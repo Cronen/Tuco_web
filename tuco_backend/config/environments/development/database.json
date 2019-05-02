@@ -1,0 +1,19 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "strapi-hook-mongoose",
+      "settings": {
+        "client": "mongo",
+        "host": "ds149706.mlab.com",
+        "port": "49706",
+        "database": "tuco_db",
+        "username": "admin",
+        "password": "tuc0tuc0"
+      },
+      "options": {
+        "authenticationDatabase": "tuco_db"
+      }
+    }
+  }
+}
