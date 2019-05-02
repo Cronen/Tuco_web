@@ -3,5 +3,5 @@
 A quick description of tuco_backend.
 
 Login for strapi admin page is
-tuco
-tuc0tuc0
+  - tuco
+  - tuc0tuc0
