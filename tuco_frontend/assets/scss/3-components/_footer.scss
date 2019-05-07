@@ -1,24 +1,32 @@
 footer{
-    background-color: #121212;
-    padding: 20px 10px;
-    color: white;
+    background-color: $footerColor;
+    color: $whiteColor;
     ul{
         padding: 0;
         list-style-type: none;
     }
-    a{
-        transition: all 400ms;
-        color: white;
-        &:hover{
-        text-decoration: none;
-        color: #c31928;
+        a{
+            color: white;
+            &:hover{
+            text-decoration: none;
+            color: $primaryColor;
+        }
+    }
+    h4{
+        text-transform: uppercase;
+        font-size: 1.125rem;
+        color: $darkGreyColor;
+        margin-bottom: 1.5625rem;
     }
 }
-}
   
-.footer_headline {
-    border-left: solid 3px #c31928;
-    color: #eaeaea;
+.footer_headline{
+    text-transform: uppercase;
+    border-left: solid 3px $primaryColor;
     padding-left: 9px;
-    font-size: 18px;
+}
+
+.footer_logo{
+    margin-bottom: 2.1875rem;
+    display: block;
 }

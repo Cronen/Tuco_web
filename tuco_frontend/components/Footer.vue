@@ -2,8 +2,8 @@
   <footer class="footer_container">
     <div class="container">
       <div class="row">
-        <div class="col">
-          <a href="#"><img src="~assets/img/tuco-logo-400.png" alt="Tuco Logo"></a>
+        <div class="col follow_us">
+          <a class="footer_logo" href="#"><img src="~assets/img/tuco_logo.png" alt="Tuco Logo"></a>
           <h4>Follow Us</h4>
           <ul class="d-flex">
             <li><a href="">Facebook</a></li>
@@ -37,6 +37,3 @@
     </div>
   </footer>
 </template>
-
-<style lang="scss">
-</style>
