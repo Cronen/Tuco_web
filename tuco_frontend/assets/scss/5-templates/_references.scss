@@ -1,0 +1,37 @@
+.my-flex-container {
+    //border: 2px solid rgb(14, 1, 5);
+    //height: 800px;
+    margin-bottom: 150px;
+    margin-top: 25px;
+  }
+
+  .my-flex-item {
+    background-color: rgb(78, 68, 68);
+    border: 1.5px solid rgba(187, 188, 194, 0.774);
+    overflow:hidden;
+    border-radius: 5px;
+    height: 163px;
+    width: 163px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-inline-start: 4px;
+    margin-inline-end: 4px;
+    cursor: pointer;
+    
+    &:hover{
+      transform: translateY(-4px);
+      box-shadow: 2px 2px rgb(204, 194, 152);
+    }
+    
+   }
+//     .my-flex-container-column {
+//       border: 2px solid rgb(11, 1, 97);
+//       height: 800px;
+//      margin-bottom: 20px;
+//    }
+  
+//   .my-flex-item-2 {
+//     background-color: rgb(243, 239, 6);
+//     border: 1px dotted rgb(39, 2, 124);
+//     height: 96px;
+//   }
