@@ -2,10 +2,14 @@
 
 @media (min-width: 991px){
 	#contact{
+		color: $whiteColor;
+		
 		.contact-box{
 			position: absolute;
 			right: 20px;
-            z-index: 1;
+			z-index: 1;
+			margin-top: 150px;
+			
            
 		}
 	}
@@ -14,6 +18,7 @@
 #contact{
 	.hide{
 		display: none;
+		
 	}
 	.social-links{
 			list-style-type: none;
@@ -35,12 +40,13 @@
  		a {
 	    margin: 0 7px;
 	    padding: 8px 18px;
-	    background-color: #ececec;
+	    background-color: $darkTextColor;
 	    border-radius: 4px;
 		}
 		a.active{
-			background-color: rgb(191, 194, 0);
-    	color: white;
+			background-color:$darkPrimaryColor;
+		color:$whiteColor;
+		
 		}
 	}
 	.employee-content{
@@ -81,14 +87,17 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		
 		div{
 			border-radius: 20px;
 			box-shadow: shadow;
-			background-color: white;
+			background-color:$darkBlueColor;
+			color: $whiteColor;
+			
 		}
 	}
 	a{
-		color: rgb(58, 54, 1);
+		color: $darkGreyColor;
 		text-decoration: none;
 	}
 	.contact{
@@ -98,7 +107,8 @@
 	}
 	.form-group {
     display: flex;
-    flex-direction: column;
+	flex-direction: column;
+
 		input, textarea{
 			border-radius: 4px;
 			// border: $border;
