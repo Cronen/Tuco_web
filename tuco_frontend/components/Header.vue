@@ -22,8 +22,7 @@
               <b-nav-item :to="{path: '/cases'}">Cases</b-nav-item>
               <b-nav-item :to="{path: '/news'}">News</b-nav-item>
               <b-nav-item :to="{path: '/about'}">About Tuco</b-nav-item>
-              <!-- TODO: Create get in touch button -->
-              <b-nav-item :to="{path: '/contact'}">Get in touch</b-nav-item>
+              <b-nav-item :to="{path: '/contact'}" class="get_in_touch_btn">Get in touch</b-nav-item>
             </b-navbar-nav>
           </b-collapse>
         </b-navbar>
