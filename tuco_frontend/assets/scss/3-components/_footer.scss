@@ -1,32 +1,57 @@
 footer{
     background-color: $footerColor;
     color: $whiteColor;
+    padding: 4.375rem 0;
     ul{
         padding: 0;
         list-style-type: none;
-    }
-        a{
-            color: white;
-            &:hover{
-            text-decoration: none;
-            color: $primaryColor;
+        margin-bottom: 1.875rem;
+        li{
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+            a{
+                color: $lightGreyColor;
+                &:hover{
+                text-decoration: none;
+                color: $primaryColor;
+                }
+            }
         }
     }
     h4{
         text-transform: uppercase;
         font-size: 1.125rem;
         color: $darkGreyColor;
-        margin-bottom: 1.5625rem;
+        margin-bottom: 1.1rem;
     }
 }
   
 .footer_headline{
     text-transform: uppercase;
-    border-left: solid 3px $primaryColor;
-    padding-left: 9px;
+    border-left: solid 0.1875rem $primaryColor;
+    padding-left: 0.5625rem;
 }
 
 .footer_logo{
     margin-bottom: 2.1875rem;
     display: block;
+}
+
+@media screen and (min-width: 768px){
+    footer{
+        .bottom-0{
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 992px){
+    footer{
+        h4{
+            margin-bottom: 1.5625rem;
+        }
+        ul{
+            margin-bottom: 0;
+        }
+    }
 }
