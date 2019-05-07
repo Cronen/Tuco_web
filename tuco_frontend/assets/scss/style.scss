@@ -1,24 +1,9 @@
 //Import needed files here
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "node_modules/bootstrap-vue/src/index.scss";
-@import "variables.scss";
+@import "1-helpers/1-helpers";
+@import "2-base/2-base";
+@import "3-components/3-components";
+//@import "4-modules/4-modules";
+@import "5-templates/5-templates";
 
-img{
-  max-width: 100%;
-  max-height: 100%;
-  display: block;
-}
-
-.footer_container {
-  background-color: #121212;
-  padding: 20px 10px;
-}
-.tuco_logo_footer {
-  height: 20px;
-}
-.footer_headline {
-  border-left: solid 3px #c31928;
-  color: #eaeaea;
-  padding-left: 9px;
-  font-size: 18px;
-}
