@@ -12,6 +12,35 @@ header {
   display: block;
 }
 
-.tuco_navbar{
-    padding: 0 5%;
+.tuco_navbar {
+  padding: 0 5%;
+}
+
+.nuxt-link-exact-active {
+  border-bottom: 1px solid $primaryColor;
+  padding-bottom: 1px;
+  color: $whiteColor !important;
+}
+
+.nav-item {
+  padding: 0 25px;
+}
+
+.get_in_touch_btn {
+  background-color: $primaryColor;
+  border-radius: 5px;
+  a {
+    color: white !important;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .nav-item {
+    padding: 0 15px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .nav-item {
+    padding: 0 4px;
+  }
 }

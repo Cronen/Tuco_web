@@ -16,28 +16,13 @@
 
           <b-collapse id="nav-text-collapse" is-nav>
             <b-navbar-nav class="ml-auto">
-              <b-nav-item active>
-                <nuxt-link :to="{path: '/'}">Home</nuxt-link>
-              </b-nav-item>
-              <b-nav-item active>
-                <nuxt-link :to="{path: '/carbon'}">Why Carbon?</nuxt-link>
-              </b-nav-item>
-              <b-nav-item active>
-                <nuxt-link :to="{path: '/references'}">References</nuxt-link>
-              </b-nav-item>
-              <b-nav-item active>
-                <nuxt-link :to="{path: '/cases'}">Cases</nuxt-link>
-              </b-nav-item>
-              <b-nav-item active>
-                <nuxt-link :to="{path: '/news'}">News</nuxt-link>
-              </b-nav-item>
-              <b-nav-item active>
-                <nuxt-link :to="{path: '/about'}">About Tuco</nuxt-link>
-              </b-nav-item>
-              <b-nav-item active>
-                  <!-- TODO: Create get in touch button -->
-                <nuxt-link :to="{path: '/contact'}">Get in touch</nuxt-link>
-              </b-nav-item>
+              <b-nav-item :to="{path: '/#'}">Home</b-nav-item>
+              <b-nav-item :to="{path: '/carbon'}">Why Carbon?</b-nav-item>
+              <b-nav-item :to="{path: '/references'}">References</b-nav-item>
+              <b-nav-item :to="{path: '/cases'}">Cases</b-nav-item>
+              <b-nav-item :to="{path: '/news'}">News</b-nav-item>
+              <b-nav-item :to="{path: '/about'}">About Tuco</b-nav-item>
+              <b-nav-item :to="{path: '/contact'}" class="get_in_touch_btn">Get in touch</b-nav-item>
             </b-navbar-nav>
           </b-collapse>
         </b-navbar>
