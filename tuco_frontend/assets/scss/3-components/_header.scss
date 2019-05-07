@@ -12,6 +12,20 @@ header {
   display: block;
 }
 
-.tuco_navbar{
-    padding: 0 5%;
+.tuco_navbar {
+  padding: 0 5%;
+}
+
+.nav-item {
+  &a {
+    color: $whiteColor;
+  }
+}
+.nuxt-link-active, .active {
+  color: $whiteColor !important;
+}
+
+.nuxt-link-exact-active {
+  border-bottom: 1px solid $primaryColor;
+  padding-bottom: 1px;
 }
