@@ -1,0 +1,17 @@
+header {
+  background-color: $headerColor;
+}
+
+.top_bar {
+  border-bottom: 1px solid $darkGreyColor;
+  color: $lightGreyColor;
+  font-size: 13px;
+}
+
+.header_logo {
+  display: block;
+}
+
+.tuco_navbar{
+    padding: 0 5%;
+}
