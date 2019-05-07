@@ -1,0 +1,24 @@
+footer{
+    background-color: #121212;
+    padding: 20px 10px;
+    color: white;
+    ul{
+        padding: 0;
+        list-style-type: none;
+    }
+    a{
+        transition: all 400ms;
+        color: white;
+        &:hover{
+        text-decoration: none;
+        color: #c31928;
+    }
+}
+}
+  
+.footer_headline {
+    border-left: solid 3px #c31928;
+    color: #eaeaea;
+    padding-left: 9px;
+    font-size: 18px;
+}
