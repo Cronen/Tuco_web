@@ -4,7 +4,7 @@
     transition: all 400ms;
     text-align: center;
     border-radius: 0.3125rem;
-    font-weight: 300;
+    font-weight: 400;
     background-color: transparent;
     padding: 0.9375rem 2.1875rem;
     font-family: 'Open Sans', sans-serif;
@@ -21,6 +21,10 @@
         background-color: $primaryColor;
         &:hover{
             background-color: $darkPrimaryColor;
+            color: $whiteColor;
+            a{
+                color: $whiteColor;
+            }
         }
     }
 
@@ -36,17 +40,17 @@
 }
 
 .add-btn{
-    height: 40px;
-    width: 40px;
+    height: 2.5rem;
+    width: 2.5rem;
     background-color: $primaryColor;
     color: $whiteColor;
 }
 
 .date-label{
-    padding: 6px 24px;
+    padding: 0.375rem 1.5rem;
     text-transform: uppercase;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     color: $whiteColor;
     background-color: $primaryColor;
-    font-weight: 300;
+    font-weight: 400;
 }

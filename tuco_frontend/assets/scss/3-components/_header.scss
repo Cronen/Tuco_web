@@ -1,46 +1,63 @@
-header {
-  background-color: $headerColor;
-}
-
 .top_bar {
-  border-bottom: 1px solid $darkGreyColor;
+  border-bottom: 0.0625rem solid $darkGreyColor;
   color: $lightGreyColor;
-  font-size: 13px;
+  font-size: 0.875rem;
+  padding: 0.9375rem 0;
 }
 
-.header_logo {
-  display: block;
-}
-
-.tuco_navbar {
-  padding: 0 5%;
+.header-contact{
+  list-style-type: none;
+  display: flex;
+  padding: 0 1rem;
+  li{
+    margin: 0 0.9375rem 0 0;
+    &:last-child{
+      margin: 0;
+    }
+  }
 }
 
 .nuxt-link-exact-active {
-  border-bottom: 1px solid $primaryColor;
-  padding-bottom: 1px;
+  border-bottom: 0.0625rem  solid $primaryColor;
+  padding-bottom: 0.0625rem ;
   color: $whiteColor !important;
 }
 
 .nav-item {
-  padding: 0 25px;
+  padding: 0 1.5625rem;
+}
+
+.nav-link{
+  padding: 0;
 }
 
 .get_in_touch_btn {
   background-color: $primaryColor;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   a {
     color: white !important;
   }
 }
 
+@media screen and (min-width: 768px){
+  .tuco_navbar {
+    padding: 0 5%;
+  }
+}
+
+@media screen and (min-width: 992px){
+  .menu-items{
+    align-items: center;
+  }
+}
+
 @media screen and (max-width: 1600px) {
   .nav-item {
-    padding: 0 15px;
+    padding: 0 0.9375rem;
   }
 }
 @media screen and (max-width: 1200px) {
   .nav-item {
-    padding: 0 4px;
+    padding: 0 0.25rem;
   }
 }
