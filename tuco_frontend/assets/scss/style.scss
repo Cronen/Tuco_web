@@ -1,3 +1,18 @@
 //Import needed files here
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "node_modules/bootstrap-vue/src/index.scss";
+@import "variables.scss";
+
+.footer_container {
+  background-color: #121212;
+  padding: 20px 10px;
+}
+.tuco_logo_footer {
+  height: 20px;
+}
+.footer_headline {
+  border-left: solid 3px #c31928;
+  color: #eaeaea;
+  padding-left: 9px;
+  font-size: 18px;
+}
