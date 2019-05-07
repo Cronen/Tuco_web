@@ -1,0 +1,52 @@
+%btn{
+    font-size: 0.9375rem;
+    text-decoration: none;
+    transition: all 400ms;
+    text-align: center;
+    border-radius: 0.3125rem;
+    font-weight: 300;
+    background-color: transparent;
+    padding: 0.9375rem 2.1875rem;
+    font-family: 'Open Sans', sans-serif;
+    color: $lightGreyColor;
+    &:hover{
+        cursor: pointer;
+        outline: none;
+    }
+}
+
+.btn{
+    &-main{
+        @extend %btn;
+        background-color: $primaryColor;
+        &:hover{
+            background-color: $darkPrimaryColor;
+        }
+    }
+
+    &-link-border{
+        @extend %btn;
+        background-color: none;
+        text-transform: uppercase;
+        border-bottom: 0.125rem solid $primaryColor;
+        font-weight: 700;
+        border-radius: none;
+        padding: 0 0 0.3125rem 0;
+    }
+}
+
+.add-btn{
+    height: 40px;
+    width: 40px;
+    background-color: $primaryColor;
+    color: $whiteColor;
+}
+
+.date-label{
+    padding: 6px 24px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    color: $whiteColor;
+    background-color: $primaryColor;
+    font-weight: 300;
+}
