@@ -1,20 +1,25 @@
 .top_bar {
-  border-bottom: 0.0625rem solid $darkGreyColor;
+  border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.25);
   color: $lightGreyColor;
   font-size: 0.875rem;
-  padding: 0.9375rem 0;
+  padding-top: 0.9375rem;
+  padding-bottom: 0.9375rem;
 }
 
 .header-contact{
   list-style-type: none;
   display: flex;
-  padding: 0 1rem;
   li{
     margin: 0 0.9375rem 0 0;
     &:last-child{
       margin: 0;
+      color: $lightGreyColor;
     }
   }
+}
+
+.main-navbar{
+  padding: 20px 0;
 }
 
 .nuxt-link-exact-active {
@@ -27,15 +32,13 @@
   padding: 0 1.5625rem;
 }
 
-.nav-link{
-  padding: 0;
+.navbar-dark .navbar-nav .nav-link{
+  color: $lightGreyColor;
 }
 
-.get_in_touch_btn {
-  background-color: $primaryColor;
-  border-radius: 0.3125rem;
-  a {
-    color: white !important;
+.btn-main{
+  .nav-link{
+    padding: 0;
   }
 }
 

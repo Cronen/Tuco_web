@@ -14,28 +14,28 @@
         </div>
       </div>
     </header>
-    <nav>
-        <div class="tuco_navbar">
-            <b-navbar toggleable="lg" type="dark">
-            <b-navbar-brand href="/#">
-              <img class="header_logo" src="~assets/img/tuco_logo.png" alt="Tuco Logo">
-            </b-navbar-brand>
+    <nav class="main-navbar">
+      <div class="tuco_navbar">
+        <b-navbar toggleable="lg" type="dark">
+          <b-navbar-brand href="/#">
+            <img class="header_logo" src="~assets/img/tuco_logo.png" alt="Tuco Logo">
+          </b-navbar-brand>
 
-            <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>
+          <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>
 
-            <b-collapse id="nav-text-collapse" is-nav>
-              <b-navbar-nav class="ml-auto menu-items">
-                <b-nav-item :to="{path: '/#'}">Home</b-nav-item>
-                <b-nav-item :to="{path: '/carbon'}">Why Carbon?</b-nav-item>
-                <b-nav-item :to="{path: '/references'}">References</b-nav-item>
-                <b-nav-item :to="{path: '/cases'}">Cases</b-nav-item>
-                <b-nav-item :to="{path: '/news'}">News</b-nav-item>
-                <b-nav-item :to="{path: '/about'}">About Tuco</b-nav-item>
-                <b-nav-item :to="{path: '/contact'}" class="btn btn-main">Get in touch</b-nav-item>
-              </b-navbar-nav>
-            </b-collapse>
-          </b-navbar>
-        </div>
+          <b-collapse id="nav-text-collapse" is-nav>
+            <b-navbar-nav class="ml-auto menu-items">
+              <b-nav-item :to="{path: '/#'}">Home</b-nav-item>
+              <b-nav-item :to="{path: '/carbon'}">Why Carbon?</b-nav-item>
+              <b-nav-item :to="{path: '/references'}">References</b-nav-item>
+              <b-nav-item :to="{path: '/cases'}">Cases</b-nav-item>
+              <b-nav-item :to="{path: '/news'}">News</b-nav-item>
+              <b-nav-item :to="{path: '/about'}">About Tuco</b-nav-item>
+              <b-nav-item :to="{path: '/contact'}" class="btn btn-main">Get in touch</b-nav-item>
+            </b-navbar-nav>
+          </b-collapse>
+        </b-navbar>
+      </div>
     </nav>
   </div>
 </template>
