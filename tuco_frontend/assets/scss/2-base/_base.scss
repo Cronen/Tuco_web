@@ -32,3 +32,17 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
+
+.section_padding{
+  padding: 100px 0;
+}
+
+.radius_box{
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 768px){
+  .section_padding{
+    padding: 200px 0;
+  }
+}
