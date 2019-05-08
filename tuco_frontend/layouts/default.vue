@@ -11,6 +11,7 @@
 <script>
 import Header from "~/components/Header.vue";
 import Footer from "~/components/Footer.vue";
+const strapi_url = "localhost yes";
 
 export default {
   components: {

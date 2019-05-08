@@ -61,5 +61,11 @@ export default {
     */
     extend(config, ctx) {
     }
+  },
+  /*
+  ** Global variables
+   */
+  env: {
+    StrapiUrl: 'http://localhost:1337'
   }
 }
