@@ -6,8 +6,8 @@
           <div class="col">
             <div class="tuco_navbar">
               <ul class="header-contact">
-                <li>+45 7020 3898</li>
-                <li>mail@tuco.dk</li>
+                <li><font-awesome-icon :icon="['fas', 'mobile-alt']"/><a href="tel:+4570203898">+45 7020 3898</a></li>
+                <li><font-awesome-icon :icon="['fas', 'envelope']"/><a href="mailto:someone@example.com?Subject=Hello%20again">mail@tuco.dk</a></li>
               </ul>
             </div>
           </div>
@@ -26,7 +26,7 @@
           <b-collapse id="nav-text-collapse" is-nav>
             <b-navbar-nav class="ml-auto menu-items">
               <b-nav-item :to="{path: '/#'}">Home</b-nav-item>
-              <b-nav-item :to="{path: '/carbon'}">Why Carbon?</b-nav-item>
+              <b-nav-item :to="{path: '/whycarbon'}">Why Carbon?</b-nav-item>
               <b-nav-item :to="{path: '/references'}">References</b-nav-item>
               <b-nav-item :to="{path: '/cases'}">Cases</b-nav-item>
               <b-nav-item :to="{path: '/news'}">News</b-nav-item>
