@@ -8,11 +8,12 @@
 </template>
 
 <script>
-//:style="'background-image: http://localhost:1337' + this.case.case_image.url"
+const strapi_url = process.env.StrapiUrl;
+
 export default {
   data() {
     return {
-        case_img: 'http://localhost:1337' + this.case.case_image.url
+        case_img: strapi_url + this.case.case_image.url
     };
   },
   props: {

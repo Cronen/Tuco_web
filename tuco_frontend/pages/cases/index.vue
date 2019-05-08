@@ -3,14 +3,14 @@
     <div class="col-4" v-for="c in cases" v-bind:key="c.id">
       <CaseCard :case="c"/>
     </div>
-    <!-- double up for test -->
-    <div class="col-4" v-for="c in cases" v-bind:key="c.id">
-      <CaseCard :case="c"/>
-    </div>
+  </section>
+  <section v-else class="row pb-5">
+    <Loader class="col-1 mx-auto"/>
   </section>
 </template>
 
 <script>
+import Loader from '~/components/Loader.vue'
 import CaseCard from "~/components/CaseCard.vue";
 import Strapi from "strapi-sdk-javascript";
 const strapi_url = process.env.StrapiUrl;
@@ -24,7 +24,10 @@ export default {
       cases: null
     };
   },
-  components: { CaseCard },
+  components: { 
+    CaseCard,
+    Loader
+    },
   created() {
     this.fetchData();
     console.log(this.cases);
