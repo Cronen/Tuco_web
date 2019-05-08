@@ -1,16 +1,15 @@
 <template>
-  <section class="row">
-    <div>
-      <div v-if="cases">
-        Reference name from Strapi:
-        <b>{{cases[0].title}}</b>
-         <img class="case_img" :src="strapi_url + cases[0].case_image.url" alt="case img">
+  <section class="row pb-5">
+    <div v-if="cases">
+      <div class="col-3" v-for="c in cases" v-bind:key="c.id">
+        <CaseCard :case="c"/>
       </div>
     </div>
   </section>
 </template>
 
 <script>
+import CaseCard from "~/components/CaseCard.vue";
 import Strapi from "strapi-sdk-javascript";
 const strapi_url = process.env.StrapiUrl;
 const strapi = new Strapi(strapi_url);
@@ -23,7 +22,7 @@ export default {
       cases: null
     };
   },
-  components: {},
+  components: { CaseCard },
   created() {
     this.fetchData();
     console.log(this.cases);
