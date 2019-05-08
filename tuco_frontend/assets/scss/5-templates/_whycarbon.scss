@@ -1,0 +1,78 @@
+
+#whycarbon.hero{
+    display: flex;
+    align-items: center;
+    height: 556px;
+    color:$whiteColor;
+    background-size: cover;
+    background-color: #ecedf1;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-name: handFadeUp;
+    background-repeat: no-repeat;
+    animation-timing-function: ease-out;
+    background-position: 100vw 0px;
+    animation-fill-mode: forwards;
+    background-image: url("/src/assets/img/");
+
+}
+  
+    .hint {
+      color:$whiteColor;
+      opacity: 0.7;
+      font-size: 13px;
+      text-decoration: none;
+      display: inline-block;
+  
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    #details{
+
+        p{
+            color: $whiteColor;
+        }
+        .h3{
+            color: $whiteColor;
+        }
+
+        table{
+            color: $whiteColor;
+
+            .tg {
+                border-collapse:collapse;
+                border-spacing:0;
+               }
+          .tg td{
+            font-size:14px;
+            padding:15px 10px;
+            border-style:solid;
+            border-width:1px;
+            overflow:hidden;
+            word-break:normal;
+            border-color:white;
+           }
+          .tg th{
+            font-size:14px;font-weight:normal;
+            padding:15px 10px;
+            border-style:solid;
+            border-width:1px;
+            overflow:hidden;
+            word-break:normal;
+            border-color:white;}
+         
+          .tg .tg-0lax{
+            text-align:left;
+            vertical-align:left;
+            color:#ffffff;
+            padding:10px;
+           }
+
+        }
+    }
+
+
+
+ 
