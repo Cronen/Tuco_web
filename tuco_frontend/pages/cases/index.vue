@@ -1,9 +1,11 @@
 <template>
-  <section class="row pb-5">
-    <div v-if="cases">
-      <div class="col-3" v-for="c in cases" v-bind:key="c.id">
-        <CaseCard :case="c"/>
-      </div>
+  <section class="row pb-5" v-if="cases">
+    <div class="col-4" v-for="c in cases" v-bind:key="c.id">
+      <CaseCard :case="c"/>
+    </div>
+    <!-- double up for test -->
+    <div class="col-4" v-for="c in cases" v-bind:key="c.id">
+      <CaseCard :case="c"/>
     </div>
   </section>
 </template>
