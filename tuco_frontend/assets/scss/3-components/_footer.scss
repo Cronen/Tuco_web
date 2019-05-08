@@ -7,8 +7,8 @@ footer{
         list-style-type: none;
         margin-bottom: 1.875rem;
         li{
-            margin-bottom: 0.5rem;
             font-weight: 300;
+            margin-bottom: 0.5rem;
             a{
                 color: $lightGreyColor;
                 &:hover{
@@ -42,6 +42,7 @@ footer{
     display: flex;
     .social_icon{
         margin: 0 1.125rem 0 0;
+        font-size: 1.5rem;
         &:last-child{
             margin-right: 0;
         }
