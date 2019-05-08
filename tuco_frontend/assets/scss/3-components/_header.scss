@@ -10,16 +10,24 @@
   list-style-type: none;
   display: flex;
   li{
-    margin: 0 0.9375rem 0 0;
+    margin: 0 1.25rem 0 0;
     &:last-child{
       margin: 0;
+    }
+    a{
+      margin-left: 0.3125rem;
       color: $lightGreyColor;
+      font-weight: 300;
+      &:hover{
+        text-decoration: none;
+        color: $primaryColor;
+      }
     }
   }
 }
 
 .main-navbar{
-  padding: 20px 0;
+  padding: 1.25rem 0;
 }
 
 .nuxt-link-exact-active {

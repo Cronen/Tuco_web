@@ -6,9 +6,9 @@
           <a class="footer_logo" href="/"><img src="~assets/img/tuco_logo.png" alt="Tuco Logo"></a>
           <h4>Follow Us</h4>
           <ul class="social_icons">
-            <li class="social_icon"><a href="">icon</a></li>
-            <li class="social_icon"><a href="">icon</a></li>
-            <li class="social_icon"><a href="">icon</a></li>
+            <li class="social_icon"><a href=""><font-awesome-icon :icon="['fab', 'facebook-square']"/></a></li>
+            <li class="social_icon"><a href=""><font-awesome-icon :icon="['fab', 'youtube']"/></a></li>
+            <li class="social_icon"><a href=""><font-awesome-icon :icon="['fab', 'linkedin']"/></a></li>
           </ul>
         </b-col>
         <b-col cols="12" md="6" lg="3" xl="2">
