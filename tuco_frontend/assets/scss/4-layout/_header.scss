@@ -31,14 +31,14 @@
   padding-bottom: 1.25rem;
 }
 
-//restyling it later
-/*
+//TODO restyling it later
 .nuxt-link-exact-active {
   border-bottom: 0.0625rem  solid $primaryColor;
-  padding-bottom: 0.0625rem ;
+  padding-bottom: 0.0625rem;
+  padding-top: 0.0625rem;
   color: $whiteColor !important;
 }
-*/
+
 
 .navbar-dark .navbar-nav .nav-link{
   color: $lightGreyColor;
