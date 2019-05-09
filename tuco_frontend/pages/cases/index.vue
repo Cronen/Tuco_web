@@ -1,20 +1,20 @@
 <template>
   <div id="caseList">
-    <section v-if="cases" class="section_padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-4" v-for="c in cases" v-bind:key="c.id">
-          <CaseCard :case="c"/>
-        </div>
-        </div>
-      </div>
-    </section>
-    <section v-else class="section_padding">
-      <div class="container">
-        <div class="row">
-          <Loader class="col-1 mx-auto"/>
-        </div>
-      </div>
+    <section class="section_padding">
+      <b-container v-if="cases">
+        <b-row>
+          <b-col cols="12" md="3" lg="4" v-for="c in cases" v-bind:key="c.id">
+            <CaseCard :case="c"/>
+          </b-col>
+        </b-row>
+      </b-container>
+      <b-container v-else>
+        <b-row>
+          <b-col cols="1" class="mx-auto">
+            <Loader/>
+          </b-col>
+        </b-row>
+      </b-container>
     </section>
   </div>
 </template>
