@@ -39,9 +39,12 @@
   color: $whiteColor !important;
 }
 
-
 .navbar-dark .navbar-nav .nav-link{
   color: $lightGreyColor;
+}
+
+.nav-item{
+  font-size: 0.9375rem;
 }
 
 .btn-main{

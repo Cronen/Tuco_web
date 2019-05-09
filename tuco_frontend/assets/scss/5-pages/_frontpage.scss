@@ -1,0 +1,16 @@
+.partners_wrapper{
+    border-bottom: 1px solid rgba(112, 112, 112, 0.25);
+    margin: 0 auto;
+    padding: 3.4375rem 0;
+    .partner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .partners_wrapper{
+        width: 930px;
+    }
+}
