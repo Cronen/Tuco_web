@@ -11,24 +11,24 @@
       </b-container>
       <b-container>
         <b-row>
-          <b-col cols="6" sm="4" md="3" lg="2"><a href=""><img class="radius_box" src="../assets/img/references/Danskemaritime.jpg" alt=""></a></b-col>
-          <b-col cols="6" sm="4" md="3" lg="2"><a href=""><img class="radius_box" src="../assets/img/references/Danskemaritime.jpg" alt=""></a></b-col>
-          <b-col cols="6" sm="4" md="3" lg="2"><a href=""><img class="radius_box" src="../assets/img/references/Danskemaritime.jpg" alt=""></a></b-col>
-          <b-col cols="6" sm="4" md="3" lg="2"><a href=""><img class="radius_box" src="../assets/img/references/Danskemaritime.jpg" alt=""></a></b-col>
-          <b-col cols="6" sm="4" md="3" lg="2"><a href=""><img class="radius_box" src="../assets/img/references/Danskemaritime.jpg" alt=""></a></b-col>
-          <b-col cols="6" sm="4" md="3" lg="2"><a href=""><img class="radius_box" src="../assets/img/references/Danskemaritime.jpg" alt=""></a></b-col>
-          <b-col cols="6" sm="4" md="3" lg="2"><a href=""><img class="radius_box" src="../assets/img/references/Danskemaritime.jpg" alt=""></a></b-col>
-          <b-col cols="6" sm="4" md="3" lg="2"><a href=""><img class="radius_box" src="../assets/img/references/Danskemaritime.jpg" alt=""></a></b-col>
-          <b-col cols="6" sm="4" md="3" lg="2"><a href=""><img class="radius_box" src="../assets/img/references/Danskemaritime.jpg" alt=""></a></b-col>
-          <b-col cols="6" sm="4" md="3" lg="2"><a href=""><img class="radius_box" src="../assets/img/references/Danskemaritime.jpg" alt=""></a></b-col>
-          <b-col cols="6" sm="4" md="3" lg="2"><a href=""><img class="radius_box" src="../assets/img/references/Danskemaritime.jpg" alt=""></a></b-col>
-          <b-col cols="6" sm="4" md="3" lg="2"><a href=""><img class="radius_box" src="../assets/img/references/Danskemaritime.jpg" alt=""></a></b-col>
-          <b-col cols="6" sm="4" md="3" lg="2"><a href=""><img class="radius_box" src="../assets/img/references/Danskemaritime.jpg" alt=""></a></b-col>
-          <b-col cols="6" sm="4" md="3" lg="2"><a href=""><img class="radius_box" src="../assets/img/references/Danskemaritime.jpg" alt=""></a></b-col>
-          <b-col cols="6" sm="4" md="3" lg="2"><a href=""><img class="radius_box" src="../assets/img/references/Danskemaritime.jpg" alt=""></a></b-col>
-          <b-col cols="6" sm="4" md="3" lg="2"><a href=""><img class="radius_box" src="../assets/img/references/Danskemaritime.jpg" alt=""></a></b-col>
-          <b-col cols="6" sm="4" md="3" lg="2"><a href=""><img class="radius_box" src="../assets/img/references/Danskemaritime.jpg" alt=""></a></b-col>
-          <b-col cols="6" sm="4" md="3" lg="2"><a href=""><img class="radius_box" src="../assets/img/references/Danskemaritime.jpg" alt=""></a></b-col>
+          <b-col cols="6" sm="4" md="3" lg="2"><a href="#"><img class="radius_box" src="../assets/img/references/Danskemaritime.jpg" alt=""></a></b-col>
+          <b-col cols="6" sm="4" md="3" lg="2"><a href="#"><img class="radius_box" src="../assets/img/references/Danskemaritime.jpg" alt=""></a></b-col>
+          <b-col cols="6" sm="4" md="3" lg="2"><a href="#"><img class="radius_box" src="../assets/img/references/Danskemaritime.jpg" alt=""></a></b-col>
+          <b-col cols="6" sm="4" md="3" lg="2"><a href="#"><img class="radius_box" src="../assets/img/references/Danskemaritime.jpg" alt=""></a></b-col>
+          <b-col cols="6" sm="4" md="3" lg="2"><a href="#"><img class="radius_box" src="../assets/img/references/Danskemaritime.jpg" alt=""></a></b-col>
+          <b-col cols="6" sm="4" md="3" lg="2"><a href="#"><img class="radius_box" src="../assets/img/references/Danskemaritime.jpg" alt=""></a></b-col>
+          <b-col cols="6" sm="4" md="3" lg="2"><a href="#"><img class="radius_box" src="../assets/img/references/Danskemaritime.jpg" alt=""></a></b-col>
+          <b-col cols="6" sm="4" md="3" lg="2"><a href="#"><img class="radius_box" src="../assets/img/references/Danskemaritime.jpg" alt=""></a></b-col>
+          <b-col cols="6" sm="4" md="3" lg="2"><a href="#"><img class="radius_box" src="../assets/img/references/Danskemaritime.jpg" alt=""></a></b-col>
+          <b-col cols="6" sm="4" md="3" lg="2"><a href="#"><img class="radius_box" src="../assets/img/references/Danskemaritime.jpg" alt=""></a></b-col>
+          <b-col cols="6" sm="4" md="3" lg="2"><a href="#"><img class="radius_box" src="../assets/img/references/Danskemaritime.jpg" alt=""></a></b-col>
+          <b-col cols="6" sm="4" md="3" lg="2"><a href="#"><img class="radius_box" src="../assets/img/references/Danskemaritime.jpg" alt=""></a></b-col>
+          <b-col cols="6" sm="4" md="3" lg="2"><a href="#"><img class="radius_box" src="../assets/img/references/Danskemaritime.jpg" alt=""></a></b-col>
+          <b-col cols="6" sm="4" md="3" lg="2"><a href="#"><img class="radius_box" src="../assets/img/references/Danskemaritime.jpg" alt=""></a></b-col>
+          <b-col cols="6" sm="4" md="3" lg="2"><a href="#"><img class="radius_box" src="../assets/img/references/Danskemaritime.jpg" alt=""></a></b-col>
+          <b-col cols="6" sm="4" md="3" lg="2"><a href="#"><img class="radius_box" src="../assets/img/references/Danskemaritime.jpg" alt=""></a></b-col>
+          <b-col cols="6" sm="4" md="3" lg="2"><a href="#"><img class="radius_box" src="../assets/img/references/Danskemaritime.jpg" alt=""></a></b-col>
+          <b-col cols="6" sm="4" md="3" lg="2"><a href="#"><img class="radius_box" src="../assets/img/references/Danskemaritime.jpg" alt=""></a></b-col>
         </b-row>
       </b-container>
     </section>
