@@ -46,7 +46,7 @@ export default {
     async fetchData() {
       this.loading = true;
       let response = await strapi
-        .request("get", "/cases")
+        .request("get", "/cases?_sort=createdAt:DESC")
         .then((this.loading = false));
       console.log(response[0]);
       this.cases = response;
