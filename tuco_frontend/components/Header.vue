@@ -13,7 +13,7 @@
       </div>
     </header>
         <b-navbar toggleable="lg" type="dark" class="main_bar">
-          <b-navbar-brand href="#">
+          <b-navbar-brand href="/">
             <img class="header_logo" src="~assets/img/tuco_logo.png" alt="Tuco Logo">
           </b-navbar-brand>
 
@@ -21,7 +21,7 @@
 
           <b-collapse id="nav-text-collapse" is-nav>
             <b-navbar-nav class="ml-auto menu-items">
-              <b-nav-item :to="{path: '/#'}">Home</b-nav-item>
+              <b-nav-item :to="{path: '/'}">Home</b-nav-item>
               <b-nav-item :to="{path: '/whycarbon'}">Why Carbon?</b-nav-item>
               <!--<b-nav-item :to="{path: '/quality'}">QUALITY</b-nav-item>-->
               <b-nav-item :to="{path: '/references'}">References</b-nav-item>
