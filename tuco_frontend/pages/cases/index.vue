@@ -1,12 +1,22 @@
 <template>
-  <section class="row pb-5" v-if="cases">
-    <div class="col-4" v-for="c in cases" v-bind:key="c.id">
-      <CaseCard :case="c"/>
-    </div>
-  </section>
-  <section v-else class="row pb-5">
-    <Loader class="col-1 mx-auto"/>
-  </section>
+  <div id="caseList">
+    <section v-if="cases" class="section_padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-4" v-for="c in cases" v-bind:key="c.id">
+          <CaseCard :case="c"/>
+        </div>
+        </div>
+      </div>
+    </section>
+    <section v-else class="section_padding">
+      <div class="container">
+        <div class="row">
+          <Loader class="col-1 mx-auto"/>
+        </div>
+      </div>
+    </section>
+  </div>
 </template>
 
 <script>

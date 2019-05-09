@@ -4,20 +4,16 @@
       <div class="container-fluid top_bar">
         <div class="row">
           <div class="col">
-            <div class="tuco_navbar">
-              <ul class="header-contact">
-                <li><font-awesome-icon :icon="['fas', 'mobile-alt']"/><a href="tel:+4570203898">+45 7020 3898</a></li>
-                <li><font-awesome-icon :icon="['fas', 'envelope']"/><a href="mailto:someone@example.com?Subject=Hello%20again">mail@tuco.dk</a></li>
-              </ul>
-            </div>
+            <ul class="header-contact">
+              <li><font-awesome-icon :icon="['fas', 'mobile-alt']"/><a href="tel:+4570203898">+45 7020 3898</a></li>
+              <li><font-awesome-icon :icon="['fas', 'envelope']"/><a href="mailto:someone@example.com?Subject=Hello%20again">mail@tuco.dk</a></li>
+            </ul>
           </div>
         </div>
       </div>
     </header>
-    <nav class="main-navbar">
-      <div class="tuco_navbar">
-        <b-navbar toggleable="lg" type="dark">
-          <b-navbar-brand href="/#">
+        <b-navbar toggleable="lg" type="dark" class="main_bar">
+          <b-navbar-brand href="#">
             <img class="header_logo" src="~assets/img/tuco_logo.png" alt="Tuco Logo">
           </b-navbar-brand>
 
@@ -25,7 +21,7 @@
 
           <b-collapse id="nav-text-collapse" is-nav>
             <b-navbar-nav class="ml-auto menu-items">
-              <b-nav-item :to="{path: '/#'}">Home</b-nav-item>
+              <b-nav-item :to="{path: '/'}">Home</b-nav-item>
               <b-nav-item :to="{path: '/whycarbon'}">Why Carbon?</b-nav-item>
               <b-nav-item :to="{path: '/references'}">References</b-nav-item>
               <b-nav-item :to="{path: '/cases'}">Cases</b-nav-item>
@@ -35,8 +31,6 @@
             </b-navbar-nav>
           </b-collapse>
         </b-navbar>
-      </div>
-    </nav>
   </div>
 </template>
         

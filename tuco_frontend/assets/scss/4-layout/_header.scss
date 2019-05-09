@@ -26,15 +26,19 @@
   }
 }
 
-.main-navbar{
-  padding: 1.25rem 0;
+.main_bar{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
+//restyling it later
+/*
 .nuxt-link-exact-active {
   border-bottom: 0.0625rem  solid $primaryColor;
   padding-bottom: 0.0625rem ;
   color: $whiteColor !important;
 }
+*/
 
 .navbar-dark .navbar-nav .nav-link{
   color: $lightGreyColor;
@@ -47,8 +51,9 @@
 }
 
 @media screen and (min-width: 768px){
-  .tuco_navbar {
-    padding: 0 5%;
+  .main_bar, .top_bar{
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
 
