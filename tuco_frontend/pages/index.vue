@@ -1,12 +1,28 @@
 <template>
-  <section class="container">
-    <div>
-      <div v-if="references">
-        Reference name from Strapi:
-        <b>{{references[0].ref_name}}</b>
+  <div id="app">
+    <section class="container">
+      <div>
+        <div v-if="references">
+          Reference name from Strapi:
+          <b>{{references[0].ref_name}}</b>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+    <section class="partners">
+      <b-container>
+        <b-row class="partners_wrapper">
+            <b-col cols="6" md="4" lg="3" class="partner"><img src="../assets/img/partners/Tekinstitut-logo.svg" alt="partner logo"></b-col>
+            <b-col cols="6" md="4" lg="3" class="partner"><img src="../assets/img/partners/molslinjen-logo.svg" alt="partner logo"></b-col>
+            <b-col cols="6" md="4" lg="3" class="partner"><img src="../assets/img/partners/ixblue-logo.svg" alt="partner logo"></b-col>
+            <b-col cols="6" md="4" lg="3" class="partner"><img src="../assets/img/partners/university-logo.svg" alt="partner logo"></b-col>
+            <b-col cols="6" md="4" lg="3" class="partner"><img src="../assets/img/partners/dfds-logo.svg" alt="partner logo"></b-col>
+            <b-col cols="6" md="4" lg="3" class="partner"><img src="../assets/img/partners/man-logo.svg" alt="partner logo"></b-col>
+            <b-col cols="6" md="4" lg="3" class="partner"><img src="../assets/img/partners/dbi-logo.svg" alt="partner logo"></b-col>
+            <b-col cols="6" md="4" lg="3" class="partner"><img src="../assets/img/partners/scandlines-logo.svg" alt="partner logo"></b-col>
+        </b-row>
+      </b-container>
+    </section>
+  </div>
 </template>
 
 <script>

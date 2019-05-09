@@ -21,14 +21,14 @@
 
           <b-collapse id="nav-text-collapse" is-nav>
             <b-navbar-nav class="ml-auto menu-items">
-              <b-nav-item :to="{path: '/#'}">HOME</b-nav-item>
-              <b-nav-item :to="{path: '/whycarbon'}">WHY CARBON ?</b-nav-item>
-              <b-nav-item :to="{path: '/quality'}">QUALITY</b-nav-item>
-              <b-nav-item :to="{path: '/references'}">REFERENCES</b-nav-item>
-              <b-nav-item :to="{path: '/cases'}">CASES</b-nav-item>
-              <b-nav-item :to="{path: '/news'}">NEWS</b-nav-item>
-              <b-nav-item :to="{path: '/about'}">ABOUT TUCO</b-nav-item>
-              <b-nav-item :to="{path: '/contact'}" class="btn btn-main">GET IN TOUCH</b-nav-item>
+              <b-nav-item :to="{path: '/#'}">Home</b-nav-item>
+              <b-nav-item :to="{path: '/whycarbon'}">Why Carbon?</b-nav-item>
+              <!--<b-nav-item :to="{path: '/quality'}">QUALITY</b-nav-item>-->
+              <b-nav-item :to="{path: '/references'}">References</b-nav-item>
+              <b-nav-item :to="{path: '/cases'}">Cases</b-nav-item>
+              <b-nav-item :to="{path: '/news'}">News</b-nav-item>
+              <b-nav-item :to="{path: '/about'}">About Tuco</b-nav-item>
+              <b-nav-item :to="{path: '/contact'}" class="btn btn-main">Get in touch</b-nav-item>
             </b-navbar-nav>
           </b-collapse>
         </b-navbar>
