@@ -22,7 +22,7 @@
           <b-collapse id="nav-text-collapse" is-nav>
             <b-navbar-nav class="ml-auto menu-items">
               <b-nav-item :to="{path: '/#'}">HOME</b-nav-item>
-              <b-nav-item :to="{path: '/whycarbon'}">WHY CARBON ?</b-nav-item>
+              <b-nav-item :to="{path: '/whycarbon'}">WHY CARBON?</b-nav-item>
               <b-nav-item :to="{path: '/quality'}">QUALITY</b-nav-item>
               <b-nav-item :to="{path: '/references'}">REFERENCES</b-nav-item>
               <b-nav-item :to="{path: '/cases'}">CASES</b-nav-item>
