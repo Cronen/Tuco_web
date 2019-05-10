@@ -22,6 +22,15 @@
         </b-row>
       </b-container>
     </section>
+    <section>
+      <b-container>
+        <b-row class="flex-column">
+          <h4>Join Tuco Marines Newsletter</h4>
+          <p>Subscribe now and get the latest boat news</p>
+          <input type="text" placeholder="Enter your email adress">
+        </b-row>
+      </b-container>
+    </section>
   </div>
 </template>
 

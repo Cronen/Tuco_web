@@ -1,11 +1,24 @@
+//Partner Section
+
 .partners_wrapper{
     border-bottom: 1px solid rgba(112, 112, 112, 0.25);
     margin: 0 auto;
-    padding: 3.4375rem 0;
+    padding: 1.5625rem 0;
     .partner{
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 0.9375rem;
+        margin-bottom: 0.9375rem;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .partners_wrapper{
+        .partner{
+            margin-top: 1.5625rem;
+            margin-bottom: 1.5625rem;
+        }
     }
 }
 
