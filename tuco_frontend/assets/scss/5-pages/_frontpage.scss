@@ -1,5 +1,33 @@
-//Partner Section
+//Banner
+.banner_hero{
+    position: relative;
+    img{
+        background-position: center;
+        height: auto;
+        width: 100%;
+        display: block;
+    }
+    .banner_overlay{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
 
+        .banner_title{
+            margin-bottom: 25px;
+            text-shadow: rgba(0,0,0,0.5) 0px 8px 6px;
+        }
+        .banner_subtitle{
+            margin-bottom: 60px;
+            text-shadow: rgba(0,0,0,0.90) 0px 3px 3px;
+        }
+    }
+}
+
+//Partner Section
 .partners_wrapper{
     border-bottom: 1px solid rgba(112, 112, 112, 0.25);
     margin: 0 auto;
