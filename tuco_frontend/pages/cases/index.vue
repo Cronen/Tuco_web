@@ -1,4 +1,7 @@
 <template>
+<div>
+    <subbanner/>
+   
   <div id="caseList">
     <section class="section_padding">
       <b-container v-if="cases">
@@ -17,9 +20,11 @@
       </b-container>
     </section>
   </div>
+   </div>
 </template>
 
 <script>
+import subbanner from "~/components/subbanner.vue";
 import Loader from '~/components/Loader.vue'
 import CaseCard from "~/components/CaseCard.vue";
 import Strapi from "strapi-sdk-javascript";
@@ -36,7 +41,8 @@ export default {
   },
   components: { 
     CaseCard,
-    Loader
+    Loader,
+    subbanner
     },
   created() {
     this.fetchData();
