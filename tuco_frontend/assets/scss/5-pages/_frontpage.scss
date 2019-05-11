@@ -27,6 +27,15 @@
     }
 }
 
+.intro_title{
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.intro_subtext{
+    text-align: center;
+}
+
 //Partner Section
 .partners_wrapper{
     border-bottom: 1px solid rgba(112, 112, 112, 0.25);
@@ -51,7 +60,17 @@
 }
 
 @media screen and (min-width: 1200px){
+    .banner_hero{
+        .banner_subtext{
+            line-height: 28px;
+        }
+    }
+
     .partners_wrapper{
         width: 930px;
+    }
+
+    .intro_subtext{
+        line-height: 32px;
     }
 }

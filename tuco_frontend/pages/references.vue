@@ -8,7 +8,7 @@
         <b-container>
           <b-row>
             <b-col md="7" lg="6">
-              <h1>Our References</h1>
+              <h2>Our References</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</p>
             </b-col>
           </b-row>

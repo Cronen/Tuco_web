@@ -4,6 +4,14 @@
    
   <div id="caseList">
     <section class="section_padding">
+      <b-container>
+        <b-row>
+          <b-col md="7" lg="6">
+            <h2>Our Latest Cases</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</p>
+          </b-col>
+        </b-row>
+      </b-container>
       <b-container v-if="cases">
         <b-row>
           <b-col cols="12" md="3" lg="4" v-for="c in cases" v-bind:key="c.id">
