@@ -1,6 +1,16 @@
 <template>
   <div id="app">
     <FrontBanner/>
+    <section>
+      <b-container>
+        <b-row>
+          <b-col>
+            <h2>Classification Projects</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </b-col>
+        </b-row>
+      </b-container>
+    </section>
     <section class="container">
       <div>
         <div v-if="references">
