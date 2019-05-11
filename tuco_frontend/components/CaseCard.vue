@@ -1,8 +1,13 @@
 <template>
-  <article class="casecard border-white">
+  <article class="casecard">
+    <button class="bookmark_btn"><font-awesome-icon :icon="['fas', 'plus']"/></button>
     <nuxt-link class="casecard" :to="{path: '/cases/'+this.case.id}">
-      <img :src="case_img" alt="case_img">
-      <h4>{{this.case.title}}</h4>
+      <img class="radius_box" :src="case_img" alt="case_img">
+      <div class="card_overlay">
+        <div class="card_fade">
+          <h4 class="case_title">{{this.case.title}}</h4>
+        </div>
+      </div>
     </nuxt-link>
   </article>
 </template>

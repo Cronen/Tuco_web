@@ -1,5 +1,16 @@
 <template>
   <div id="app">
+    <FrontBanner/>
+    <section>
+      <b-container>
+        <b-row>
+          <b-col>
+            <h2>Classification Projects</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </b-col>
+        </b-row>
+      </b-container>
+    </section>
     <section class="container">
       <div>
         <div v-if="references">
@@ -22,21 +33,15 @@
         </b-row>
       </b-container>
     </section>
-    <section>
-      <b-container>
-        <b-row class="flex-column">
-          <h4>Join Tuco Marines Newsletter</h4>
-          <p>Subscribe now and get the latest boat news</p>
-          <input type="text" placeholder="Enter your email adress">
-        </b-row>
-      </b-container>
-    </section>
+    <NewsletterForm/>
   </div>
 </template>
 
 <script>
 import Strapi from "strapi-sdk-javascript";
 const strapi = new Strapi("http://localhost:1337");
+import FrontBanner from "~/components/FrontBanner.vue";
+import NewsletterForm from "~/components/NewsletterForm.vue";
 
 export default {
   data() {
@@ -45,7 +50,10 @@ export default {
       references: null
     };
   },
-  components: {},
+  components: {
+    FrontBanner,
+    NewsletterForm
+  },
   created() {
     this.fetchData();
     console.log(this.references);
