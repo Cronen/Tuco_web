@@ -28,9 +28,9 @@ const classMap = {
   h2: "col-12",
   h3: "col-12",
   h4: "col-12",
-  img: "img-fluid article_img",
-  iframe: "col-6 mx-auto",
-  p: "col-12"
+  img: "col-5 p-0",
+  iframe: "col-12 mx-auto",
+  p: "px-3"
 };
 
 const bindings = Object.keys(classMap).map(key => ({
@@ -51,7 +51,7 @@ export default {
     Loader
   },
   created() {
-    console.log(this.case);
+    console.log(bindings);
   },
   async asyncData(context) {
     return {
