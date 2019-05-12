@@ -1,9 +1,10 @@
 .casecard{
     position: relative;
     display: block;
+    height: 480px;
 
     .case_img{
-        height: 480px !important;
+        height: 100%;
     }
 }
 

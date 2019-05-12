@@ -1,6 +1,6 @@
 <template>
-  <article class>
-    <a :href="this.reference.ref_url">
+  <article class="ref_logo">
+    <a :href="this.reference.ref_url" target="_blank">
       <img class="radius_box" :src="ref_img" :alt="this.reference.ref_name">
     </a>
   </article>

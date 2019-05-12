@@ -6,7 +6,7 @@
     <section class="section_padding">
       <b-container>
         <b-row>
-          <b-col md="7" lg="6">
+          <b-col md="7" lg="6" class="intro_wrapper">
             <h2>Our Latest Cases</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</p>
           </b-col>

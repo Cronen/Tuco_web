@@ -36,6 +36,10 @@ a {
   padding: 100px 0;
 }
 
+.intro_wrapper{
+  margin-bottom: 40px;
+}
+
 .radius_box{
   border-radius: 5px;
 }
@@ -43,5 +47,9 @@ a {
 @media screen and (min-width: 768px){
   .section_padding{
     padding: 200px 0;
+  }
+
+  .intro_wrapper{
+    margin-bottom: 80px;
   }
 }

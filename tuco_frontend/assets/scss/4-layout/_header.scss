@@ -39,11 +39,10 @@
   padding-bottom: 1.25rem;
 }
 
-//TODO restyling it later
 .nuxt-link-exact-active {
-  border-bottom: 0.0625rem  solid $primaryColor;
-  padding-bottom: 0.0625rem;
-  padding-top: 0.0625rem;
+  border-bottom: 0.09375rem  solid $primaryColor;
+  padding-bottom: 0.09375rem;
+  padding-top: 0.09375rem;
   color: $whiteColor !important;
 }
 
@@ -61,6 +60,8 @@
   }
 }
 
+
+
 @media screen and (min-width: 768px){
   .main_bar, .top_bar{
     padding-left: 5%;
@@ -74,19 +75,22 @@
   }
 
   .nav-item {
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    &:last-child{
+      margin: 0;
+    }
   }
 
-  .btn-main{
-      padding-left: 1.6rem !important;
-      padding-right: 1.6rem !important;
+  .navbar-expand-lg .navbar-nav .nav-link{
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 @media screen and (min-width: 1271px){
   .nav-item {
-    padding-left: 1.5625rem;
-    padding-right: 1.5625rem;
+    margin-left: 1.5625rem;
+    margin-right: 1.5625rem;
   }
 }
