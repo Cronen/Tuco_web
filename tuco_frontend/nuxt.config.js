@@ -80,6 +80,6 @@ export default {
   ** Global variables
    */
   env: {
-    StrapiUrl: process.env.NODE_ENV !== 'production' ? 'http://localhost:1337' : 'http://nodejs-mongo-persistent-tucoweb.1d35.starter-us-east-1.openshiftapps.com'
+    StrapiUrl: process.env.NODE_ENV !== 'production' ? 'http://localhost:1337' : ''
   }
 }
