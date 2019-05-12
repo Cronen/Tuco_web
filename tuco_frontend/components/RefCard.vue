@@ -1,7 +1,7 @@
 <template>
-  <article class="ref_logo">
+  <article class="ref_logo hover_bounce">
     <a :href="this.reference.ref_url" target="_blank">
-      <img class="radius_box" :src="ref_img" :alt="this.reference.ref_name">
+      <img class="ref_logo_img" :src="ref_img" :alt="this.reference.ref_name">
     </a>
   </article>
 </template>
