@@ -1,9 +1,10 @@
 //Banner
 .banner_hero{
     position: relative;
+    height: 700px;
     img{
         background-position: center;
-        height: auto;
+        height: 100%;
         width: 100%;
         display: block;
     }
@@ -52,6 +53,9 @@
 }
 
 @media screen and (min-width: 768px){
+    .banner_hero{
+        height: 80vh;
+    }
     .partners_wrapper{
         .partner{
             margin-top: 1.5625rem;
@@ -62,6 +66,7 @@
 
 @media screen and (min-width: 1200px){
     .banner_hero{
+        height: 100vh;
         .banner_subtext{
             line-height: 28px;
         }

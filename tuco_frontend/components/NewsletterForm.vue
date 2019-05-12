@@ -1,6 +1,6 @@
 <template>
     <section class="signup_bg">
-      <img src="~assets/img/signup-bg.jpg" alt="">
+      <!--<img src="~assets/img/signup-bg.jpg" alt="">-->
       <div class="newsform_wrapper">
         <b-container>
           <b-row>

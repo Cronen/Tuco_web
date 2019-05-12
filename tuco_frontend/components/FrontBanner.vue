@@ -1,5 +1,5 @@
 <template>
-    <section class="banner_hero banner_margin">
+    <section class="banner_hero">
         <img src="~assets/img/banner-frontpage.jpg" alt="">
         <div class="banner_overlay">
             <b-container>
