@@ -1,3 +1,11 @@
+.navbar-wrapper{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
 .top_bar {
   border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.25);
   color: $lightGreyColor;
