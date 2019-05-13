@@ -1,62 +1,62 @@
 .location_info{
-	padding: 35px 25px;
+	padding: 2.1875rem 1.875rem;
 	background-color: $darkBlueColor;
-	margin-bottom: 50px;
+	margin-bottom: 3.125rem;
 	ul{
 		list-style-type: none;
 	}
 }
 
 .location_address{
-	margin-bottom: 30px;
+	margin-bottom: 1.875rem;
 	.adress_title{
-		margin-bottom: 15px;
-		font-size: 30px;
-		line-height: 38px;
+		margin-bottom: 0.9375rem;
+		font-size: 1.875rem;
+		line-height: 2.375rem;
 		font-weight: 700;
-		letter-spacing: 1px;
+		letter-spacing: 0.0625rem;
 	}
 	ul{
 		color: $lightGreyColor;
-		font-size: 15px;
+		font-size: 0.9375rem;
 		font-weight: 300;
 	}
 }
 
 .contact_title{
-	font-size: 18px;
-	padding-left: 5px;
-	border-left: 3px solid $primaryColor;
+	font-size: 1.125rem;
+	padding-left: 0.3125rem;
+	border-left: 0.1875rem solid $primaryColor;
 	font-weight: 700;
 }
 
 .location_phone, .location_mail{
-	margin-bottom: 30px;
+	margin-bottom: 1.875rem;
 	a{
 		font-weight: 300;
 		color: $lightGreyColor;
-		font-size: 15px;
+		font-size: 0.9375rem;
 	}
 }
 
 .location_media{
-	border-top: 1px solid rgba(221, 221, 221, 0.5);
+	border-top: 0.0625rem solid rgba(221, 221, 221, 0.5);
 	ul{
 		display: flex;
 		justify-content: space-between;
-		padding: 30px 35px 0 35px;
+		padding: 1.875rem 2.1875rem 0 2.1875rem;
 		
 		.location_media_icon{
-			border: 1px solid $lightBlueColor;
-			height: 40px;
-			width: 40px;
+			border: 0.0625rem solid $lightBlueColor;
+			height: 2.5rem;
+			width: 2.5rem;
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			a{
 				color: $lightBlueColor;
-				height: 40px;
-				width: 40px;
+				height: 2.5rem;
+				width: 2.5rem;
 				display: flex;
 				align-items: center;
 				justify-content: center;
@@ -70,7 +70,7 @@
 }
 
 .map_location{
-	height: 250px;
+	height: 15.625rem;
 	width: 100%;
 	position: relative;
 }
@@ -79,17 +79,17 @@
 @media screen and (min-width: 768px){
 	
 	.location_info{
-		padding: 50px 40px;
-		max-width: 395px;
+		padding: 3.125rem 2.5rem;
+		max-width: 24.6875rem;
 		position: absolute;
 		z-index: 1;
-		bottom: -240px;
-		left: 80px;
-		margin-bottom: 0px;
+		bottom: -15rem;
+		left: 5rem;
+		margin-bottom: 0rem;
 	}
 
 	.map_location{
-		height: 565px;
+		height: 35.3125rem;
 	}
 
 	.adress_title{
@@ -104,6 +104,6 @@
 
 @media screen and (min-width: 1200px){
 	.location_info{
-		bottom: -140px;
+		bottom: -8.75rem;
 	}
 }

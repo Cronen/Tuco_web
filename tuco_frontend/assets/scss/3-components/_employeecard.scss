@@ -23,23 +23,23 @@
 
     .employee_name{
         margin-top: 0px;
-        margin-bottom: 8px;
-        font-size: 24px;
+        margin-bottom: 0.5rem;
+        font-size: 1.5rem;
         font-weight: 700;
     }
 
     .employee_title{
         color: rgba(255, 255, 255, 0.7);
         font-weight: 400;
-        margin-bottom: 20px;
-        font-size: 20px;
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
     }
 
     .employee_mail{
         color: $lightBlueColor;
         text-decoration: none;
         svg{
-            margin-right: 5px;
+            margin-right: 0.3125rem;
         }
     }
 }
