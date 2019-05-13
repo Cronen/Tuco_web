@@ -1,37 +1,4 @@
 <template>
-  <!--
-  <div class id="contact">
-    <div class>
-      <div class="contact-box col-md-8">
-        <div class="p-md-5">
-           <h2 class="boldtext h3">Kontakt
-            <span class="colorgreentext">information</span>
-          </h2>
-          <p>
-            Tuco Marine ApS <br>
-Krogsbjergvej 2 <br>
-DK-5600 Faaborg.
-            <br>
-          </p>
-          <p>
-            <a class="boldtext" href="tel:+4570203898">Tlf. +45 7020 3898</a>
-            <br>
-            <a class="boldtext" href="mailto:Lvsinfo@lavs.dk">mail@tuco.dk</a>
-            <br>EAN-nr. xxxxxxxxxxx
-            <br>Cvr.nr. xxxxxxx
-          </p>
-          <p>
-            <strong class="colorgreentext">Åbningstider:</strong>
-            <br>Alle dage fra. 08.00 – 16.00
-            <br>Undtagen Lørdage og Søndage (Lukket)
-          </p>
-        </div>
-      </div>
-     
-    </div>
-  </div>
-  -->
-
   <div id="contact">
     <subbanner/>
     <section class="section_padding_extra">
@@ -46,11 +13,11 @@ DK-5600 Faaborg.
                 </ul>
               </div>
               <div class="location_phone">
-                <h4>Phone number</h4>
+                <h4 class="contact_title">Phone number</h4>
                 <a href="tel:+4570203898">+45 7020 3898</a>
               </div>
               <div class="location_mail">
-                <h4>Email</h4>
+                <h4 class="contact_title">Email</h4>
                 <a href="mailto:someone@example.com?Subject=Hello%20again">mail@tuco.dk</a>
               </div>
               <div class="location_media">
@@ -73,7 +40,7 @@ DK-5600 Faaborg.
       <b-container>
         <b-row>
           <b-col>
-            <h4>The people behind Tuco</h4>
+            <h4 class="mb-50">The people behind Tuco</h4>
           </b-col>
         </b-row>
       </b-container>
@@ -86,7 +53,36 @@ DK-5600 Faaborg.
       </b-container>
     </section>
     <section class="section_padding">
+      <b-container>
+        <b-row>
+          <b-col>
+            <div class="form_wrapper">
+              <h3 class="form_title">Let's get in touch</h3>
+              <p class="form_subtext">Leave your details below and we will contact you for a day trial to work at a Spaces location of your choice. Your first killer coffee is on us.</p>
+              <form id="contactForm" action="">
+                <input id="firstName" name="FirstName" type="text" placeholder="Firstname" class="form_input">
+                <input id="lastName" name="lastName" type="text" placeholder="Lastname" class="form_input">
+                <input id="company" name="company" type="text" placeholder="Company" class="form_input">
+                <input id="jobTitle" name="jobTitle" type="text" placeholder="Job discription" class="form_input">
+                <input id="email" name="email" type="email" placeholder="Email" class="form_input">
+                <input id="phone" name="phone" type="tel" placeholder="Phone number" class="form_input">
+                <select name="country" id="country" class="form_select">
+                  <option value="countryDisabled" disabled selected>Country</option>
+                  <option value="Algeria">Algeria</option>
+                  <option value="Azerbaijan">Azerbaijan</option>
+                  <option value="Canada">Canada</option>
+                  <option value="China">China</option>
+                  <option value="Croatia">Croatia</option>
+                  <option value="Denmark">Denmark</option>
+                  <option value="Estonia">Estonia</option>
+                </select>
 
+                <button type="submit" class="btn btn-main">Send request<font-awesome-icon :icon="['fas', 'long-arrow-alt-right']"/></button>
+              </form>
+            </div>
+          </b-col>
+        </b-row>
+      </b-container>
     </section>
   </div>
 </template>

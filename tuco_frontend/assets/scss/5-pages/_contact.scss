@@ -11,16 +11,29 @@
 	margin-bottom: 30px;
 	.adress_title{
 		margin-bottom: 15px;
+		font-size: 30px;
+		line-height: 38px;
+		font-weight: 700;
+		letter-spacing: 1px;
 	}
 	ul{
 		color: $lightGreyColor;
 		font-size: 15px;
+		font-weight: 300;
 	}
+}
+
+.contact_title{
+	font-size: 18px;
+	padding-left: 5px;
+	border-left: 3px solid $primaryColor;
+	font-weight: 700;
 }
 
 .location_phone, .location_mail{
 	margin-bottom: 30px;
 	a{
+		font-weight: 300;
 		color: $lightGreyColor;
 		font-size: 15px;
 	}
@@ -70,13 +83,18 @@
 		max-width: 395px;
 		position: absolute;
 		z-index: 1;
-		bottom: -140px;
+		bottom: -240px;
 		left: 80px;
 		margin-bottom: 0px;
 	}
 
 	.map_location{
 		height: 565px;
+	}
+
+	.adress_title{
+		width: 90%;
+    	word-break: break-all;
 	}
 }
 
@@ -85,5 +103,7 @@
 }
 
 @media screen and (min-width: 1200px){
-	
+	.location_info{
+		bottom: -140px;
+	}
 }
