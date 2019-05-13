@@ -1,150 +1,76 @@
-/*
-@media (min-width: 991px){
-	#contact{
-		color: $whiteColor;
-		
-		.contact-box{
-			position: absolute;
-			right: 0px;
-			z-index: 1;
-			margin-top: 150px;
-			
-			
-           
-		}
+.location_info{
+	padding: 35px 25px;
+	background-color: $darkBlueColor;
+	ul{
+		list-style-type: none;
 	}
 }
 
-#contact{
-	.hide{
-		display: none;
-		
+.location_address{
+	margin-bottom: 30px;
+	.adress_title{
+		margin-bottom: 15px;
 	}
-	.social-links{
-			list-style-type: none;
-			display: flex;
-			padding-left: 0px;
-			font-size: 20px;
-			li{
-				margin-right: 20px;
-			}
+	ul{
+		color: $lightGreyColor;
 	}
-	iframe{
-					// background-image: url('../assets/images/map.png');
-					background-position: center;
-					background-size: cover;
-                    height: 500px;
-                   
-	}
-	.emp-filtering{
- 		a {
-	    margin: 0 7px;
-	    padding: 8px 18px;
-	    background-color: $darkTextColor;
-	    border-radius: 4px;
-		}
-		a.active{
-			background-color:$darkPrimaryColor;
-		color:$whiteColor;
-		
-		}
-	}
-	.employee-content{
+}
 
-		.employee-item{
-	    border-radius: 20px;
-	    overflow: hidden;
-        border-radius: 2;
-        
-			-webkit-transition: all 0.3s ease;
-	    -moz-transition: all 0.3s ease;
-	    transition: all 0.3s ease;
-			animation-name: bump;
-	    animation-duration: 0.3s;
-	    animation-timing-function: cubic-bezier(0.29, -0.39, 0.29, 1.46);
-			.img{
-				width: 100%;
-				height: 290px;
-				background-position: top;
-				background-size: cover;
-			}
-			h2 {
-    		font-size: 20px;
-    		font-weight: bold;
-			}
-			p{
-				margin-bottom: 0px;
-			}
-			&:hover{
-		    transform: translateY(-10px);
-		    box-shadow: shadow;
-
-			}
-		}
-	}
-	.contact-box{
-		height: 200px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		
-		div{
-			border-radius: 20px;
-			box-shadow: shadow;
-			background-color:$darkBlueColor;
-			color: $whiteColor;
-			
-		}
-	}
+.location_phone, .location_mail{
+	margin-bottom: 30px;
 	a{
-		color: $darkGreyColor;
-		text-decoration: none;
+		color: $lightGreyColor;
 	}
-	.contact{
-		border-radius: 20px;
-		box-shadow: shadow;
-		// border: $border;
-	}
-	.form-group {
-    display: flex;
-	flex-direction: column;
+}
 
-		input, textarea{
-			border-radius: 4px;
-			// border: $border;
-			padding: 9px;
-			resize: none;
-			&:focus{
-				outline: 0;
+.location_media{
+	border-top: 1px solid rgba(221, 221, 221, 0.5);
+	ul{
+		display: flex;
+		justify-content: space-between;
+		padding: 30px 35px 0 35px;
+		
+		.location_media_icon{
+			border: 1px solid $lightBlueColor;
+			height: 40px;
+			width: 40px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			a{
+				color: $lightBlueColor;
+				height: 40px;
+				width: 40px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				&:hover{
+					color: $primaryColor;
+				}
 			}
 		}
-		textarea{
-			min-height: 150px;
-		}
 	}
 }
-
-@keyframes bump {
-
-	0% {
-	    transform: scale(1);
-	}
-	50% {
-	    transform: scale(1.01);
-	}
-	100% {
-	    transform: scale(1);
-	}
-
-}
-*/
 
 .map_location{
 	height: 250px;
 	width: 100%;
+	position: relative;
 }
 
+
 @media screen and (min-width: 768px){
+	
+	.location_info{
+		padding: 50px 40px;
+		max-width: 395px;
+		position: absolute;
+		z-index: 1;
+		bottom: -140px;
+		left: 80px;
+	}
+
 	.map_location{
 		height: 565px;
 	}
