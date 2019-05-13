@@ -14,12 +14,12 @@
         <b-col cols="12" md="6" lg="3" xl="2">
           <h4 class="footer_headline">Sitemap</h4>
           <ul>
-            <li><a href="#">Welcome</a></li>
-            <li><a href="#">Why Carbon?</a></li>
-            <li><a href="#">References</a></li>
-            <li><a href="#">Cases</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">About Tuco</a></li>
+            <!-- <li><a href="#">Welcome</a></li> -->
+            <li><a href="/whycarbon">Why Carbon?</a></li>
+            <li><a href="/references">References</a></li>
+            <li><a href="/cases">Cases</a></li>
+            <li><a href="news">News</a></li>
+            <li><a href="about">About Tuco</a></li>
           </ul>
         </b-col>
         <b-col cols="12" md="6" lg="3" xl="2">
