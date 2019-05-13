@@ -1,7 +1,7 @@
 <template>
     <div>
         <subbanner/>
-    <div id="details">
+    <div id="whycarbon">
       <section class="my-5 py-5">
       <div class="container">
         <div class="row">
@@ -19,7 +19,7 @@
         </div>
       </div>
     </section>
-    <section class="my-5 py-5">
+    <section class="my-5 py-2">
       <div class="container">
         <div class="row">
           <div class="col-md-6 video-col">
@@ -83,7 +83,7 @@
         </div>
       </div>
     </section>
-    <section class="my-5 py-5">
+    <section class="my-5 py-2">
       <div class="container">
         <div class="row">
           <div class="col-md-6 video-col">
