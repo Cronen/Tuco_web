@@ -1,9 +1,9 @@
 footer{
     background-color: $footerColor;
     color: $whiteColor;
-    padding: 4.375rem 0;
+    padding: 4.375rem 0rem;
     ul{
-        padding: 0;
+        padding: 0rem;
         list-style-type: none;
         margin-bottom: 1.875rem;
         li{
@@ -44,7 +44,7 @@ footer{
         margin: 0 1.125rem 0 0;
         font-size: 1.5rem;
         &:last-child{
-            margin-right: 0;
+            margin-right: 0rem;
         }
     }
 }
@@ -52,7 +52,7 @@ footer{
 @media screen and (min-width: 768px){
     footer{
         .bottom-0{
-            margin-bottom: 0;
+            margin-bottom: 0rem;
         }
     }
 }
@@ -63,7 +63,7 @@ footer{
             margin-bottom: 1.5625rem;
         }
         ul{
-            margin-bottom: 0;
+            margin-bottom: 0rem;
         }
     }
 }

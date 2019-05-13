@@ -1,39 +1,38 @@
 <template>
-<div>
+  <div>
     <subbanner/>
-   
-  <div id="caseList">
-    <section class="section_padding">
-      <b-container>
-        <b-row>
-          <b-col md="7" lg="6" class="intro_wrapper">
-            <h2>Our Latest Cases</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</p>
-          </b-col>
-        </b-row>
-      </b-container>
-      <b-container v-if="cases">
-        <b-row>
-          <b-col cols="12" md="3" lg="4" v-for="c in cases" v-bind:key="c.id">
-            <CaseCard :case="c"/>
-          </b-col>
-        </b-row>
-      </b-container>
-      <b-container v-else>
-        <b-row>
-          <b-col cols="1" class="mx-auto">
-            <Loader/>
-          </b-col>
-        </b-row>
-      </b-container>
-    </section>
+    <div id="caseList">
+      <section class="section_padding">
+        <b-container>
+          <b-row>
+            <b-col md="7" lg="6" class="intro_wrapper">
+              <h2>Our Latest Cases</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</p>
+            </b-col>
+          </b-row>
+        </b-container>
+        <b-container v-if="cases">
+          <b-row>
+            <b-col cols="12" md="3" lg="4" v-for="c in cases" v-bind:key="c.id">
+              <CaseCard :case="c"/>
+            </b-col>
+          </b-row>
+        </b-container>
+        <b-container v-else>
+          <b-row>
+            <b-col cols="1" class="mx-auto">
+              <Loader/>
+            </b-col>
+          </b-row>
+        </b-container>
+      </section>
+    </div>
   </div>
-   </div>
 </template>
 
 <script>
 import subbanner from "~/components/subbanner.vue";
-import Loader from '~/components/Loader.vue'
+import Loader from "~/components/Loader.vue";
 import CaseCard from "~/components/CaseCard.vue";
 import Strapi from "strapi-sdk-javascript";
 const strapi_url = process.env.StrapiUrl;
@@ -47,11 +46,11 @@ export default {
       cases: null
     };
   },
-  components: { 
+  components: {
     CaseCard,
     Loader,
     subbanner
-    },
+  },
   created() {
     this.fetchData();
     console.log(this.cases);

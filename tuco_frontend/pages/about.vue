@@ -5,7 +5,7 @@
       <b-container>
         <b-row>
           <b-col>
-            <blockquote>
+            <blockquote class="mb-40">
               <p>We are founded by entrepreneurs who are innovative and who want to continue being so, by developing and delivering products that weight less, saves fuels and affects our environment less.</p>
             </blockquote>
             <h6>Jonas Pedersen</h6>

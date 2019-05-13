@@ -3,15 +3,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 38.75rem;
+    height: 17.1875rem;
     color: $darkGreyColor; 
-    /*animation-duration: 1s;
-    animation-delay: 0.5s;
-    animation-name: handFadeUp;
-    background-repeat: no-repeat;
-    animation-timing-function: ease-out;
-    background-position: 100vw 0px;
-    animation-fill-mode: forwards;*/
 }
 
 .subbanner_overlay{
@@ -39,7 +32,17 @@
     height: 100%;
 }
 
+@media screen and (min-width: 768px){
+    .subbanner{
+        height: 30rem;
+    }
+}
+
 @media screen and (min-width: 1200px){
+    .subbanner{
+        height: 38.75rem;
+    }
+
     .subbanner_title{
         font-size: 3.75rem;
     }

@@ -38,6 +38,7 @@
 
 .input_wrapper{
     border: 0.125rem solid rgba(255, 255, 255, 0.75);
+    border-radius: $radius;
     .signup_form{
         display: flex;
         .signup_input{
