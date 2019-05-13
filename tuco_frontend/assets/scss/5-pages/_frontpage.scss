@@ -19,11 +19,12 @@
 
         .banner_title{
             margin-bottom: 1.5625rem;
-            text-shadow: rgba(0,0,0,0.5) 0rem 0.5rem 0.375rem;
+            text-shadow: rgba(0,0,0,0.5) 0px 8px 6px;
         }
         .banner_subtext{
             margin-bottom: 3.75rem;
-            text-shadow: rgba(0,0,0,0.90) 0rem 0.1875rem 0.1875rem;
+            text-shadow: rgba(0,0,0,0.90) 0px 3px 3px;
+            font-size: 14px;
         }
     }
 }
@@ -55,6 +56,12 @@
 @media screen and (min-width: 768px){
     .banner_hero{
         height: 80vh;
+
+        .banner_overlay{
+            .banner_subtext{
+                font-size: 16px;
+            }
+        }
     }
     .partners_wrapper{
         .partner{

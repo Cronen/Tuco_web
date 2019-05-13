@@ -1,5 +1,4 @@
-
-
+/*
 @media (min-width: 991px){
 	#contact{
 		color: $whiteColor;
@@ -137,4 +136,24 @@
 	    transform: scale(1);
 	}
 
+}
+*/
+
+.map_location{
+	height: 250px;
+	width: 100%;
+}
+
+@media screen and (min-width: 768px){
+	.map_location{
+		height: 565px;
+	}
+}
+
+@media screen and (min-width: 992px){
+	
+}
+
+@media screen and (min-width: 1200px){
+	
 }

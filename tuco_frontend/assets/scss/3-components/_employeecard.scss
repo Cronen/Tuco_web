@@ -1,0 +1,51 @@
+.employee_wrapper{
+    position: relative;
+}
+
+.employee_overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 400ms;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: $radius;
+}
+
+.employee_info{
+    text-align: center;
+
+    .employee_name{
+        margin-top: 0px;
+        margin-bottom: 8px;
+    }
+
+    .employee_title{
+        color: rgba(255, 255, 255, 0.7);
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+
+    .employee_mail{
+        color: $lightBlueColor;
+        text-decoration: none;
+        svg{
+            margin-right: 5px;
+        }
+    }
+}
+
+.employee_wrapper:hover .employee_overlay{
+    opacity: 1;
+    visibility: visible;
+}
+
+.employee_img{
+    border-radius: $radius;
+}
