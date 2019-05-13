@@ -1,6 +1,7 @@
 .location_info{
 	padding: 35px 25px;
 	background-color: $darkBlueColor;
+	margin-bottom: 50px;
 	ul{
 		list-style-type: none;
 	}
@@ -13,6 +14,7 @@
 	}
 	ul{
 		color: $lightGreyColor;
+		font-size: 15px;
 	}
 }
 
@@ -20,6 +22,7 @@
 	margin-bottom: 30px;
 	a{
 		color: $lightGreyColor;
+		font-size: 15px;
 	}
 }
 
@@ -69,6 +72,7 @@
 		z-index: 1;
 		bottom: -140px;
 		left: 80px;
+		margin-bottom: 0px;
 	}
 
 	.map_location{

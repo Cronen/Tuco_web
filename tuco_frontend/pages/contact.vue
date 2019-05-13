@@ -34,7 +34,7 @@ DK-5600 Faaborg.
 
   <div id="contact">
     <subbanner/>
-    <section class="section_padding">
+    <section class="section_padding_extra">
       <b-container>
         <b-row class="relative">
           <b-col cols="12" class="location_info">

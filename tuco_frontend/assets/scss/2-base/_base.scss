@@ -40,6 +40,10 @@ a {
   padding: 6.25rem 0;
 }
 
+.section_padding_extra{
+  padding: 6.25rem 0;
+}
+
 .intro_wrapper{
   margin-bottom: 2.5rem;
 }
@@ -54,6 +58,10 @@ a {
 @media screen and (min-width: 768px){
   .section_padding{
     padding: 12.5rem 0;
+  }
+
+  .section_padding_extra{
+    padding: 12.5rem 0 21.875rem 0; 
   }
 
   .intro_wrapper{
