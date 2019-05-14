@@ -1,24 +1,24 @@
 <template>
 <div id="articleList">
     <b-row>
-        <b-col>
-            <img src="" alt="">
+        <b-col xs="12" lg="6" class="article_imgwrapper">
+            <img src="~assets/img/0b48acbe30999524ca3a49913345b1e9.jpg" alt="">
         </b-col>
-        <b-col>
-            <div class="article_textwrapper">
-                <span class="article_label">News post</span>
-                <div class="article_timestamp">
-                    <span>March 8 2019 13.49 pm</span>
-                </div>
+        <b-col xs="12" lg="6" class="article_textwrapper">
+            <div class="article_inner">
+                <span class="article_label date_label">News post</span> 
                 <div class="article_meta">
-                    <ul class="arcticle_share">
-                        <li class="article_icons"><a href="#"></a></li>
-                        <li class="article_icons"><a href="#"></a></li>
-                        <li class="article_icons"><a href="#"></a></li>
+                    <div class="article_timestamp">
+                        <span><time>March 8 2019 13.49 pm</time></span>
+                    </div>
+                    <ul class="article_share">
+                        <li class="article_icon"><a target="_blank" href="https://www.facebook.com/pages/Tuco-Marine-Group-ApS/250239778331751?fref=ts"><font-awesome-icon :icon="['fab', 'facebook-f']"/></a></li>
+                        <li class="article_icon"><a target="_blank" href="http://www.linkedin.com/company/tuco-marine-aps"><font-awesome-icon :icon="['fab', 'linkedin-in']"/></a></li>
+                        <li class="article_icon"><a target="_blank" href="http://www.youtube.com/tucomarine"><font-awesome-icon :icon="['fas', 'envelope']"/></a></li>
                     </ul>
                 </div>
-                <h2>Eleanor - 12m demonstrator for sale.</h2>
-                <p>Our 12m light pilot classed “Eleanor” is now offered for sale after a successful charter. Full specifications, General Arrangement as well as asking price can be obtained by contacting our team as...</p>
+                <h2 class="article_title">Eleanor - 12m demonstrator for sale.</h2>
+                <p class="article_introtext">Our 12m light pilot classed “Eleanor” is now offered for sale after a successful charter. Full specifications, General Arrangement as well as asking price can be obtained by contacting our team as...</p>
             </div>
         </b-col>
     </b-row>

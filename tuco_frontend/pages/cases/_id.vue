@@ -1,6 +1,7 @@
 <template>
   <div id="case">
-    <section class="section_padding">
+    <subbanner :img_url="get_img_url()" :title="this.case.title"/>
+    <section class="pt-5">
       <b-container v-if="this.case">
         <b-row v-html="this.get_article_html()"></b-row>
       </b-container>
@@ -16,6 +17,7 @@
 </template>
 
 <script>
+import subbanner from "~/components/subbanner.vue";
 import Loader from "~/components/Loader.vue";
 import Strapi from "strapi-sdk-javascript";
 import showdown from "showdown";
@@ -45,13 +47,15 @@ const converter = new showdown.Converter({
 
 export default {
   data() {
-    return {};
+    return {
+    };
   },
   components: {
-    Loader
+    Loader,
+    subbanner
   },
   created() {
-    console.log(bindings);
+    console.log(this.case);
   },
   async asyncData(context) {
     return {
@@ -61,6 +65,9 @@ export default {
   methods: {
     get_article_html() {
       return converter.makeHtml(this.case.article);
+    },
+    get_img_url(){
+      return strapi_url + this.case.case_image.url;
     }
   }
 };

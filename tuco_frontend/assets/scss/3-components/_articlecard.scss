@@ -1,0 +1,116 @@
+.article_imgwrapper{
+    img{
+        border-radius: $radius $radius 0 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.article_textwrapper{
+    position: static;
+}
+
+.article_inner{
+    background-color: $lightBoxColor;
+    border-radius: 0 0 $radius $radius;
+    padding: 25px 45px 25px 20px;
+
+    .article_label{
+        position: absolute;
+        top: 20px;
+    }
+
+    .article_meta{
+        color: $lightBlueColor;
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+
+        .article_timestamp{
+            font-size: 11px;
+            text-transform: uppercase;
+            border-right: 1px solid $lightBlueColor;
+            padding-right: 10px;
+        }
+        .article_share{
+            display: flex;
+            list-style-type: none;
+            padding-left: 10px;
+
+            .article_icon{
+                margin-right: 8px;
+                &:last-child{
+                    margin-right: 0;
+                }
+                a{
+                    color: $lightBlueColor;
+                }
+            }
+        }
+    }
+
+    .article_title{
+        color: $darkTextColor;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 32px;
+        margin-bottom: 25px;
+    }
+
+    .article_introtext{
+        color: $lightBlueColor;
+        font-size: 15px;
+        line-height: 25px;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 768px){
+
+}
+
+@media screen and (min-width: 1200px){
+    .article_imgwrapper{
+        padding-right: 0;
+        img{
+            border-radius: $radius 0 0 $radius;
+        }
+    }
+
+    .article_textwrapper{
+        padding-left: 0;
+        background-color: $lightBoxColor; 
+        border-radius: 0 $radius $radius 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .article_inner{
+        background-color: transparent;
+        border-radius: 0;
+        padding: 75px 65px;
+
+        .article_label{
+            top: 20px;
+            right: 20px;
+        }
+
+        .article_meta{
+
+            .article_timestamp{
+                font-size: 13px;
+            }
+        }
+
+        .article_title{
+            font-size: 40px;
+            line-height: 50px;
+            margin-bottom: 30px;
+        }
+
+        .article_introtext{
+            font-size: 14px;
+            line-height: 28px;
+        }
+    }
+}
