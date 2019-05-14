@@ -1,6 +1,6 @@
 <template>
   <div>
-    <carousel items="2">
+    <carousel :autoplay="true" :nav="false" items="1" :responsive="{768:{items:2}}">
       <div class="review_wrapper">
         <div class="review_img">
           <img src="~assets/img/review2.jpg" alt>
@@ -8,8 +8,7 @@
         <div class="review_textwrapper">
           <h4 class="review_name">Jan Johansen</h4>
           <span class="review_company">IXblue</span>
-          <p
-            class="review_text"
+          <p class="review_text"
           >Lorem ipsum dolor sit amet, consectetur adiut labore et dolore magna aliqua.</p>
         </div>
       </div>
@@ -20,8 +19,7 @@
         <div class="review_textwrapper">
           <h4 class="review_name">Jan Johansen</h4>
           <span class="review_company">IXblue</span>
-          <p
-            class="review_text"
+          <p class="review_text"
           >Lorem ipsum dolor sit amet, consectetur adiut labore et dolore magna aliqua.</p>
         </div>
       </div>
@@ -34,7 +32,9 @@
 import carousel from "vue-owl-carousel";
 
 export default {
-  components: { carousel }
-};
+  components: { 
+    carousel
+  }
+}
 </script>
 

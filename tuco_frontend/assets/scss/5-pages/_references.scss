@@ -14,46 +14,6 @@
   padding-top: 125px;
 }
 
-//styling owl element
-.owl-dot{
-  &:focus{
-    outline: none;
-  }
-}
-
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
-  background: $primaryColor !important;
-}
-
-.owl-theme .owl-dots .owl-dot span{
-  background: rgba(227, 227, 227, 0.25) !important;
-}
-
-.review_wrapper{
-  .review_img{
-    img{
-      border-radius: 100%;
-    }
-  }
-
-  .review_name{
-    margin-bottom: 8px;
-    color: $darkGreyColor;
-  }
-
-  .review_company{
-    color: $darkGreyColor;
-    font-size: 18px;
-    margin-bottom: 18px;
-    line-height: 18px;
-    display: inline-block;
-  }
-
-  .review_text{
-    color: rgba(227, 227, 227, 0.75);
-    line-height: 28px;
-  }
-}
 
 @media screen and (max-width: 575px){
   .ref_logo{
