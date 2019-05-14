@@ -9,11 +9,11 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    title: 'Tuco Marine Group',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { hid: 'description', name: 'description', content: 'Fast boats for professionals' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
