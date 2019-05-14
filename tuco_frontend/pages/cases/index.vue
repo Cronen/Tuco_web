@@ -1,6 +1,6 @@
 <template>
   <div>
-    <subbanner/>
+    <subbanner img_url=""/>
     <div id="caseList">
       <section class="section_padding">
         <b-container>
@@ -53,7 +53,8 @@ export default {
   },
   created() {
     this.fetchData();
-    console.log(this.cases);
+    // console.log(this.cases);
+    console.log(this.$nuxt.$route.name)
   },
   methods: {
     async fetchData() {
@@ -61,7 +62,7 @@ export default {
       let response = await strapi
         .request("get", "/cases?_sort=createdAt:DESC")
         .then((this.loading = false));
-      console.log(response[0]);
+      // console.log(response[0]);
       this.cases = response;
     }
   },
