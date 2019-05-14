@@ -1,10 +1,10 @@
 <template>
 <div id="articleList">
     <b-row>
-        <b-col xs="12" lg="6" class="article_imgwrapper">
+        <b-col xs="12" md="5" lg="6" class="article_imgwrapper">
             <img src="~assets/img/0b48acbe30999524ca3a49913345b1e9.jpg" alt="">
         </b-col>
-        <b-col xs="12" lg="6" class="article_textwrapper">
+        <b-col xs="12" md="7" lg="6" class="article_textwrapper">
             <div class="article_inner">
                 <span class="article_label date_label">News post</span> 
                 <div class="article_meta">
@@ -17,7 +17,9 @@
                         <li class="article_icon"><a target="_blank" href="http://www.youtube.com/tucomarine"><font-awesome-icon :icon="['fas', 'envelope']"/></a></li>
                     </ul>
                 </div>
-                <h2 class="article_title">Eleanor - 12m demonstrator for sale.</h2>
+                <h2 class="article_title">
+                    <a href="#">Eleanor - 12m demonstrator for sale.</a>
+                </h2>
                 <p class="article_introtext">Our 12m light pilot classed “Eleanor” is now offered for sale after a successful charter. Full specifications, General Arrangement as well as asking price can be obtained by contacting our team as...</p>
             </div>
         </b-col>
