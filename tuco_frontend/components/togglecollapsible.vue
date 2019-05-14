@@ -43,8 +43,7 @@
 export default {
     head(){
     return{
-     script: [{src:"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"},
-     {src:"https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"}],
+     script: [{src:"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"}],
      }
   }
 }
