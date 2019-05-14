@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-    <subbanner/>
+    <subbanner title="References"/>
     </div>
     <div id="references">
       <section class="section_padding">
