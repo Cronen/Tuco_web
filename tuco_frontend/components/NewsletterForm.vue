@@ -19,7 +19,7 @@
       </div>
         <b-modal id="mail_modal" >
            <template slot="modal-header">
-            <font-awesome-icon :icon="['fas', 'times-circle']" class="close_icon" />
+            <font-awesome-icon :icon="['fas', 'times-circle']" class="close_icon" @click="close_modal()"/>
             <img src="~assets/img/modal_header.png"/>
           </template>
           <template slot="default">
@@ -52,6 +52,9 @@ export default {
     open_modal(e){
       e.preventDefault();
       this.$bvModal.show('mail_modal');
+    },
+    close_modal(){
+      this.$bvModal.hide('mail_modal');
     }
   }
 }

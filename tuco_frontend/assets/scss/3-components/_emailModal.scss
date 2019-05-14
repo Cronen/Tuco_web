@@ -1,25 +1,32 @@
 .modal-header {
   padding: 0;
-//   max-height: 10em;
+  //   max-height: 10em;
   img {
     max-height: 17rem;
     width: 100%;
     border-radius: 0.5rem 0.5rem 0 0;
-
   }
 }
 
-.modal-content{
-    border-radius: 0.5rem 0.5rem 0 0;
-    color: black;
+.modal-content {
+  border-radius: 0.5rem 0.5rem 0 0;
+  color: black;
 }
 
-.close_icon{
-    position: absolute;
-    z-index: 99;
-    color: $primaryColor;
-    font-size: 2.5rem;
-    top: -1rem;
-    right: -1rem;
-    background-image: radial-gradient(at center, white 40%, transparent 40%);
+.close_icon {
+  position: absolute;
+  z-index: 10;
+  color: $primaryColor;
+  font-size: 2.5rem;
+  top: -1.25rem;
+  right: -1.25rem;
+  background-image: radial-gradient(at center, white 40%, transparent 40%);
+  &:hover {
+    font-size: 2.6rem;
+    top: -1.35rem;
+    right: -1.35rem;
+  }
+  -webkit-transition: all 0.1s;
+  -moz-transform: all 0.1s;
+  transition: all 0.1s;
 }
