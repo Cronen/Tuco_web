@@ -49,6 +49,7 @@
     top: 1.25rem;
     right: 1.25rem;
     z-index: 1;
+    border-radius: $radius;
     &:focus{
         outline: none;
     }
