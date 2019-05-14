@@ -13,32 +13,32 @@
 .article_inner{
     background-color: $lightBoxColor;
     border-radius: 0 0 $radius $radius;
-    padding: 35px 45px 35px 30px;
+    padding: 2.1875rem 2.8125rem 2.1875rem 1.875rem;
 
     .article_label{
         position: absolute;
-        top: 20px;
+        top: 1.25rem;
     }
 
     .article_meta{
         color: $lightBlueColor;
         display: flex;
         align-items: center;
-        margin-bottom: 15px;
+        margin-bottom: 0.9375rem;
 
         .article_timestamp{
-            font-size: 11px;
+            font-size: 0.6875rem;
             text-transform: uppercase;
-            border-right: 1px solid $lightBlueColor;
-            padding-right: 10px;
+            border-right: 0.0625rem solid $lightBlueColor;
+            padding-right: 0.625rem;
         }
         .article_share{
             display: flex;
             list-style-type: none;
-            padding-left: 10px;
+            padding-left: 0.625rem;
 
             .article_icon{
-                margin-right: 8px;
+                margin-right: 0.5rem;
                 &:last-child{
                     margin-right: 0;
                 }
@@ -51,10 +51,10 @@
 
     .article_title{
         color: $darkTextColor;
-        font-size: 30px;
+        font-size: 1.875rem;
         font-weight: 700;
-        line-height: 32px;
-        margin-bottom: 25px;
+        line-height: 2rem;
+        margin-bottom: 1.5625rem;
         a{
             color: $darkTextColor;
             text-decoration: none;
@@ -66,8 +66,8 @@
 
     .article_introtext{
         color: $lightBlueColor;
-        font-size: 15px;
-        line-height: 25px;
+        font-size: 0.9375rem;
+        line-height: 1.5625rem;
         font-weight: 400;
         margin: 0;
     }
@@ -93,12 +93,12 @@
         background-color: transparent;
 
         .article_label{
-            right: 20px;
+            right: 1.25rem;
         }
 
         .article_introtext{
-            font-size: 14px;
-            line-height: 24px;
+            font-size: 0.875rem;
+            line-height: 1.5rem;
         }
     }
 }
@@ -107,15 +107,20 @@
 
     .article_inner{
         border-radius: 0;
-        padding: 50px 45px 50px 45px;
+        padding: 3.125rem 2.8125rem 3.125rem 2.8125rem;
 
         .article_meta{
             .article_timestamp{
-                font-size: 13px;
+                font-size: 0.8125rem;
+            }
+            .article_share{
+                .article_icon{
+                    margin-right: 0.625rem;
+                }
             }
         }
         .article_introtext{
-            line-height: 28px;
+            line-height: 1.75rem;
         }
     }
 }
@@ -123,12 +128,12 @@
 @media screen and (min-width: 1200px){
     
     .article_inner{
-        padding: 75px 65px;
+        padding: 4.6875rem 4.0625rem;
 
         .article_title{
-            font-size: 40px;
-            line-height: 50px;
-            margin-bottom: 30px;
+            font-size: 2.5rem;
+            line-height: 3.125rem;
+            margin-bottom: 1.875rem;
         }
     }
 }

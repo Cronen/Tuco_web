@@ -1,0 +1,52 @@
+.page_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5625rem;
+}
+
+.ml-25{
+    margin-left: 1.5625rem;
+}
+
+.mr-25{
+    margin-right: 1.5625rem;
+}
+
+.page_number {
+    font-size: 1.125rem;
+    padding-bottom: 0.5rem;
+    font-family: 'Oswald', sans-serif;
+    &:hover {
+      cursor: pointer;
+    }
+}
+  
+.page_active {
+  border-bottom: 0.09375rem solid $primaryColor;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.page_arrow {
+  font-size: 1.8rem;
+  height: 3.125rem;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.arrow_disabled {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 992px){
+  .page_container{
+    margin-top: 3.125rem;
+  }
+}
+
+  

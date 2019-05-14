@@ -19,6 +19,7 @@
         bottom: 0;
         display: flex;
         align-items: center;
+        z-index: 1;
 
         .banner_title{
             margin-bottom: 1.5625rem;
@@ -39,7 +40,6 @@
 
 .intro_subtext{
     text-align: center;
-
 }
 
 //Partner Section

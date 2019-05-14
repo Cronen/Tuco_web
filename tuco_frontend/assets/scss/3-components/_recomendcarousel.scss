@@ -21,29 +21,29 @@
   .review_wrapper{
       text-align: center;
     .review_img{
-        max-width: 175px;
-        margin: 0 auto 30px auto;
+        max-width: 10.9375rem;
+        margin: 0 auto 1.875rem auto;
       img{
         border-radius: 100%;
       }
     }
   
     .review_name{
-      margin-bottom: 15px;
+      margin-bottom: 0.9375rem;
       color: $darkGreyColor;
     }
   
     .review_company{
       color: $darkGreyColor;
-      font-size: 18px;
-      margin-bottom: 18px;
-      line-height: 18px;
+      font-size: 1.125rem;
+      margin-bottom: 1.125rem;
+      line-height: 1.125rem;
       display: inline-block;
     }
   
     .review_text{
       color: rgba(227, 227, 227, 0.75);
-      line-height: 28px;
+      line-height: 1.75rem;
       margin:  0 auto;
       width: 80%;
     }
@@ -70,6 +70,6 @@
     }
 
     .review_name{
-        margin-bottom: 8px;
+        margin-bottom: 0.5rem;
     }
 }

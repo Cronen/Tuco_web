@@ -22,12 +22,12 @@
               <Loader/>
             </b-col>
           </b-row>
-          <b-row class="page_container justify-content-center align-items-center">
-            <b-col cols="auto" class="page_arrow mr-5" @click="previous_page()" :class="{'arrow_disabled': current_page == 1}">
+          <b-row class="page_container">
+            <b-col cols="auto" class="page_arrow mr-25" @click="previous_page()" :class="{'arrow_disabled': current_page == 1}">
               <font-awesome-icon :icon="['fa', 'angle-left']" :color="get_arrow_color(false)"/>
             </b-col>
             <b-col cols="auto" v-for="n in totalPages" :key="n" @click="change_page(n)" class="page_number" :class="{'page_active': n == current_page}">{{n &lt; 11 ? '0'+n:n}}</b-col>
-            <b-col cols="auto" class="page_arrow ml-5" @click="next_page()" :class="{'arrow_disabled': current_page == totalPages}">
+            <b-col cols="auto" class="page_arrow ml-25" @click="next_page()" :class="{'arrow_disabled': current_page == totalPages}">
               <font-awesome-icon :icon="['fa', 'angle-right']" :color="get_arrow_color(true)" />
             </b-col>
           </b-row>
@@ -101,11 +101,11 @@ export default {
       }
     },
     get_arrow_color(next){
-      let color = 'red';
+      let color = 'white';
       if(next){
-        color = this.current_page != this.totalPages ? 'red': 'grey';
+        color = this.current_page != this.totalPages ? 'white': 'grey';
       }else{
-        color = this.current_page != 1 ? 'red': 'grey';
+        color = this.current_page != 1 ? 'white': 'grey';
       }
       return color;
     }

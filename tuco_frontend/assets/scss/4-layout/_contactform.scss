@@ -83,7 +83,7 @@
     }
 
     .form_input, .form_select{
-        width: calc(50% - 25px);
+        width: calc(50% - 1.5625rem);
         &::placerholder{
             font-size: 1.125rem;
         }
