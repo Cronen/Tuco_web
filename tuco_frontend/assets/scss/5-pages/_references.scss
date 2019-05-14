@@ -14,6 +14,21 @@
   padding-top: 125px;
 }
 
+//styling owl element
+.owl-dot{
+  &:focus{
+    outline: none;
+  }
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+  background: $primaryColor !important;
+}
+
+.owl-theme .owl-dots .owl-dot span{
+  background: rgba(227, 227, 227, 0.25) !important;
+}
+
 .review_wrapper{
   .review_img{
     img{
