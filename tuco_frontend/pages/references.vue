@@ -14,7 +14,7 @@
           </b-row>
         </b-container>
         <b-container v-if="references">
-          <b-row>
+          <b-row class="references_logos">
             <b-col cols="6" sm="4" md="3" lg="1-5" class="mb-4" v-for="r in references" v-bind:key="r.id">
               <RefCard :reference="r"/>
             </b-col>
@@ -27,6 +27,13 @@
             </b-col>
           </b-row>
         </b-container>
+        <b-container>
+          <b-row>
+            <b-col>
+              <RefCarousel/>
+            </b-col>
+          </b-row>
+        </b-container>
       </section>
     </div>
   </div>
@@ -36,6 +43,7 @@
 import subbanner from "~/components/subbanner.vue";
 import Loader from "~/components/Loader.vue";
 import RefCard from "~/components/RefCard.vue";
+import RefCarousel from "~/components/RefCarousel.vue";
 import Strapi from "strapi-sdk-javascript";
 const strapi_url = process.env.StrapiUrl;
 const strapi = new Strapi(strapi_url);
@@ -49,9 +57,10 @@ export default {
     };
   },
   components: {
+    subbanner,
     Loader,
     RefCard,
-    subbanner
+    RefCarousel
   },
   created() {
     this.fetchData();

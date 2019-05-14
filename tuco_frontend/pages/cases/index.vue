@@ -13,7 +13,7 @@
         </b-container>
         <b-container v-if="cases">
           <b-row>
-            <b-col cols="12" md="3" lg="4" v-for="c in cases" v-bind:key="c.id">
+            <b-col cols="12" md="6" lg="4" class="mb-30" v-for="c in cases" v-bind:key="c.id">
               <CaseCard :case="c"/>
             </b-col>
           </b-row>

@@ -1,7 +1,7 @@
 <template>
   <div id="case">
     <subbanner :img_url="get_img_url()" :title="this.case.title"/>
-    <section class="pt-5">
+    <section class="section_padding">
       <b-container v-if="this.case">
         <b-row v-html="this.get_article_html()"></b-row>
       </b-container>

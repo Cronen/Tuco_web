@@ -1,11 +1,13 @@
 .casecard{
     position: relative;
     display: block;
-    height: 30rem;
+    height: 26rem;
 
     .case_img{
         height: 100%;
         border-radius: $radius;
+        //looks the same as in the desing file
+        object-fit: cover;
     }
 }
 
@@ -28,14 +30,20 @@
         background-image: linear-gradient(rgba(255, 255, 255, 0), black);
 
         .case_title{
-            text-transform: capitalize;
             color: $whiteColor;
             position: absolute;
             right: 1.875rem;
             bottom: 1.875rem;
             left: 1.875rem;
             font-size: 1.375rem;
-
+            font-weight: 600;
+            text-transform: uppercase;
         }
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .casecard{
+        height: 30rem;
     }
 }
