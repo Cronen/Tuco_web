@@ -7,7 +7,7 @@
       <section class="section_padding">
         <b-container>
           <b-row>
-            <b-col md="7" lg="6" class="intro_wrapper">
+            <b-col md="7" lg="6" class="mb-80">
               <h2>Our References</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</p>
             </b-col>

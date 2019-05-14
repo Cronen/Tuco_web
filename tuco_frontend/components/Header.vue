@@ -24,7 +24,6 @@
           <b-navbar-nav class="ml-auto menu-items">
             <b-nav-item :to="{path: '/'}">Home</b-nav-item>
             <b-nav-item :to="{path: '/whycarbon'}">Why Carbon?</b-nav-item>
-            <!--<b-nav-item :to="{path: '/quality'}">QUALITY</b-nav-item>-->
             <b-nav-item :to="{path: '/references'}">References</b-nav-item>
             <b-nav-item :to="{path: '/cases'}">Cases</b-nav-item>
             <b-nav-item :to="{path: '/news'}">News</b-nav-item>

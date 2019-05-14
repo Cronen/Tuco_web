@@ -42,7 +42,6 @@
 }
 
 .wrapper_checkbox{
-    color: $blackColor;
     display: flex;
     align-items: center;
     label{
@@ -50,6 +49,7 @@
     }
     p{
         margin-bottom: 0;
+        color: $blackColor;
     }
 
     label{
