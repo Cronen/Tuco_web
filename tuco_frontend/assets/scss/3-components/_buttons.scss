@@ -55,12 +55,14 @@
 }
 
 .date_label{
-    padding: 0.375rem 1.5rem;
+    padding: 0.375rem 1.2rem;
     text-transform: uppercase;
     border-radius: 0.3125rem;
     color: $whiteColor;
     background-color: $primaryColor;
     font-weight: 400;
+    display: inline-block;
+    font-size: 14px;
 }
 
 .scroll_btn{
