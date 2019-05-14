@@ -2,6 +2,9 @@
 .banner_hero{
     position: relative;
     height: 43.75rem;
+    &:after{
+        @include banner_fade;
+    }
     img{
         background-position: center;
         height: 100%;

@@ -9,3 +9,16 @@
     width: 100%;
     height: 2.75rem;
 }
+
+@mixin banner_fade{
+    -moz-box-shadow: inset 0 -150px 100px -140px $darkBlueColor;
+    -webkit-box-shadow: inset 0 -150px 100px -140px $darkBlueColor;
+    box-shadow: inset 0 -150px 100px -140px $darkBlueColor;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    content: "";
+}
