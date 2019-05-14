@@ -13,7 +13,7 @@
 .article_inner{
     background-color: $lightBoxColor;
     border-radius: 0 0 $radius $radius;
-    padding: 25px 45px 25px 20px;
+    padding: 35px 45px 35px 30px;
 
     .article_label{
         position: absolute;
@@ -55,6 +55,13 @@
         font-weight: 700;
         line-height: 32px;
         margin-bottom: 25px;
+        a{
+            color: $darkTextColor;
+            text-decoration: none;
+            &:hover{
+                color: $lightBlueColor;
+            }
+        }
     }
 
     .article_introtext{
@@ -66,10 +73,6 @@
 }
 
 @media screen and (min-width: 768px){
-
-}
-
-@media screen and (min-width: 1200px){
     .article_imgwrapper{
         padding-right: 0;
         img{
@@ -87,30 +90,44 @@
 
     .article_inner{
         background-color: transparent;
-        border-radius: 0;
-        padding: 75px 65px;
 
         .article_label{
-            top: 20px;
             right: 20px;
         }
 
-        .article_meta{
+        .article_introtext{
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+}
 
+@media screen and (min-width: 992px){
+
+    .article_inner{
+        border-radius: 0;
+        padding: 50px 45px 50px 45px;
+
+        .article_meta{
             .article_timestamp{
                 font-size: 13px;
             }
         }
+        .article_introtext{
+            line-height: 28px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px){
+    
+    .article_inner{
+        padding: 75px 65px;
 
         .article_title{
             font-size: 40px;
             line-height: 50px;
             margin-bottom: 30px;
-        }
-
-        .article_introtext{
-            font-size: 14px;
-            line-height: 28px;
         }
     }
 }
