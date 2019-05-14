@@ -1,17 +1,20 @@
 <template>
-  <div class="Case_header">
-    <img :src="this.img_url">
-    <div class="share_container">
-        <font-awesome-icon :icon="['fas', 'envelope']" color="red"/>
-        <font-awesome-icon :icon="['fab', 'facebook-f']" color="red"/>
-        <font-awesome-icon :icon="['fab', 'linkedin']" color="red"/>
+  <div class="casehead_wrapper">
+    <div class="casehead_share">
+        <span>Share</span>
+        <ul class="caseheade_shareicons">
+          <li><a href=""><font-awesome-icon :icon="['fas', 'envelope']"/></a></li>
+          <li><a href=""><font-awesome-icon :icon="['fab', 'facebook-f']"/></a></li>
+          <li><a href=""><font-awesome-icon :icon="['fab', 'linkedin']"/></a></li>
+        </ul>
     </div>
-    <div class>
-      <div class>
-        <h4 class="Acase_title">{{this.title}}</h4>
-        <p class="Acase_date">{{this.date}}</p>
+    <div class="casehead_fade">
+      <div class="casehead_textwrapper">
+        <h4 class="casehead_title">{{this.title}}</h4>
+        <span class="casehead_date">{{this.date}}</span>
       </div>
     </div>
+    <img class="casehead_img" :src="this.img_url">
   </div>
 </template>
 

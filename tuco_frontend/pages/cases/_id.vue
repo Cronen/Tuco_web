@@ -4,7 +4,9 @@
     <section class="section_padding">
       <b-container v-if="this.case">
         <b-row>
-          <CaseHead :title="this.case.title" :img_url="get_img_url()" :date="get_date()"/>
+          <b-col>
+            <CaseHead :title="this.case.title" :img_url="get_img_url()" :date="get_date()"/>
+          </b-col>
         </b-row>
         <b-row v-html="this.get_article_html()"></b-row>
       </b-container>

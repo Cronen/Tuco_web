@@ -1,0 +1,115 @@
+.casehead_wrapper{
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.casehead_img{
+    border-radius: $radius;
+}
+
+.casehead_share{
+    position: absolute;
+    right: 1.875rem;
+    top: 1.875rem;
+    bottom: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $lightBoxColor;
+    border-radius: $radius;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 28px 8px;
+    padding: 20px 15px;
+    span{
+        color: $darkBlueColor;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+
+    .caseheade_shareicons{
+        list-style-type: none;
+        li{
+            margin-bottom: 5px;
+            text-align: center;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            a{
+                color: $lightBlueColor;
+            }
+        }
+    }
+}
+
+.casehead_fade{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), black);
+    border-radius: 0 0 $radius $radius;
+}
+
+.casehead_textwrapper{
+    position: absolute;
+    top: auto;
+    right: 1.875rem;
+    bottom: 1.875rem;
+    left: 1.875rem;
+    width: 80%;
+    .casehead_title{
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .casehead_date{
+        color: $primaryColor;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .casehead_wrapper{
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .casehead_textwrapper{
+        right: 50px;
+        bottom: 50px;
+        left: 50px;
+
+        .casehead_title{
+            font-size: 55px;
+            line-height: 70px;
+            margin-bottom: 20px;
+        }
+
+        .casehead_date{
+            font-size: 14px;
+        }
+    }
+
+    .casehead_share{
+        padding: 40px 30px;
+        span{
+            font-weight: 700;
+            margin-bottom: 40px;
+            font-size: 15px;
+        }
+
+        .caseheade_shareicons{
+            li{
+                margin-bottom: 20px;
+                a{
+                    font-size: 23px;
+                }
+            }
+        }
+    }
+}
