@@ -64,7 +64,7 @@
       </b-container>
       <b-container v-if="employees">
         <b-row>
-          <b-col cols="12" sm="6" lg="4" v-for="e in employees"  :key="e.id">
+          <b-col cols="12" sm="6" lg="4" class="mb-30" v-for="e in employees"  :key="e.id">
             <EmployeeCard :name="e.Name" :title="e.Position" :mail="e.Email" :img_url="create_img_url(e.Portrait.url)"/>
           </b-col>
         </b-row>

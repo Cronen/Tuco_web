@@ -10,18 +10,66 @@
   }
 }
 
+.review_spacing{
+  padding-top: 125px;
+}
+
+.review_wrapper{
+  .review_img{
+    img{
+      border-radius: 100%;
+    }
+  }
+
+  .review_name{
+    margin-bottom: 8px;
+    color: $darkGreyColor;
+  }
+
+  .review_company{
+    color: $darkGreyColor;
+    font-size: 18px;
+    margin-bottom: 18px;
+    line-height: 18px;
+    display: inline-block;
+  }
+
+  .review_text{
+    color: rgba(227, 227, 227, 0.75);
+    line-height: 28px;
+  }
+}
+
 @media screen and (max-width: 575px){
   .ref_logo{
     .ref_logo_img{
-      height: 12rem;
+      height: 10rem;
       width: 100%;
     }
+  }
+}
+
+@media screen and (min-width: 768px){
+  .review_spacing{
+    padding-top: 175px;
   }
 }
 
 @media screen and (min-width: 992px){
   .col-lg-1-5 { 
     max-width: 20%;
+  }
+
+  .review_wrapper{
+    display: flex;
+    align-items: center;
+
+    .review_img{
+      margin-right: 30px;
+      img{
+        width: 175px;
+      }
+    }
   }
 }
 

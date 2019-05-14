@@ -27,7 +27,7 @@
             </b-col>
           </b-row>
         </b-container>
-        <b-container>
+        <b-container class="review_spacing">
           <b-row>
             <b-col>
               <RefCarousel/>

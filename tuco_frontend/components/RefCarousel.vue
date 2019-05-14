@@ -1,44 +1,29 @@
 <template>
-  <div>
-    <b-carousel
-      id="carousel-1"
-      v-model="slide"
-      :interval="4000"
-      controls
-      indicators
-      background="#ababab"
-      img-width="1024"
-      img-height="480"
-      style="text-shadow: 1px 1px 2px #333;"
-      @sliding-start="onSlideStart"
-      @sliding-end="onSlideEnd"
-    >
-      <!-- Slide with blank fluid image to maintain slide aspect ratio -->
-      <b-carousel-slide caption="Blank Image" img-blank img-alt="Blank image">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros felis, tincidunt
-          a tincidunt eget, convallis vel est. Ut pellentesque ut lacus vel interdum.
-        </p>
-      </b-carousel-slide>
-    </b-carousel>
-  </div>
+    <div>
+        <carousel>
+            <b-row>
+                <b-col class="review_wrapper">
+                    <div class="review_img">
+                        <img src="~assets/img/review2.jpg" alt="">
+                    </div>
+                    <div class="review_textwrapper">
+                        <h4 class="review_name">Jan Johansen</h4>
+                        <span class="review_company">IXblue</span>
+                        <p class="review_text">Lorem ipsum dolor sit amet, consectetur adiut labore et dolore magna aliqua. </p>
+                    </div>
+                </b-col>
+            </b-row>
+        </carousel>
+    </div>
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        slide: 0,
-        sliding: null
-      }
-    },
-    methods: {
-      onSlideStart(slide) {
-        this.sliding = true
-      },
-      onSlideEnd(slide) {
-        this.sliding = false
-      }
+    import carousel from 'vue-owl-carousel'
+
+    export default {
+    components: { carousel },
+        
     }
-  }
+
 </script>
+
