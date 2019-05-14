@@ -1,15 +1,27 @@
-.page_number{
-   font-size: 1.125rem; 
+.page_number {
+  font-size: 1.125rem;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .page_active {
   border-bottom: 0.09375rem solid $primaryColor;
+  &:hover {
+    cursor: default;
+  }
 }
 
 .page_arrow {
   font-size: 1.8rem;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .arrow_disabled {
   color: pink;
+  &:hover {
+    cursor: default;
+  }
 }
