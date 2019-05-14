@@ -78,10 +78,10 @@
       <b-container>
         <b-row>
           <b-col>
-            <img src="" alt="">
+            <img src="../assets/img/about3.png" alt="">
           </b-col>
           <b-col>
-
+           <togglecollapsible/>
           </b-col>
         </b-row>
       </b-container>
@@ -91,10 +91,13 @@
 
 <script>
 import subbanner from "~/components/subbanner.vue";
+import togglecollapsible from "~/components/togglecollapsible.vue";
 
 export default {
+  
   components: {
-    subbanner
+    subbanner,
+    togglecollapsible
     }
 }
 </script>
