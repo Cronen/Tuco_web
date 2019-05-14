@@ -1,6 +1,6 @@
 <template>
     <div id="newsList">
-        <subbanner/>
+        <subbanner title="News"/>
         <section class="section_padding">
             <b-container>
                 <b-row>

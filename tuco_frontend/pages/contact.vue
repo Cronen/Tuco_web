@@ -1,6 +1,6 @@
 <template>
   <div id="contact">
-    <subbanner/>
+    <subbanner title="Contact"/>
     <section class="section_padding_extra">
       <b-container>
         <b-row class="relative">

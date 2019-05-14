@@ -1,6 +1,6 @@
 <template>
     <div>
-        <subbanner/>
+        <subbanner title="Why Carbon?"/>
     <div id="whycarbon">
       <section class="my-5 py-5">
       <div class="container">

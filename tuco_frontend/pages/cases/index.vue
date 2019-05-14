@@ -1,6 +1,6 @@
 <template>
   <div>
-    <subbanner img_url=""/>
+    <subbanner title="Cases"/>
     <div id="caseList">
       <section class="section_padding">
         <b-container>

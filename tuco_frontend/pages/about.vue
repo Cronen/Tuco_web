@@ -1,6 +1,6 @@
 <template>
   <div id="about">
-    <subbanner/>
+    <subbanner title="About Tuco"/>
     <section class="section_padding">
       <b-container>
         <b-row>
