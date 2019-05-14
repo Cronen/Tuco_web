@@ -1,8 +1,11 @@
 <template>
   <div id="case">
-    <subbanner :img_url="get_img_url()" :title="this.case.title"/>
+    <subbanner title="Cases"/>
     <section class="section_padding">
       <b-container v-if="this.case">
+        <b-row>
+          <CaseHead :title="this.case.title" :img_url="get_img_url()" :date="get_date()"/>
+        </b-row>
         <b-row v-html="this.get_article_html()"></b-row>
       </b-container>
       <b-container v-else>
@@ -18,6 +21,7 @@
 
 <script>
 import subbanner from "~/components/subbanner.vue";
+import CaseHead from "~/components/CaseHead.vue";
 import Loader from "~/components/Loader.vue";
 import Strapi from "strapi-sdk-javascript";
 import showdown from "showdown";
@@ -52,10 +56,12 @@ export default {
   },
   components: {
     Loader,
-    subbanner
+    subbanner,
+    CaseHead
   },
   created() {
     console.log(this.case);
+    console.log(this.get_date());
   },
   async asyncData(context) {
     return {
@@ -68,6 +74,11 @@ export default {
     },
     get_img_url(){
       return strapi_url + this.case.case_image.url;
+    },
+    get_date(){
+      let d = new Date(this.case.createdAt);
+      var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+      return `${months[d.getMonth()]} ${d.getDate()} ${d.getFullYear()}`;
     }
   }
 };
