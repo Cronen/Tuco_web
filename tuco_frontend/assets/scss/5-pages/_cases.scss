@@ -1,3 +1,15 @@
-.article_img{
-    
+.page_number{
+   font-size: 1.125rem; 
+}
+
+.page_active {
+  border-bottom: 0.09375rem solid $primaryColor;
+}
+
+.page_arrow {
+  font-size: 1.8rem;
+}
+
+.arrow_disabled {
+  color: pink;
 }
