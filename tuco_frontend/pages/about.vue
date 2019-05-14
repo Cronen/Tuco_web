@@ -60,7 +60,7 @@
             <p>Tuco won a tender on the construction of hulls for three carbon fibre ferries for the Norwegian commercial sector. The task now was to manufacture three 35-meter carbon fibre hull structures that were ready for outfitting.</p>
           </b-col>
           <b-col>
-            <img src="../assets/img/about1.png" alt="">
+            <img src="../assets/img/about4.png" alt="">
           </b-col>
         </b-row>
       </b-container>
