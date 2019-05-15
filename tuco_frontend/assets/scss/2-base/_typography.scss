@@ -10,3 +10,39 @@ p{
     margin-bottom: 0;
 }
 
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 35px;
+}
+
+h3{
+    font-size: 30px;
+}
+
+h4{
+    font-size: 28px;
+}
+
+h5{
+    font-size: 20px;
+}
+
+h6{
+
+}
+
+blockquote{
+    font-size: 22px;
+}
+
+.left_border{
+    padding-left: 10px;
+    border-left: 3px solid $primaryColor;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+

@@ -1,50 +1,18 @@
 <template>
   <div id="app">
+
     <FrontBanner/>
-    <section class="section_padding">
-      <b-container>
-        <b-row class="justify-content-center">
-          <b-col cols="12" md="10" lg="8">
-            <h2 class="intro_title">Classification Projects</h2>
-            <p class="intro_subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </b-col>
-        </b-row>
-      </b-container>
-      <b-container>
-        <b-row>
 
-        </b-row>
-      </b-container>
-    </section>
+    <IntroAbout/>
+    
+    <FeaturedCases/>
 
-    <section>
-      <b-container>
-        <b-row>
-          <b-col>
-            <div v-if="references">
-              Reference name from Strapi:
-              <b>{{references[0].ref_name}}</b>
-            </div>
-          </b-col>
-        </b-row>
-      </b-container>
-    </section>
+    <VideoPromo/>
 
-    <section class="partners">
-      <b-container>
-        <b-row class="partners_wrapper">
-            <b-col cols="6" md="4" lg="3" class="partner_logo"><img src="../assets/img/partners/Tekinstitut-logo.svg" alt="partner logo"></b-col>
-            <b-col cols="6" md="4" lg="3" class="partner_logo"><img src="../assets/img/partners/molslinjen-logo.png" alt="partner logo"></b-col>
-            <b-col cols="6" md="4" lg="3" class="partner_logo"><img src="../assets/img/partners/ixblue-logo.png" alt="partner logo"></b-col>
-            <b-col cols="6" md="4" lg="3" class="partner_logo"><img src="../assets/img/partners/university-logo.png" alt="partner logo"></b-col>
-            <b-col cols="6" md="4" lg="3" class="partner_logo"><img src="../assets/img/partners/dfds-logo.png" alt="partner logo"></b-col>
-            <b-col cols="6" md="4" lg="3" class="partner_logo"><img src="../assets/img/partners/man-logo.png" alt="partner logo"></b-col>
-            <b-col cols="6" md="4" lg="3" class="partner_logo"><img src="../assets/img/partners/dbi-logo.png" alt="partner logo"></b-col>
-            <b-col cols="6" md="4" lg="3" class="partner_logo"><img src="../assets/img/partners/scandlines-logo.png" alt="partner logo"></b-col>
-        </b-row>
-      </b-container>
-    </section>
+    <Partners/>
+
     <NewsletterForm/>
+
   </div>
 </template>
 
@@ -52,6 +20,10 @@
 import Strapi from "strapi-sdk-javascript";
 const strapi = new Strapi("http://localhost:1337");
 import FrontBanner from "~/components/FrontBanner.vue";
+import IntroAbout from "~/components/IntroAbout.vue";
+import FeaturedCases from "~/components/FeaturedCases.vue";
+import VideoPromo from "~/components/VideoPromo.vue";
+import Partners from "~/components/Partners.vue";
 import NewsletterForm from "~/components/NewsletterForm.vue";
 
 export default {
@@ -63,6 +35,10 @@ export default {
   },
   components: {
     FrontBanner,
+    IntroAbout,
+    FeaturedCases,
+    VideoPromo,
+    Partners,
     NewsletterForm
   },
   created() {

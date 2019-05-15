@@ -58,7 +58,7 @@
       <b-container>
         <b-row>
           <b-col>
-            <h4 class="mb-50 left_border">The people behind Tuco</h4>
+            <h5 class="mb-50 left_border">The people behind Tuco</h5>
           </b-col>
         </b-row>
       </b-container>

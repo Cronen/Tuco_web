@@ -5,7 +5,7 @@
         <b-container>
           <b-row>
             <b-col class="text-center">
-              <h4 class="signup_title">Join Tuco Marines Newsletter</h4>
+              <h3 class="signup_title">Join Tuco Marines Newsletter</h3>
               <p class="signup_subtext">Subscribe now and get the latest boat news</p>
               <div class="input_wrapper radius_box">
                 <form class="signup_form" action="">
