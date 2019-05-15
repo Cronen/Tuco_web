@@ -25,7 +25,6 @@ export default {
     case: Object
   },
   created() {
-    console.log(this.case);
   }
 };
 </script>

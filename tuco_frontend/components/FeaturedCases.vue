@@ -47,7 +47,6 @@ export default {
       let response = await strapi
         .request("get", "/cases?_sort=createdAt:DESC&featured=true&_limit=3")
         .then((this.loading = false));
-      console.log(response)
       this.cases = response
     }
   }

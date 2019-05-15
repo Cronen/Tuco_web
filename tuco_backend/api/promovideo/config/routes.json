@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/promovideos",
+      "handler": "Promovideo.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/promovideos/count",
+      "handler": "Promovideo.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/promovideos/:_id",
+      "handler": "Promovideo.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/promovideos",
+      "handler": "Promovideo.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/promovideos/:_id",
+      "handler": "Promovideo.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/promovideos/:_id",
+      "handler": "Promovideo.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

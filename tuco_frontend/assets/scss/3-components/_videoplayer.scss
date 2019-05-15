@@ -1,0 +1,4 @@
+.carousel-indicators{
+    //Fix for indicators appearing on top of modal
+    z-index: 2 !important;
+}

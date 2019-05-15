@@ -1,0 +1,33 @@
+{
+  "connection": "default",
+  "collectionName": "promovideo",
+  "info": {
+    "name": "promovideo",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "default": "",
+      "type": "string"
+    },
+    "description": {
+      "default": "",
+      "maxLength": 350,
+      "type": "text"
+    },
+    "YoutubeLink": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "thumbnail": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}
