@@ -2,7 +2,7 @@
     <section class="section_padding">
         <b-container>
             <b-row>
-                <b-col cols="12" lg="5" class="product_wrapper">
+                <b-col cols="12" md="5" class="product_wrapper">
                     <h5 class="product_title">Prozero 10.5m wbw archipilargo</h5>
                     <p class="product_description">The unique ProZero system with a flexible attached cabin reducing noise from engines.</p>
                     <ul class="product_detail">
@@ -21,7 +21,7 @@
                     </ul>
                     <a href="#" class="btn btn-main">View boat</a>
                 </b-col>
-                <b-col cols="12" lg="7">
+                <b-col cols="12" md="7" class="product_img_wrapper">
                     <img src="~assets/img/productmain-img.png" alt="">
                 </b-col>
             </b-row>

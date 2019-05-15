@@ -1,5 +1,5 @@
 <template>
-    <section class="section_padding">
+    <section class="intro_section">
       <b-container>
         <b-row class="justify-content-center">
           <b-col cols="12" md="10" lg="8">

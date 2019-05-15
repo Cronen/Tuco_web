@@ -1,3 +1,4 @@
+//Banner Hero
 .banner_hero{
     position: relative;
     height: 43.75rem;
@@ -32,15 +33,23 @@
     }
 }
 
-
 //About Section
+.intro_section{
+    padding-top: 6.25rem;
+}
+
 .intro_title{
     margin-bottom: 2.8125rem;
     text-align: center;
 }
 
+.intro_subtext{
+    text-align: center;
+}
+
 //Product Section
 .product_wrapper{
+    margin-bottom: 3.125rem;
     .product_title{
         margin-bottom: 0.9375rem;
         text-transform: uppercase;
@@ -61,7 +70,7 @@
             font-weight: 300;
             color: $darkGreyColor;
             .product_icon{
-                width: 60px;
+                width: 3.75rem;
                 text-align: center;
             }
             span{
@@ -71,10 +80,6 @@
             }
         }
     }
-}
-
-.intro_subtext{
-    text-align: center;
 }
 
 //Partner Section
@@ -106,6 +111,20 @@
             }
         }
     }
+
+    .intro_section{
+        padding-top: 12.5rem;
+    }
+
+    .product_wrapper{
+        margin-bottom: 0rem;
+    }
+
+    .product_img_wrapper{
+        display: flex;
+        align-items: center;
+    }
+
     .partners_wrapper{
         .partner_logo{
             margin-top: 1.5625rem;
