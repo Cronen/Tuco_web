@@ -23,6 +23,10 @@
     "article": {
       "default": "",
       "type": "text"
+    },
+    "featured": {
+      "default": false,
+      "type": "boolean"
     }
   }
 }
