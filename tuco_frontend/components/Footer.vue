@@ -4,8 +4,8 @@
       <b-row>
         <b-col cols="12" md="6" lg="3" xl="6" class="follow_us">
           <a class="footer_logo" href="/"><img src="~assets/img/tuco_logo.png" alt="Tuco Logo"></a>
-           <a class="footer_prozero_logo" a target="_blank" href="https://prozero.dk"><img src="~assets/img/prozero_logo.png" alt="Prozero Logo"></a>
-          <h4>&nbsp;&nbsp;Follow Us</h4>
+           <a class="footer_logo prozero_logo" a target="_blank" href="https://prozero.dk"><img src="~assets/img/prozero_logo.png" alt="Prozero Logo"></a>
+          <h4 class="footer_follow">Follow Us</h4>
           <ul class="social_icons">
             <li class="social_icon"><a target="_blank" href="https://www.facebook.com/pages/Tuco-Marine-Group-ApS/250239778331751?fref=ts"><font-awesome-icon :icon="['fab', 'facebook-square']"/></a></li>
             <li class="social_icon"><a target="_blank" href="http://www.youtube.com/tucomarine"><font-awesome-icon :icon="['fab', 'youtube']"/></a></li>
@@ -15,7 +15,6 @@
         <b-col cols="12" md="6" lg="3" xl="2">
           <h4 class="footer_headline">Sitemap</h4>
           <ul>
-            <!-- <li><a href="#">Welcome</a></li> -->
             <li><a href="/whycarbon">Why Carbon?</a></li>
             <li><a href="/references">References</a></li>
             <li><a href="/cases">Cases</a></li>
