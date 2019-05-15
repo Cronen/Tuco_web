@@ -33,9 +33,9 @@
     }
 }
 
-//About Section
+//Story Section
 .intro_section{
-    padding-top: 6.25rem;
+    padding: 6.25rem 0;
 }
 
 .intro_title{
@@ -47,10 +47,23 @@
     text-align: center;
 }
 
+.story_wrapper{
+    background-color: $darkBlueColor;
+
+    .story_title{
+        margin-bottom: 30px;
+    }
+
+    .story_text{
+        margin-bottom: 40px;
+    }
+}
+
 //Product Section
 .product_wrapper{
     margin-bottom: 3.125rem;
     .product_title{
+        color: $darkGreyColor;
         margin-bottom: 0.9375rem;
         text-transform: uppercase;
         font-weight: 600;
@@ -113,7 +126,7 @@
     }
 
     .intro_section{
-        padding-top: 12.5rem;
+        padding: 9.375rem 0;
     }
 
     .product_wrapper{
