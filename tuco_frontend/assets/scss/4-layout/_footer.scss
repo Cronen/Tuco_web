@@ -34,13 +34,22 @@ footer{
 }
 
 .footer_logo{
+    margin-bottom: 1.1875rem;
+    display: block;
+}
+.footer_prozero_logo{
     margin-bottom: 2.1875rem;
     display: block;
+    max-width:100px;
+    max-height: 70px;
+    margin-left: 15px;
 }
 
 .social_icons{
     display: flex;
+    margin-left: 15px;
     .social_icon{
+        
         margin: 0 1.125rem 0 0;
         font-size: 1.5rem;
         &:last-child{
