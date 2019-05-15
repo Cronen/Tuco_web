@@ -11,27 +11,27 @@ p{
 }
 
 h1{
-    font-size: 40px;
+    font-size: 2.5rem;
     color: $darkGreyColor;
 }
 
 h2{
-    font-size: 35px;
+    font-size: 2.1875rem;
     color: $darkGreyColor;
 }
 
 h3{
-    font-size: 30px;
+    font-size: 1.875rem;
     color: $darkGreyColor;
 }
 
 h4{
-    font-size: 28px;
+    font-size: 1.75rem;
     color: $darkGreyColor;
 }
 
 h5{
-    font-size: 20px;
+    font-size: 1.25rem;
     color: $darkGreyColor;
 }
 
@@ -40,15 +40,15 @@ h6{
 }
 
 blockquote{
-    font-size: 22px;
+    font-size: 1.375rem;
 }
 
 .left_border{
-    padding-left: 10px;
-    border-left: 3px solid $primaryColor;
+    padding-left: 0.625rem;
+    border-left: 0.1875rem solid $primaryColor;
     text-transform: uppercase;
     font-weight: 600;
-    letter-spacing: 1px;
+    letter-spacing: 0.0625rem;
     margin: 0;
     color: $darkGreyColor;
 }

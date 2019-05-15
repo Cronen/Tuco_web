@@ -28,8 +28,12 @@
               </a>
             </div>
           </b-col>
-          <img src="~assets/img/story-img1.jpg" alt="">
-          <img src="~assets/img/story-img2.jpg" alt="">
+          <b-col>
+            <img src="~assets/img/story-img1.jpg" alt="">
+          </b-col>
+          <b-col>
+            <img src="~assets/img/story-img2.jpg" alt="">
+          </b-col>
         </b-row>
       </b-container>
     </section>

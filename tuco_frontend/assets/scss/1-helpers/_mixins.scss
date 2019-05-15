@@ -27,13 +27,13 @@
   @media only screen and (min-width: 768px) {
     display: block;
     content: "";
-    width: 60px;
-    height: 60px;
+    width: 3.75rem;
+    height: 3.75rem;
     position: absolute;
-    bottom: -10px;
-    left: -10px;
-    border-bottom: 5px solid #ed1b2e;
-    border-left: 5px solid #ed1b2e;
+    bottom: -0.625rem;
+    left: -0.625rem;
+    border-bottom: 0.3125rem solid #ed1b2e;
+    border-left: 0.3125rem solid #ed1b2e;
     z-index: 2;
   }
 }

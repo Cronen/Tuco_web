@@ -5,49 +5,49 @@
     }
   }
   
-  .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
-    background: $primaryColor !important;
-  }
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+  background: $primaryColor !important;
+}
+
+.owl-theme .owl-dots .owl-dot span{
+  background: rgba(227, 227, 227, 0.25) !important;
+}
+
+.owl-theme .owl-nav.disabled + .owl-dots{
+  margin-top: 40px !important;
+  display: block !important;
+}
   
-  .owl-theme .owl-dots .owl-dot span{
-    background: rgba(227, 227, 227, 0.25) !important;
+.review_wrapper{
+    text-align: center;
+  .review_img{
+      max-width: 10.9375rem;
+      margin: 0 auto 1.875rem auto;
+    img{
+      border-radius: 100%;
+    }
   }
 
-  .owl-theme .owl-nav.disabled + .owl-dots{
-    margin-top: 40px !important;
-    display: block !important;
+  .review_name{
+    margin-bottom: 10px;
+    color: $darkGreyColor;
+    font-size: 24px;
   }
-  
-  .review_wrapper{
-      text-align: center;
-    .review_img{
-        max-width: 10.9375rem;
-        margin: 0 auto 1.875rem auto;
-      img{
-        border-radius: 100%;
-      }
-    }
-  
-    .review_name{
-      margin-bottom: 10px;
-      color: $darkGreyColor;
-      font-size: 24px;
-    }
-  
-    .review_company{
-      color: $darkGreyColor;
-      font-size: 1.125rem;
-      margin-bottom: 1.125rem;
-      line-height: 1.125rem;
-      display: inline-block;
-    }
-  
-    .review_text{
-      color: rgba(227, 227, 227, 0.75);
-      line-height: 1.75rem;
-      margin:  0 auto;
-      width: 80%;
-    }
+
+  .review_company{
+    color: $darkGreyColor;
+    font-size: 1.125rem;
+    margin-bottom: 1.125rem;
+    line-height: 1.125rem;
+    display: inline-block;
+  }
+
+  .review_text{
+    color: rgba(227, 227, 227, 0.75);
+    line-height: 1.75rem;
+    margin:  0 auto;
+    width: 80%;
+  }
 }
 
 @media screen and (min-width: 768px){
@@ -59,18 +59,18 @@
 }
 
 @media screen and (min-width: 992px){
-    .review_wrapper{
-        text-align: left;
-        .review_img{
-            margin: 0;
-        }
-
-        .review_text{
+  .review_wrapper{
+      text-align: left;
+      .review_img{
           margin: 0;
-        }
-    }
+      }
 
-    .review_name{
-        margin-bottom: 0.5rem;
-    }
+      .review_text{
+        margin: 0;
+      }
+  }
+
+  .review_name{
+      margin-bottom: 0.5rem;
+  }
 }
