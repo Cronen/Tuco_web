@@ -19,6 +19,7 @@
     &-main{
         @extend %btn;
         background-color: $primaryColor;
+        min-width: 10.9375rem;
         &:hover{
             background-color: $darkPrimaryColor;
             color: $whiteColor;
@@ -49,7 +50,6 @@
     top: 1.25rem;
     right: 1.25rem;
     z-index: 1;
-    border-radius: $radius;
     &:focus{
         outline: none;
     }
@@ -63,7 +63,7 @@
     background-color: $primaryColor;
     font-weight: 400;
     display: inline-block;
-    font-size: 13px;
+    font-size: 0.8125rem;
 }
 
 .scroll_btn{

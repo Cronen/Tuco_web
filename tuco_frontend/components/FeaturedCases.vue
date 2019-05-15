@@ -1,12 +1,12 @@
 <template>
-  <section>
+  <section class="section_padding">
     <b-container>
-      <b-row>
+      <b-row class="mb-25">
         <b-col>
           <h5 class="left_border">Latest project cases</h5>
         </b-col>
       </b-row>
-      <b-row v-if="!loading" class="my-3">
+      <b-row v-if="!loading">
         <b-col cols="12" md="6" lg="4" class="mb-30" v-for="c in cases" v-bind:key="c.id">
           <CaseCard :case="c"/>
         </b-col>

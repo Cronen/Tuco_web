@@ -1,13 +1,13 @@
 <template>
   <section class="video_promos">
     <b-container>
-      <b-col>
-        <b-row>
+      <b-row class="mb-25">
+        <b-col>
           <h5 class="left_border">Wath promo videos</h5>
-        </b-row>
-      </b-col>
+        </b-col>
+      </b-row>
     </b-container>
-    <b-container fluid v-if="promos" class="px-0 py-3">
+    <b-container fluid v-if="promos" class="px-0">
       <b-row no-gutters>
         <b-col>
           <b-carousel controls indicators img-width="1920" img-height="480" :interval="interval">

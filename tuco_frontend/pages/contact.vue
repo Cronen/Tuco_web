@@ -56,9 +56,9 @@
     </section>
     <section>
       <b-container>
-        <b-row>
+        <b-row class="mb-25">
           <b-col>
-            <h5 class="mb-50 left_border">The people behind Tuco</h5>
+            <h5 class="left_border">The people behind Tuco</h5>
           </b-col>
         </b-row>
       </b-container>
