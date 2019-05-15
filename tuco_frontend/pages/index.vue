@@ -9,6 +9,8 @@
 
     <VideoPromo/>
 
+    <FrontProduct/>
+
     <Partners/>
 
     <NewsletterForm/>
@@ -21,6 +23,7 @@ import FrontBanner from "~/components/FrontBanner.vue";
 import IntroAbout from "~/components/IntroAbout.vue";
 import FeaturedCases from "~/components/FeaturedCases.vue";
 import VideoPromo from "~/components/VideoPromo.vue";
+import FrontProduct from "~/components/FrontProduct.vue";
 import Partners from "~/components/Partners.vue";
 import NewsletterForm from "~/components/NewsletterForm.vue";
 
@@ -36,6 +39,7 @@ export default {
     IntroAbout,
     FeaturedCases,
     VideoPromo,
+    FrontProduct,
     Partners,
     NewsletterForm
   },
