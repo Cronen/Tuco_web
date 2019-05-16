@@ -15,7 +15,7 @@
         <b-col cols="12" md="6" lg="3" xl="2">
           <h4 class="footer_headline">Sitemap</h4>
           <ul>
-            <li><a href="/whycarbon">Why Carbon?</a></li>
+            <li><a href="/quality">Quality</a></li>
             <li><a href="/references">References</a></li>
             <li><a href="/cases">Cases</a></li>
             <li><a href="news">News</a></li>
