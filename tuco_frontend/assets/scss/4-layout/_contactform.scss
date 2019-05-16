@@ -1,7 +1,7 @@
 .contact_section{
     position: relative;
     overflow: hidden;
-    margin: 70px 0 0 0;
+    margin: 4.375rem 0 0 0;
 }
 
 .contact_imgbg{
@@ -23,7 +23,7 @@
 .form_wrapper{
     background-color: $lightBoxColor;
     padding: 1.875rem;
-    margin: 50px 0;
+    margin: 3.125rem 0;
 
     .form_title{
         color: $darkTextColor;
@@ -46,7 +46,7 @@
 }
 
 .form_input{
-    margin-bottom: 25px;
+    margin-bottom: 1.5625rem;
     @include input_field;  
     color: $darkTextColor;
     &::placeholder{
@@ -88,16 +88,15 @@
 
 @media screen and (min-width: 768px){
     .contact_section{
-        margin-top: 90px;
-        margin-bottom: 120px;
+        margin-top: 5.625rem;
+        margin-bottom: 7.5rem;
     }
 
     .contact_imgbg{
         z-index: 0;
-        right: calc(-1200px / 2 + 50% + 1.875em);
+        right: calc(-1200px / 2 + 50% + 2.7rem);
         top: 5em;
         bottom: 5em;
-        //width: 45.875em;
         left: auto;
     }
 

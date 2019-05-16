@@ -77,9 +77,33 @@
 
 .scroll_btn{
     background-color: $primaryColor;
-    height: 4.6875rem;
-    width: 4.6875rem;
+    height: 64px;
+    width: 64px;
     color: $whiteColor;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -32px;
+    &:hover{
+        color: $lightGreyColor;
+    }
+    .scroll_inner{
+        background-color: $darkPrimaryColor;
+        width: 49px;
+        height: 49px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .play_btn{

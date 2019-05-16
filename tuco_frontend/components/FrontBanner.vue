@@ -12,5 +12,10 @@
                 </b-row>
             </b-container>
         </div>
+        <a href="" class="scroll_btn">
+            <div class="scroll_inner">
+                <font-awesome-icon :icon="['fas', 'chevron-down']"/>
+            </div>
+        </a>
     </section>
 </template>
