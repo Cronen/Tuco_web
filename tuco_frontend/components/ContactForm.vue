@@ -1,5 +1,8 @@
 <template>
-    <section class="section_padding">
+    <section class="contact_section">
+      <div class="contact_imgbg">
+        <img src="~assets/img/contact-form-img.jpg" alt="">
+      </div>
       <b-container>
         <b-row>
           <b-col>
@@ -8,12 +11,12 @@
               <p class="form_subtext">Leave your details below and we will contact you for a day trial to work at a Spaces location of your choice. Your first killer coffee is on us.</p>
               <form id="contactForm" action="">
                 <div class="form_col">
-                    <input id="firstName" name="FirstName" type="text" placeholder="Firstname" class="form_input mb-25">
-                    <input id="lastName" name="lastName" type="text" placeholder="Lastname" class="form_input mb-25">
-                    <input id="company" name="company" type="text" placeholder="Company" class="form_input mb-25">
-                    <input id="jobTitle" name="jobTitle" type="text" placeholder="Job discription" class="form_input mb-25">
-                    <input id="email" name="email" type="email" placeholder="Email" class="form_input mb-25">
-                    <input id="phone" name="phone" type="tel" placeholder="Phone number" class="form_input mb-25">
+                    <input id="firstName" name="FirstName" type="text" placeholder="Firstname" class="form_input">
+                    <input id="lastName" name="lastName" type="text" placeholder="Lastname" class="form_input">
+                    <input id="company" name="company" type="text" placeholder="Company" class="form_input">
+                    <input id="jobTitle" name="jobTitle" type="text" placeholder="Job discription" class="form_input">
+                    <input id="email" name="email" type="email" placeholder="Email" class="form_input">
+                    <input id="phone" name="phone" type="tel" placeholder="Phone number" class="form_input">
                     <select name="country" id="country" class="form_select mb-30">
                     <option value="countryDisabled" disabled selected>Country</option>
                     <option value="Algeria">Algeria</option>

@@ -1,6 +1,29 @@
+.contact_section{
+    position: relative;
+    overflow: hidden;
+    margin: 70px 0 0 0;
+}
+
+.contact_imgbg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    z-index: -1;
+
+    img{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+}
+
 .form_wrapper{
     background-color: $lightBoxColor;
     padding: 1.875rem;
+    margin: 50px 0;
 
     .form_title{
         color: $darkTextColor;
@@ -23,6 +46,7 @@
 }
 
 .form_input{
+    margin-bottom: 25px;
     @include input_field;  
     color: $darkTextColor;
     &::placeholder{
@@ -63,9 +87,24 @@
 }
 
 @media screen and (min-width: 768px){
+    .contact_section{
+        margin-top: 90px;
+        margin-bottom: 120px;
+    }
+
+    .contact_imgbg{
+        z-index: 0;
+        right: calc(-1200px / 2 + 50% + 1.875em);
+        top: 5em;
+        bottom: 5em;
+        //width: 45.875em;
+        left: auto;
+    }
+
     .form_wrapper{
         padding: 3.125rem;
         max-width: 41.5625rem;
+        margin: 120px 0;
 
         .form_title{
             font-size: 2.8125rem;
