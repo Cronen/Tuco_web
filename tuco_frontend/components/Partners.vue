@@ -30,9 +30,9 @@ const strapi = new Strapi(strapi_url);
 export default {
   data() {
     return {
-      RefCard: null,
       loading: false,
-      strapi_url: strapi_url
+      strapi_url: strapi_url,
+      references: null
     };
   },
   components: {
