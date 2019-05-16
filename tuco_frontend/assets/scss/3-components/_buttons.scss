@@ -103,6 +103,37 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        .mouse_scroll{
+            display: flex;
+            width: 20px; 
+            height: 30px;
+            justify-content: center;
+            align-items: flex-start;
+            border: 2px solid #bbbbbb;
+            border-radius: 12px;
+
+            .mouse_wheel{
+                width: 4px;
+                height: 4px;
+                margin-top: 6px;
+                border-radius: 50%;
+                background-color: #bbbbbb;
+                animation-duration: 1.5s;
+                animation-iteration-count: infinite;
+                animation-name: animation_wheel;
+            }
+
+            @keyframes animation_wheel{
+                0%{
+                    opacity: 1; 
+                }
+                100%{
+                    opacity: 0;
+                    transform: translateY(15px); 
+                }
+            }
+        }
     }
 }
 

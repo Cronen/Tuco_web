@@ -14,7 +14,9 @@
         </div>
         <a href="" class="scroll_btn">
             <div class="scroll_inner">
-                <font-awesome-icon :icon="['fas', 'chevron-down']"/>
+                <div class="mouse_scroll">
+                    <div class="mouse_wheel"></div>
+                </div>
             </div>
         </a>
     </section>
