@@ -9,7 +9,7 @@
             <b-col cols="6" md="4" lg="3" class="partner_logo"><img class="filtered" src="../assets/img/partners/dfds-logo.png" alt="partner logo"></b-col>
             <b-col cols="6" md="4" lg="3" class="partner_logo"><img class="filtered" src="../assets/img/partners/man-logo.png" alt="partner logo"></b-col>
             <b-col cols="6" md="4" lg="3" class="partner_logo"><img class="filtered" src="../assets/img/partners/dbi-logo.png" alt="partner logo"></b-col>
-        <b-col cols="6" md="4" lg="3" class="partner_logo"><img class="filtered" src="../assets/img/partners/scandlines-logo.png" alt="partner logo"></b-col>-->
+        <b-col cols="6" md="4" lg="3" class="partner_logo"><img class="filtered" src="../assets/img/partners/scandlines-logo.png" alt="partner logo"></b-col>
         
 
         <!-- <b-row v-if="!loading">
