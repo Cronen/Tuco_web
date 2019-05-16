@@ -47,6 +47,7 @@
             padding: 0.9375rem;
             border: none;
             outline: none;
+            height: 52px;
             &::placeholder{
                 text-align: center;
                 text-transform: uppercase;
@@ -73,6 +74,7 @@
         margin: 0 auto;
         .signup_form{
             .signup_input{
+                height: 72px;
                 padding: 1.5625rem;
                 &::placeholder{
                     font-size: 1.125rem;

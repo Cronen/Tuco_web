@@ -1,6 +1,6 @@
 <template>
   <div>
-    <carousel :autoplay="true" loop="true" :nav="false" items="1" :responsive="{768:{items:2}}">
+    <carousel :autoplay="true" loop="true" :nav="false" :items="1" :responsive="{768:{items:2}}">
       <div class="review_wrapper">
         <div class="review_img">
           <img src="~assets/img/review2.jpg" alt>
@@ -28,7 +28,6 @@
 </template>
 
 <script>
-//Read more about component here https://www.npmjs.com/package/vue-owl-carousel
 import carousel from "vue-owl-carousel";
 
 export default {

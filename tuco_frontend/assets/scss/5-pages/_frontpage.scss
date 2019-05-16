@@ -49,13 +49,17 @@
 
 .story_wrapper{
     background-color: $darkBlueColor;
+    padding: 2.1875rem 1.875rem;
+    &:before {
+        @include cornor_red;
+    }
 
     .story_title{
-        margin-bottom: 30px;
+        margin-bottom: 1.875rem;
     }
 
     .story_text{
-        margin-bottom: 40px;
+        margin-bottom: 2.5rem;
     }
 }
 
@@ -127,6 +131,10 @@
 
     .intro_section{
         padding: 9.375rem 0;
+    }
+
+    .story_wrapper{
+        padding: 3.125rem 2.5rem;
     }
 
     .product_wrapper{
