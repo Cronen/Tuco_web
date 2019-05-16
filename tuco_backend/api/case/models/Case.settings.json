@@ -25,7 +25,7 @@
       "type": "text"
     },
     "featured": {
-      "default": false,
+      "default": true,
       "type": "boolean"
     }
   }
