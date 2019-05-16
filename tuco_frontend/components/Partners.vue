@@ -11,11 +11,6 @@
           <Loader/>
         </b-col>
       </b-row>
-      <!-- <b-row class="references_logos">
-            <b-col cols="12" sm="4" md="6" lg="1-5" class="mb-4" v-for="r in references" v-bind:key="r.id">
-              <RefCard :reference="r"/>
-            </b-col>
-      </b-row>-->
     </b-container>
   </section>
 </template>
@@ -47,7 +42,7 @@ export default {
       this.loading = true;
       let response = await strapi
         .request(
-          "get", "/references?_sort=createdAt:DESC&featured=true&_limit=4"
+          "get", "/references?_sort=createdAt:DESC&featured=true&_limit=3"
         )
         .then((this.loading = false));
       this.references = response
