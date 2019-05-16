@@ -35,4 +35,32 @@
     </div>
   </div>
 </template>
+<script>
+  export default {
+    mounted() {
+       this.setupMailchimpPopup() 
+    },
+    methods: {
+      setupMailchimpPopup () {
+          var mailchimpConfig = {
+              baseUrl: 'mc.us3.list-manage.com',
+              uuid: '3e88e027773776d95a845e4f1',
+              lid: '52f6ddc33c'
+          };
+          // No edits below this line are required
+          var chimpPopupLoader = document.createElement("script");
+          chimpPopupLoader.src = '//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js';
+          chimpPopupLoader.setAttribute('data-dojo-config', 'usePlainJson: true, isDebug: false');
+          var chimpPopup = document.createElement("script");
+          chimpPopup.appendChild(document.createTextNode('require(["mojo/signup-forms/Loader"], function (L) { L.start({"baseUrl": "' +  mailchimpConfig.baseUrl + '", "uuid": "' + mailchimpConfig.uuid + '", "lid": "' + mailchimpConfig.lid + '"})});'));
+          
+          chimpPopupLoader.onload = function() {
+            document.body.appendChild(chimpPopup);
+          }
+          document.body.appendChild(chimpPopupLoader);
+          
+      }
+    }
+  }
+</script>
         
