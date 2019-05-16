@@ -1,6 +1,6 @@
 {
   "connection": "default",
-  "collectionName": "",
+  "collectionName": "reference",
   "info": {
     "name": "reference",
     "description": ""
@@ -22,6 +22,10 @@
       "via": "related",
       "plugin": "upload",
       "required": false
+    },
+    "featured": {
+      "default": false,
+      "type": "boolean"
     }
   }
 }
