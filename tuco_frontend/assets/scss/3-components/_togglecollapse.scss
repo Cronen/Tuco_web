@@ -1,10 +1,12 @@
 .tab_collaps{
-    margin-top: 50px;
+    margin-top: 3.125rem;
     .card{
-        margin-bottom: 25px;
+        margin-bottom: 2.1875rem;
         background-color: transparent;
+        border: none;
         .card-header{
             border-radius: 0;
+            border: none;
             .collapse_button{
                 box-shadow: none;
                 background-color: transparent;
@@ -12,15 +14,18 @@
                 text-align: left;
                 text-transform: uppercase;
                 font-weight: 600;
-                font-size: 22px;
+                font-size: 1.375rem;
                 border-radius: 0;
                 padding: 0 0 0 0.625rem;
                 border-left: 0.1875rem solid #ed1b2e;
                 color: $darkGreyColor;
                 letter-spacing: 0.0625rem;
+                display: flex;
+                align-items: center;
 
                 .collapse_icon{
-                    margin-left: 20px;
+                    margin-left: 1.25rem;
+                    font-size: 0.9375rem;
                 }
             }
         }
@@ -33,6 +38,6 @@
 
 @media screen and (min-width: 768px){
     .tab_collaps{
-        margin-top: 0;
+        margin-top: 0rem;
     }
 }

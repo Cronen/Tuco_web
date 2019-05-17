@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
-@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400&display=swap');
 
 //Fluid Typography
 
@@ -40,7 +40,9 @@ h6{
 }
 
 blockquote{
-    font-size: 1.375rem;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 2.25rem;
 }
 
 .left_border{
@@ -51,5 +53,12 @@ blockquote{
     letter-spacing: 0.0625rem;
     margin: 0;
     color: $darkGreyColor;
+}
+
+@media screen and (min-width: 992px){
+    .left_border{
+        font-size: 28px;
+        line-height: 38px;
+    }
 }
 

@@ -1,0 +1,54 @@
+.about_cite{
+    font-size: 0.9375rem;
+    color: $primaryColor;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.about_spoke{
+    font-size: 0.875rem;
+    color: $whiteColor;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: 'Oswald', sans-serif;
+    display: block;
+}
+
+.twoin_section, .vision_qoute{
+    padding-top: 6.25rem;
+}
+
+.history_section{
+    border-bottom: 1px solid $borderColor;
+
+    .history_title{
+        margin-bottom: 1.875rem;
+    }
+    
+    .history_img_wrapper{
+        margin-top: 1.875rem;
+    }
+}
+
+
+@media screen and (min-width: 768px){
+    .history_img_wrapper{
+        margin-top: 0rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .twoin_section, .vision_qoute{
+        padding-top: 12.5rem;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .history_title{
+        margin-bottom: 5rem;
+    }
+}

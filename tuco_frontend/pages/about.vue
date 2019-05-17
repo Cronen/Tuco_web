@@ -6,10 +6,10 @@
         <b-row>
           <b-col>
             <blockquote class="mb-40">
-              <p>We are founded by entrepreneurs who are innovative and who want to continue being so, by developing and delivering products that weight less, saves fuels and affects our environment less.</p>
+              We are founded by entrepreneurs who are innovative and who want to continue being so, by developing and delivering products that weight less, saves fuels and affects our environment less.
             </blockquote>
-            <h6>Jonas Pedersen</h6>
-            <span>CEO-Founder</span>
+            <cite class="about_cite">Jonas Pedersen</cite>
+            <span class="about_spoke">CEO-Founder</span>
           </b-col>
         </b-row>
       </b-container>
@@ -29,7 +29,7 @@
         </b-row>
       </b-container>
     </section>
-    <section class="section_padding">
+    <section class="twoin_section">
       <b-container>
         <b-row>
           <b-col cols="12" class="mb-80">
@@ -38,18 +38,18 @@
             <p>“The spirit at Tuco is and must be that we are always there for our customers - both as owners, leaders and workers. This attitude has to be tangible and present in our everyday work. We aim to deliver products and projects of the highest possible quality on schedule. This is our pledge to our customers nationally as well as internationally”, Jonas Pedersen concludes.</p>
           </b-col>
           <b-col cols="12">
-            <h5 class="mb-30">Two-in-company</h5>
+            <h5 class="mb-30 left_border">Two-in-company</h5>
             <p>After the first years, Jakob Frost and Jonas Pedersen decided to change the name of the company. They wanted to market the company on an international level and the name was not well suited for this task. In collaboration with a local advertising agency, it was decided that the new name should be Tuco – short for two-in-company. Short and easy to pronounce in more languages.</p>
             <p>Through the years Tuco has been involved in many different projects. Tuco has taken part in manufacturing a one-off luxury yacht in collaboration with Royal Denship in Aarhus, produced sailing boats in the Impala-series, delivered vessels for rescue services, patrolling vessels for police and military. Tuco has manufactured moulds for the windmill industry and exhibition objects for a big Danish toy company. Furthermore, Tuco is a subcontractor for several industrial companies.</p>
           </b-col>
         </b-row>
       </b-container>
     </section>
-    <section>
+    <section class="section_padding history_section">
       <b-container>
         <b-row>
           <b-col>
-            <h5>Our history</h5>
+            <h5 class="left_border history_title">Our history</h5>
           </b-col>
         </b-row>
       </b-container>
@@ -61,22 +61,24 @@
             >The change of focus in the production to composite materials was further accelerated in 2009</h3>
             <p>Tuco won a tender on the construction of hulls for three carbon fibre ferries for the Norwegian commercial sector. The task now was to manufacture three 35-meter carbon fibre hull structures that were ready for outfitting.</p>
           </b-col>
-          <b-col cols="12" md="6">
+          <b-col cols="12" md="6" class="history_img_wrapper">
             <img src="../assets/img/about4.png" alt>
           </b-col>
         </b-row>
       </b-container>
     </section>
-    <section class="section_padding">
+    <section class="vision_qoute">
       <b-container>
         <b-row>
           <b-col>
-            <blockquote>
-              <p>We deliver products that through weight savings and unique advantages offer our customers solutions that will save them money in their operations, and will offer significant improvements in the way they affect the environment.</p>
+            <blockquote class="vision_quoute">
+              We deliver products that through weight savings and unique advantages offer our customers solutions that will save them money in their operations, and will offer significant improvements in the way they affect the environment.
             </blockquote>
           </b-col>
         </b-row>
       </b-container>
+    </section>
+    <section class="section_padding">
       <b-container>
         <b-row class="align-items-md-center">
           <b-col cols="12" md="6">

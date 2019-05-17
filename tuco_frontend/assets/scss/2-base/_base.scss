@@ -192,19 +192,21 @@ a {
 }
 
 @media screen and (min-width: 768px){
-  .section_padding{
-    padding: 12.5rem 0;
-  }
-
-  .section_padding_extra{
-    padding: 12.5rem 0 21.875rem 0; 
-  }
-
   .intro_wrapper{
     margin-bottom: 5rem;
   }
 
   .mb-25 {
     margin-bottom: 50px !important;
+  }
+}
+
+@media screen and (min-width: 992px){
+  .section_padding{
+    padding: 12.5rem 0;
+  }
+
+  .section_padding_extra{
+    padding: 12.5rem 0 21.875rem 0; 
   }
 }
