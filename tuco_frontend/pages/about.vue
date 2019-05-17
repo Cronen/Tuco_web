@@ -16,7 +16,7 @@
     </section>
     <section>
       <b-container>
-        <b-row>
+        <b-row class="align-items-md-center">
           <b-col cols="12" md="6">
             <img src="../assets/img/about1.png" alt>
             <img src="../assets/img/about2.png" alt>
@@ -54,7 +54,7 @@
         </b-row>
       </b-container>
       <b-container>
-        <b-row class="history_wrapper">
+        <b-row class="align-items-md-center">
           <b-col cols="12" md="6">
             <h3
               class="mb-40"
@@ -78,7 +78,7 @@
         </b-row>
       </b-container>
       <b-container>
-        <b-row>
+        <b-row class="align-items-md-center">
           <b-col cols="12" md="6">
             <img src="../assets/img/about3.png" alt>
           </b-col>

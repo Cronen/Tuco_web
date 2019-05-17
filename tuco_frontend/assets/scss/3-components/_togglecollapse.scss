@@ -1,0 +1,38 @@
+.tab_collaps{
+    margin-top: 50px;
+    .card{
+        margin-bottom: 25px;
+        background-color: transparent;
+        .card-header{
+            border-radius: 0;
+            .collapse_button{
+                box-shadow: none;
+                background-color: transparent;
+                border: 0;
+                text-align: left;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 22px;
+                border-radius: 0;
+                padding: 0 0 0 0.625rem;
+                border-left: 0.1875rem solid #ed1b2e;
+                color: $darkGreyColor;
+                letter-spacing: 0.0625rem;
+
+                .collapse_icon{
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active:focus{
+    box-shadow: none;
+}
+
+@media screen and (min-width: 768px){
+    .tab_collaps{
+        margin-top: 0;
+    }
+}
