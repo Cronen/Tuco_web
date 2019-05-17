@@ -17,11 +17,11 @@
     <section>
       <b-container>
         <b-row>
-          <b-col>
+          <b-col cols="12" md="6">
             <img src="../assets/img/about1.png" alt>
             <img src="../assets/img/about2.png" alt>
           </b-col>
-          <b-col>
+          <b-col cols="12" md="6">
             <h2 class="mb-30">Main Title Here</h2>
             <p>At Tuco Marine Group we specialize in light structures and hulls manufactured with composite materials such as carbon fibre. Tuco supplies a range of different composite structures for the shipping industry and other industries where low weight and strength are important factors.</p>
             <p>Tuco Yacht Yard, which is part of Tuco Marine Group offers custom-built ships, but also repairs, maintenance and all kinds of different jobs in composite materials. The work can be performed at Tuco’s facilities in Faaborg or wherever the customer is.</p>
@@ -54,14 +54,14 @@
         </b-row>
       </b-container>
       <b-container>
-        <b-row>
-          <b-col>
+        <b-row class="history_wrapper">
+          <b-col cols="12" md="6">
             <h3
               class="mb-40"
             >The change of focus in the production to composite materials was further accelerated in 2009</h3>
             <p>Tuco won a tender on the construction of hulls for three carbon fibre ferries for the Norwegian commercial sector. The task now was to manufacture three 35-meter carbon fibre hull structures that were ready for outfitting.</p>
           </b-col>
-          <b-col>
+          <b-col cols="12" md="6">
             <img src="../assets/img/about4.png" alt>
           </b-col>
         </b-row>
@@ -79,10 +79,10 @@
       </b-container>
       <b-container>
         <b-row>
-          <b-col>
+          <b-col cols="12" md="6">
             <img src="../assets/img/about3.png" alt>
           </b-col>
-          <b-col>
+          <b-col cols="12" md="6">
             <togglecollapsible/>
           </b-col>
         </b-row>

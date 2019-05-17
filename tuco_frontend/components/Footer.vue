@@ -13,16 +13,6 @@
           </ul>
         </b-col>
         <b-col cols="12" md="6" lg="3" xl="2">
-          <h4 class="footer_headline">Sitemap</h4>
-          <ul>
-            <li><a href="/quality">Quality</a></li>
-            <li><a href="/references">References</a></li>
-            <li><a href="/cases">Cases</a></li>
-            <li><a href="news">News</a></li>
-            <li><a href="about">About Tuco</a></li>
-          </ul>
-        </b-col>
-        <b-col cols="12" md="6" lg="3" xl="2">
           <h4 class="footer_headline">Information</h4>
           <ul class="bottom-0">
             <li><a href="https://prozero.dk/about_prozero/" target="_blank">About Prozero</a></li>
@@ -30,6 +20,16 @@
             <li><a href="https://prozero.dk/defence-boats/" target="_blank">Defence Boats</a></li>
             <li><a href="https://prozero.dk/offshore-boats/" target="_blank">Offshore Boats</a></li>
             <li><a href="https://prozero.dk/file-camp/" target="_blank">File Camp</a></li>
+          </ul>
+        </b-col>
+        <b-col cols="12" md="6" lg="3" xl="2">
+          <h4 class="footer_headline">Sitemap</h4>
+          <ul>
+            <li><a href="/quality">Quality</a></li>
+            <li><a href="/references">References</a></li>
+            <li><a href="/cases">Cases</a></li>
+            <li><a href="news">News</a></li>
+            <li><a href="about">About Tuco</a></li>
           </ul>
         </b-col>
         <b-col cols="12" md="6" lg="3" xl="2">

@@ -15,10 +15,10 @@
     <section class="story_section">
       <b-container>
         <b-row>
-          <b-col>
+          <b-col class="story_img_wrapper">
             <img src="~assets/img/story-img1.jpg" alt="">
           </b-col>
-          <b-col>
+          <b-col class="story_img_wrapper">
             <img src="~assets/img/story-img2.jpg" alt="">
           </b-col>
           <b-col class="story_wrapper">

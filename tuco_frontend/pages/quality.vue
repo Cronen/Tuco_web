@@ -1,7 +1,7 @@
 <template>
   <div>
     <subbanner title="Quality"/>
-    <section-1 id="quality">
+    <section id="quality">
       <b-container>
         <b-row>
           <b-col>
@@ -12,7 +12,7 @@
           </b-col>
         </b-row>
       </b-container>
-    </section-1>
+    </section>
     <br>
     <section>
       <b-container>
