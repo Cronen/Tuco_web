@@ -19,7 +19,7 @@
                 <h3>{{get_youtube_id(p.YoutubeLink)}}</h3>
                 <span class="promo_description">{{p.description}}</span>
               </div>
-              <b-modal :id="'promo_modal-' + p.id" :hide-header="true" :hide-footer="true" class="promo_modal" size="lg">
+              <b-modal :id="'promo_modal-' + p.id" :hide-header="true" :hide-footer="true" class="promo_modal" size="fluid">
                   <font-awesome-icon
                     :icon="['fas', 'times-circle']"
                     class="close_icon"
@@ -27,14 +27,12 @@
                   />
                   <iframe v-if="playing_id == p.id"
                     class="promo_video"
-                    width="1250"
-                    height="720"
+                    height="720px"
                     :src="'https://www.youtube.com/embed/' + get_youtube_id(p.YoutubeLink) + '?autoplay=1'"
                     frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
-                    modestbranding="1"
-                  ></iframe>
+                    modestbranding="1"/>
               </b-modal>
             </b-carousel-slide>
             <div>{{get_youtube_id('https://www.youtube.com/NdqbI0_0GsM')}}</div>
