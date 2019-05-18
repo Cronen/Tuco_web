@@ -19,20 +19,30 @@
                 <h3>{{get_youtube_id(p.YoutubeLink)}}</h3>
                 <span class="promo_description">{{p.description}}</span>
               </div>
-              <b-modal :id="'promo_modal-' + p.id" :hide-header="true" :hide-footer="true" class="promo_modal" size="fluid">
-                  <font-awesome-icon
-                    :icon="['fas', 'times-circle']"
-                    class="close_icon"
-                    @click="close_promo_modal(p.id)"
-                  />
-                  <iframe v-if="playing_id == p.id"
+              <b-modal
+                :id="'promo_modal-' + p.id"
+                :hide-header="true"
+                :hide-footer="true"
+                class="promo_modal"
+                size="fluid"
+              >
+                <font-awesome-icon
+                  :icon="['fas', 'times-circle']"
+                  class="close_icon"
+                  @click="close_promo_modal(p.id)"
+                />
+                <div class="player_area">
+                  <iframe
+                    v-if="playing_id == p.id"
                     class="promo_video"
                     height="720px"
                     :src="'https://www.youtube.com/embed/' + get_youtube_id(p.YoutubeLink) + '?autoplay=1'"
                     frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
-                    modestbranding="1"/>
+                    modestbranding="1"
+                  />
+                </div>
               </b-modal>
             </b-carousel-slide>
             <div>{{get_youtube_id('https://www.youtube.com/NdqbI0_0GsM')}}</div>
@@ -54,7 +64,7 @@ export default {
       promos: null,
       loading: true,
       interval: 5000,
-      playing_id: ''
+      playing_id: ""
     };
   },
   created() {
@@ -90,14 +100,14 @@ export default {
     this.$root.$on("bv::modal::show", (bvEvent, modalId) => {
       //Runs on modal opening
       console.log("Opens", modalId);
-      this.playing_id = modalId.split('-')[1];
+      this.playing_id = modalId.split("-")[1];
 
       this.interval = 0;
     });
     this.$root.$on("bv::modal::hide", (bvEvent, modalId) => {
       //Runs on modal closing
       console.log("Closes", modalId);
-      this.playing_id = '';
+      this.playing_id = "";
       this.interval = 5000;
     });
   }
