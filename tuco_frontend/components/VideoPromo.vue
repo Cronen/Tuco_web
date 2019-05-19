@@ -12,11 +12,10 @@
         <b-col>
           <b-carousel controls indicators img-width="1920" img-height="480" :interval="interval">
             <b-carousel-slide v-for="p in this.promos" :key="p.id">
-              <img slot="img" :src="get_thumbnail_url(p)" width="1920" height="680">
+              <img slot="img" :src="get_thumbnail_url(p)" class="carousel_img">
               <div class="promo_wrapper">
-                <font-awesome-icon :icon="['fas', 'play-circle']" @click="open_promo_modal(p.id)"/>
+                <span class="play_icon"><font-awesome-icon :icon="['fas', 'play-circle']" @click="open_promo_modal(p.id)"/></span>
                 <h4 class="promo_title">{{p.title}}</h4>
-                <h3>{{get_youtube_id(p.YoutubeLink)}}</h3>
                 <span class="promo_description">{{p.description}}</span>
               </div>
               <b-modal

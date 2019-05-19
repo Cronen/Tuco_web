@@ -3,11 +3,6 @@
   z-index: 2 !important;
 }
 
-.promo_modal {
-  //   width: 100%;
-  //   left: 10%;
-}
-
 .modal-fluid {
   max-width: 85%;
   .modal-body {
@@ -20,13 +15,34 @@
   }
 }
 
-.promo_video {
-  width: 100%;
+.play_icon {
+  font-size: 4rem;
 }
-
 .player_area {
   border-radius: 20px;
   overflow: hidden;
   padding: 0px;
   max-height: 720px;
 }
+.promo_video {
+  width: 100%;
+}
+
+.carousel_img {
+  width: 100%;
+  height: 680px;
+  object-fit: cover;
+  transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 992px) {
+  .carousel_img {
+    height: 525px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .carousel_img {
+    height: 350px;
+  }
+}
+
