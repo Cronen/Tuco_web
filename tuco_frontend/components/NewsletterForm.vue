@@ -19,8 +19,12 @@
       </div>
         <b-modal id="mail_modal" >
            <template slot="modal-header">
-            <font-awesome-icon :icon="['fas', 'times-circle']" class="close_icon" @click="close_modal()"/>
-            <img src="~assets/img/modal_header.png"/>
+             <button @click="close_promo_modal(p.id)" class="close_btn">
+                <div class="close_inner">
+                  <img src="~assets/img/close-icon.svg"/>
+                </div>
+              </button>
+            <img class="modal-header-img" src="~assets/img/modal_header.png"/>
           </template>
           <template slot="default">
             {{email}}

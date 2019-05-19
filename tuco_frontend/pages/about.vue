@@ -17,7 +17,7 @@
     <section>
       <b-container>
         <b-row class="align-items-md-center">
-          <b-col cols="12" md="6">
+          <b-col cols="12" md="6" class="about_mainimg">
             <img src="../assets/img/about1.png" alt>
             <img src="../assets/img/about2.png" alt>
           </b-col>

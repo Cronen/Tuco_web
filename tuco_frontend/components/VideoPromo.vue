@@ -26,16 +26,17 @@
                 class="promo_modal"
                 size="fluid"
               >
-                <font-awesome-icon
-                  :icon="['fas', 'times-circle']"
-                  class="close_icon"
-                  @click="close_promo_modal(p.id)"
-                />
+                <button @click="close_promo_modal(p.id)" class="close_btn">
+                  <div class="close_inner">
+                    <img src="~assets/img/close-icon.svg"/>
+                  </div>
+                </button>
                 <div class="player_area">
                   <iframe
                     v-if="playing_id == p.id"
                     class="promo_video"
-                    height="720px"
+                    height="230px"
+                    width="460px"
                     :src="'https://www.youtube.com/embed/' + get_youtube_id(p.YoutubeLink) + '?autoplay=1'"
                     frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
