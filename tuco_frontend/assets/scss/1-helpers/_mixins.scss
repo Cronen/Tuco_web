@@ -37,3 +37,10 @@
     z-index: 2;
   }
 }
+
+@mixin play_round{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}

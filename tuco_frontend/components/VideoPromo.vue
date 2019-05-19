@@ -7,49 +7,46 @@
         </b-col>
       </b-row>
     </b-container>
-    <b-container fluid v-if="promos" class="px-0">
-      <b-row no-gutters>
-        <b-col>
-          <b-carousel controls indicators img-width="1920" img-height="480" :interval="interval">
-            <b-carousel-slide v-for="p in this.promos" :key="p.id">
-              <img slot="img" :src="get_thumbnail_url(p)" class="carousel_img">
-              <div class="promo_wrapper">
-                <span class="play_icon"><font-awesome-icon :icon="['fas', 'play-circle']" @click="open_promo_modal(p.id)"/></span>
-                <h4 class="promo_title">{{p.title}}</h4>
-                <span class="promo_description">{{p.description}}</span>
+      <b-carousel indicators img-width="1920" img-height="480" :interval="interval">
+        <div class="video_promo_overlay"></div>
+        <b-carousel-slide v-for="p in this.promos" :key="p.id">
+          <img slot="img" :src="get_thumbnail_url(p)" class="carousel_img">
+          <div class="container">
+            <button class="play_btn" @click="open_promo_modal(p.id)">
+              <div class="play_wrapper"><div class="play_inner"><div class="play_icon"></div></div></div>
+            </button>
+            <h4 class="promo_title">{{p.title}}</h4>
+            <span class="promo_description">{{p.description}}</span>
+          </div>
+          <b-modal
+            :id="'promo_modal-' + p.id"
+            :hide-header="true"
+            :hide-footer="true"
+            class="promo_modal"
+            size="fluid"
+          >
+            <button @click="close_promo_modal(p.id)" class="close_btn">
+              <div class="close_inner">
+                <img src="~assets/img/close-icon.svg"/>
               </div>
-              <b-modal
-                :id="'promo_modal-' + p.id"
-                :hide-header="true"
-                :hide-footer="true"
-                class="promo_modal"
-                size="fluid"
-              >
-                <button @click="close_promo_modal(p.id)" class="close_btn">
-                  <div class="close_inner">
-                    <img src="~assets/img/close-icon.svg"/>
-                  </div>
-                </button>
-                <div class="player_area">
-                  <iframe
-                    v-if="playing_id == p.id"
-                    class="promo_video"
-                    height="230px"
-                    width="460px"
-                    :src="'https://www.youtube.com/embed/' + get_youtube_id(p.YoutubeLink) + '?autoplay=1'"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                    modestbranding="1"
-                  />
-                </div>
-              </b-modal>
-            </b-carousel-slide>
-            <div>{{get_youtube_id('https://www.youtube.com/NdqbI0_0GsM')}}</div>
-          </b-carousel>
-        </b-col>
-      </b-row>
-    </b-container>
+            </button>
+            <div class="player_area">
+              <iframe
+                v-if="playing_id == p.id"
+                class="promo_video"
+                height="230px"
+                width="460px"
+                :src="'https://www.youtube.com/embed/' + get_youtube_id(p.YoutubeLink) + '?autoplay=1'"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                modestbranding="1"
+              />
+            </div>
+          </b-modal>
+        </b-carousel-slide>
+        <div>{{get_youtube_id('https://www.youtube.com/NdqbI0_0GsM')}}</div>
+      </b-carousel>
   </section>
 </template>
 
@@ -63,7 +60,7 @@ export default {
     return {
       promos: null,
       loading: true,
-      interval: 5000,
+      interval: 20000,
       playing_id: ""
     };
   },
@@ -108,7 +105,7 @@ export default {
       //Runs on modal closing
       console.log("Closes", modalId);
       this.playing_id = "";
-      this.interval = 5000;
+      this.interval = 20000;
     });
   }
 };

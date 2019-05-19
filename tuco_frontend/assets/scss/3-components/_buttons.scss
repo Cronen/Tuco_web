@@ -1,3 +1,8 @@
+button:focus, button:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
 %btn{
     font-size: 0.9375rem;
     text-decoration: none;
@@ -14,7 +19,12 @@
         outline: none;
     }
     &:focus{
-        outline: none;
+        outline: none !important;
+        box-shadow: none !important;
+    }
+    &:active{
+        outline: none !important;
+        box-shadow: none !important;
     }
 }
 
@@ -167,8 +177,64 @@
 }
 
 .play_btn{
-    border-radius: 100%;
-    height: 8.4375rem;
-    width: 8.4375rem;
-    color: $whiteColor;
+    @include play_round;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    width: 84px;
+    height: 84px;
+    background: transparent;
+    margin: 0 auto;
+
+    .play_wrapper{
+        @include play_round;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        width: 74px;
+        height: 74px;
+
+        .play_inner{
+            @include play_round;
+            position: relative;
+            border: 5px solid $whiteColor;
+            width: 64px;
+            height: 64px;
+
+            .play_icon{
+                position: absolute;
+                left: 55%;
+                top: 50%;
+                border-top: 10px solid transparent;
+                border-bottom: 10px solid transparent;
+                border-left: 20px solid $whiteColor;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    .play_btn{
+        border: 3px solid rgba(255, 255, 255, 0.3);
+        width: 136px;
+        height: 136px;
+    
+        .play_wrapper{
+            border: 3px solid rgba(255, 255, 255, 0.5);
+            width: 120px;
+            height: 120px;
+    
+            .play_inner{
+                border: 8px solid $whiteColor;
+                width: 105px;
+                height: 105px;
+    
+                .play_icon{
+                    left: 55%;
+                    top: 50%;
+                    border-top: 10px solid transparent;
+                    border-bottom: 10px solid transparent;
+                    border-left: 20px solid $whiteColor;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
 }
