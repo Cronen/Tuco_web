@@ -19,7 +19,7 @@
       </div>
         <b-modal id="mail_modal" >
            <template slot="modal-header">
-             <button @click="close_promo_modal(p.id)" class="close_btn">
+             <button @click="close_modal" class="close_btn">
                 <div class="close_inner">
                   <img src="~assets/img/close-icon.svg"/>
                 </div>
