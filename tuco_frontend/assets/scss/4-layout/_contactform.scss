@@ -87,9 +87,9 @@
     appearance: none;
     outline: 0;
     background: transparent;
-    height: 20px;
-    width: 20px;
-    border: 1px solid $borderColor;
+    height: 1.25rem;
+    width: 1.25rem;
+    border: 0.0625rem solid $borderColor;
 
     &::after{
         content: '';
@@ -99,7 +99,7 @@
         width: 20%;
         height: 50%;
         border: solid $blackColor;
-        border-width: 0 1px 1px 0;
+        border-width: 0 0.0625rem 0.0625rem 0;
         transform: rotate(45deg);
         display: none;
     }

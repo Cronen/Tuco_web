@@ -10,8 +10,8 @@
 .carousel-indicators{
   z-index: 1;
   li{
-    width: 45px;
-    height: 3px;
+    width: 2.8125rem;
+    height: 0.1875rem;
     &:focus{
       outline: none;
     }
@@ -23,8 +23,8 @@
 }
 
 .carousel-caption{
-  right: 15px;
-  left: 15px;
+  right: 0.9375rem;
+  left: 0.9375rem;
   z-index: 2;
   padding-bottom: 0;
   padding-top: 0;
@@ -35,7 +35,7 @@
   top: 10%;
   
   .play_btn{
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
   }
 }
 
@@ -72,7 +72,7 @@
 
 .player_area {
   overflow: hidden;
-  padding: 0px;
+  padding: 0rem;
   position: relative;
   width: 100%;
   height: 0;

@@ -48,8 +48,8 @@
     }
 
     .timeline_title{
-        font-size: 25px;
-        line-height: 34px;
+        font-size: 1.5625rem;
+        line-height: 2.125rem;
         font-weight: 600;
     }
 }
@@ -76,8 +76,8 @@
 
     .history_section{
         .timeline_title{
-            font-size: 30px;
-            line-height: 40px;
+            font-size: 1.875rem;
+            line-height: 2.5rem;
         }
     }
 }
@@ -96,9 +96,13 @@
                 top: auto;
                 right: auto;
                 bottom: -30%;
-                left: 15px;
+                left: 0.9375rem;
             }
         }
+    }
+
+    .twoin_section{
+        padding-top: 21.875rem;
     }
 
     .twoin_title{
