@@ -22,7 +22,7 @@
             <div class="aboutimg_wrapper"><img src="../assets/img/about2.png" alt></div>
           </b-col>
           <b-col cols="12" md="6" lg="5">
-            <h4 class="mb-30 about_comapny_title">Main Title Here</h4>
+            <h4 class="mb-30 about_company_title">Main Title Here</h4>
             <p>At Tuco Marine Group we specialize in light structures and hulls manufactured with composite materials such as carbon fibre. Tuco supplies a range of different composite structures for the shipping industry and other industries where low weight and strength are important factors.</p>
             <p>Tuco Yacht Yard, which is part of Tuco Marine Group offers custom-built ships, but also repairs, maintenance and all kinds of different jobs in composite materials. The work can be performed at Tuco’s facilities in Faaborg or wherever the customer is.</p>
           </b-col>
