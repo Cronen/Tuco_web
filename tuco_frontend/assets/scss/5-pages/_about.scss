@@ -20,13 +20,19 @@
 
 .about_mainimg{
     margin-bottom: 3.125rem;
+
+    .aboutimg_wrapper{
+        &:first-child{
+            display: none;
+        }
+    }
 }
 
 .twoin_section, .vision_qoute{
     padding-top: 6.25rem;
 }
 
-.twoin_title{
+.twoin_title, .about_company_title{
     font-weight: 600;
 }
 
@@ -77,6 +83,24 @@
 }
 
 @media screen and (min-width: 1200px){
+    .about_mainimg{    
+        .aboutimg_wrapper{
+            &:first-child{
+                position: relative;
+                display: block;
+                text-align: center;
+                margin: 0 auto;
+            }
+            &:last-child{
+                position: absolute;
+                top: auto;
+                right: auto;
+                bottom: -30%;
+                left: 15px;
+            }
+        }
+    }
+
     .twoin_title{
         width: 65%;
     }
