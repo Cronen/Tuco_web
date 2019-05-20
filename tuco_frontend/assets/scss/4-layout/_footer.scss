@@ -2,10 +2,23 @@ footer{
     background-color: $footerColor;
     color: $whiteColor;
     padding: 4.375rem 0rem;
+
+    .footer_grid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .footer_col{
+            text-align: center;
+            margin-bottom: 1.875rem;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
     ul{
         padding: 0rem;
         list-style-type: none;
-        margin-bottom: 1.875rem;
         li{
             font-weight: 300;
             margin-bottom: 0.5rem;
@@ -58,21 +71,62 @@ footer{
     }
 }
 
+@media screen and (min-width: 576px){
+    footer{
+        .footer_grid{
+            display: grid;
+            justify-content: stretch;
+            justify-items: start;
+            align-items: start;
+            grid-template-areas: ". ." ". .";
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+
+            .footer_col{
+                text-align: left;
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 768px){
     footer{
-        .bottom-0{
-            margin-bottom: 0rem;
+        .footer_grid{
+            grid-template-areas: ". . . .";
+            grid-template-columns: 2fr 1fr 1.5fr 1fr;
+            grid-template-rows: auto;
+
+            .footer_col{
+                margin-bottom: 0rem;
+            }
         }
     }
 }
 
 @media screen and (min-width: 992px){
     footer{
+        .footer_grid{
+            grid-template-columns: 2fr 1fr 1.25fr 1fr;
+        }
         h4{
             margin-bottom: 1.25rem;
         }
         ul{
             margin-bottom: 0rem;
         }
+    }
+}
+
+@media screen and (max-width: 576px){
+    .footer_logo{
+        margin: 0 auto 1.1875rem auto;
+    }
+
+    .prozero_logo{
+        margin: 0 auto 2rem auto;
+    }
+
+    .social_icons{
+        justify-content: center;
     }
 }
