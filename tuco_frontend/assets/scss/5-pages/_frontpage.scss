@@ -157,6 +157,12 @@
 @media screen and (min-width: 1200px){
     .banner_hero{
         height: 100vh;
+        .banner_overlay{
+            .banner_title{
+                font-size: 60px;
+                line-height: 64px;
+            }
+        }
         .banner_subtext{
             line-height: 1.75rem;
         }

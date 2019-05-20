@@ -22,7 +22,7 @@
             <img src="../assets/img/about2.png" alt>
           </b-col>
           <b-col cols="12" md="6">
-            <h2 class="mb-30">Main Title Here</h2>
+            <h4 class="mb-30 twoin_title">Main Title Here</h4>
             <p>At Tuco Marine Group we specialize in light structures and hulls manufactured with composite materials such as carbon fibre. Tuco supplies a range of different composite structures for the shipping industry and other industries where low weight and strength are important factors.</p>
             <p>Tuco Yacht Yard, which is part of Tuco Marine Group offers custom-built ships, but also repairs, maintenance and all kinds of different jobs in composite materials. The work can be performed at Tuco’s facilities in Faaborg or wherever the customer is.</p>
           </b-col>
@@ -33,7 +33,7 @@
       <b-container>
         <b-row>
           <b-col cols="12" class="mb-80">
-            <h4 class="mb-40">At Tuco it is not just all about business - it’s very personal</h4>
+            <h4 class="mb-40 twoin_title">At Tuco it is not just all about business - it’s very personal</h4>
             <p>When you meet the two founders of the company Jakob and Jonas even though they are both busy leaders they are always attentive and participating. This makes for a strong and present leadership. When asked about keywords in their leadership they both agree that creativity, quality and drive have always been some of the most important values. Everyone who works for Tuco are more than willing to stay long after normal hours when there is a need for it – that is the Tuco spirit. Together we will get the job done – and we will do it well.</p>
             <p>“The spirit at Tuco is and must be that we are always there for our customers - both as owners, leaders and workers. This attitude has to be tangible and present in our everyday work. We aim to deliver products and projects of the highest possible quality on schedule. This is our pledge to our customers nationally as well as internationally”, Jonas Pedersen concludes.</p>
           </b-col>
@@ -56,9 +56,7 @@
       <b-container>
         <b-row class="align-items-md-center">
           <b-col cols="12" md="6">
-            <h3
-              class="mb-40"
-            >The change of focus in the production to composite materials was further accelerated in 2009</h3>
+            <h3 class="mb-40 timeline_title">The change of focus in the production to composite materials was further accelerated in 2009</h3>
             <p>Tuco won a tender on the construction of hulls for three carbon fibre ferries for the Norwegian commercial sector. The task now was to manufacture three 35-meter carbon fibre hull structures that were ready for outfitting.</p>
           </b-col>
           <b-col cols="12" md="6" class="history_img_wrapper">
