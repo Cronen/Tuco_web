@@ -130,4 +130,10 @@ footer{
     .social_icons{
         justify-content: center;
     }
+
+    .footer_col{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
