@@ -5,6 +5,9 @@
 
 .casehead_img{
     border-radius: $radius;
+    object-fit: cover;
+    width: 100%;
+    max-height: 500px;
 }
 
 .casehead_share{
