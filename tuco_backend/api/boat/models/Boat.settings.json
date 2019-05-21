@@ -1,0 +1,47 @@
+{
+  "connection": "default",
+  "collectionName": "boat",
+  "info": {
+    "name": "boat",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "boat_name": {
+      "default": "",
+      "type": "string"
+    },
+    "boat_description": {
+      "default": "",
+      "type": "text"
+    },
+    "boat_length": {
+      "default": "",
+      "type": "string"
+    },
+    "boat_beam": {
+      "default": "",
+      "type": "string"
+    },
+    "boat_engine": {
+      "default": "",
+      "type": "string"
+    },
+    "boat_image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "boat_url": {
+      "default": "",
+      "type": "string"
+    },
+    "boat_Featured": {
+      "default": false,
+      "type": "boolean"
+    }
+  }
+}
