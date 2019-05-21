@@ -14,14 +14,14 @@
     </section>
     <section class="story_section">
       <b-container>
-        <b-row>
-          <b-col class="story_img_wrapper">
-            <img src="~assets/img/story-img1.jpg" alt="">
+        <b-row class="relative">
+          <b-col cols="12" md="12" class="story_img_wrapper">
+            <img class="story_img_1" src="~assets/img/story-img1.jpg" alt="">
+            <div class="story_img_inner">
+              <img src="~assets/img/story-img2.jpg" alt="">
+            </div>
           </b-col>
-          <b-col class="story_img_wrapper">
-            <img src="~assets/img/story-img2.jpg" alt="">
-          </b-col>
-          <b-col class="story_wrapper">
+          <b-col cols="12" md="7" lg="6" class="story_text_wrapper">
             <h2 class="story_title">Tuco Marine Group</h2>
             <div class="story_text">
               <p class="mb-20">At Tuco Marine Group we specialize in light structures and hulls manufactured with composite materials such as carbon fibre. Tuco supplies a range of different composite structures for the shipping industry and other industries where low weight and strength are important factors.</p>

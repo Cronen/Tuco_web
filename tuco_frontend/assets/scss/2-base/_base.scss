@@ -23,7 +23,6 @@ ul {
 
 img {
   max-width: 100%;
-  max-height: 100%;
 }
 
 a {
@@ -200,14 +199,14 @@ a {
   .mb-25 {
     margin-bottom: 50px !important;
   }
+
+  .section_padding_extra{
+    padding: 12.5rem 0 21.875rem 0; 
+  }
 }
 
 @media screen and (min-width: 992px){
   .section_padding{
     padding: 12.5rem 0;
-  }
-
-  .section_padding_extra{
-    padding: 12.5rem 0 21.875rem 0; 
   }
 }
