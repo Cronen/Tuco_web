@@ -3,7 +3,7 @@
     <b-container>
       <b-row class="mb-25">
         <b-col>
-          <h5 class="left_border">Wath promo videos</h5>
+          <h5 class="left_border">Watch promo videos</h5>
         </b-col>
       </b-row>
     </b-container>
