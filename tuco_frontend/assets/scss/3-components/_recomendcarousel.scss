@@ -14,8 +14,7 @@
 }
 
 .owl-theme .owl-nav.disabled + .owl-dots{
-  margin-top: 40px !important;
-  display: block !important;
+  margin-top: 2.5rem !important;
 }
   
 .review_wrapper{
@@ -32,6 +31,7 @@
     margin-bottom: 0.625rem;
     color: $darkGreyColor;
     font-size: 1.5rem;
+    line-height: normal;
   }
 
   .review_company{
@@ -68,9 +68,9 @@
       .review_text{
         margin: 0;
       }
-  }
 
-  .review_name{
-      margin-bottom: 0.5rem;
+      .review_name{
+        margin-bottom: 0.5rem;
+    }
   }
 }

@@ -7,6 +7,7 @@
     }
     img{
         background-position: center;
+        object-fit: cover;
         height: 100%;
         width: 100%;
         display: block;
@@ -154,9 +155,20 @@
     }
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 992px){
     .banner_hero{
         height: 100vh;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .banner_hero{
+        .banner_overlay{
+            .banner_title{
+                font-size: 3.75rem;
+                line-height: 4rem;
+            }
+        }
         .banner_subtext{
             line-height: 1.75rem;
         }

@@ -20,10 +20,20 @@
 
 .about_mainimg{
     margin-bottom: 3.125rem;
+
+    .aboutimg_wrapper{
+        &:first-child{
+            display: none;
+        }
+    }
 }
 
 .twoin_section, .vision_qoute{
     padding-top: 6.25rem;
+}
+
+.twoin_title, .about_company_title{
+    font-weight: 600;
 }
 
 .history_section{
@@ -35,6 +45,12 @@
     
     .history_img_wrapper{
         margin-top: 1.875rem;
+    }
+
+    .timeline_title{
+        font-size: 1.5625rem;
+        line-height: 2.125rem;
+        font-weight: 600;
     }
 }
 
@@ -53,9 +69,46 @@
     .twoin_section, .vision_qoute{
         padding-top: 12.5rem;
     }
+
+    .twoin_title{
+        width: 78%;
+    }
+
+    .history_section{
+        .timeline_title{
+            font-size: 1.875rem;
+            line-height: 2.5rem;
+        }
+    }
 }
 
 @media screen and (min-width: 1200px){
+    .about_mainimg{    
+        .aboutimg_wrapper{
+            &:first-child{
+                position: relative;
+                display: block;
+                text-align: center;
+                margin: 0 auto;
+            }
+            &:last-child{
+                position: absolute;
+                top: auto;
+                right: auto;
+                bottom: -30%;
+                left: 0.9375rem;
+            }
+        }
+    }
+
+    .twoin_section{
+        padding-top: 21.875rem;
+    }
+
+    .twoin_title{
+        width: 65%;
+    }
+
     .history_title{
         margin-bottom: 5rem;
     }

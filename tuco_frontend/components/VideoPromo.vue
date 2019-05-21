@@ -60,7 +60,7 @@ export default {
     return {
       promos: null,
       loading: true,
-      interval: 20000,
+      interval: 5000,
       playing_id: ""
     };
   },

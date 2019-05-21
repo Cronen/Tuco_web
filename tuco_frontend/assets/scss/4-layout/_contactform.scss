@@ -68,7 +68,7 @@
 .wrapper_checkbox{
     display: flex;
     align-items: center;
-    label{
+    label{ 
         margin: 0;
     }
     p{
@@ -84,6 +84,31 @@
 .coustom_checkbox{
     margin-right: 0.625rem;
     cursor: pointer;
+    appearance: none;
+    outline: 0;
+    background: transparent;
+    height: 1.25rem;
+    width: 1.25rem;
+    border: 0.0625rem solid $borderColor;
+
+    &::after{
+        content: '';
+        position: relative;
+        left: 40%;
+        top: 15%;
+        width: 20%;
+        height: 50%;
+        border: solid $blackColor;
+        border-width: 0 0.0625rem 0.0625rem 0;
+        transform: rotate(45deg);
+        display: none;
+    }
+}
+
+.coustom_checkbox:checked{
+    &::after{
+        display: block;
+    }
 }
 
 @media screen and (min-width: 768px){

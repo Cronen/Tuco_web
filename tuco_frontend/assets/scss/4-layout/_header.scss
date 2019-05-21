@@ -31,6 +31,15 @@
   padding-bottom: 1.25rem;
 }
 
+.navbar-nav{
+  margin-top: 1.875rem;
+}
+
+.navbar-toggler{
+  border: none;
+  padding: 0;
+}
+
 .nuxt-link-exact-active {
   border-bottom: 0.09375rem  solid $primaryColor;
   padding-bottom: 0.09375rem;
@@ -40,27 +49,28 @@
 
 .navbar-dark .navbar-nav .nav-link{
   color: $lightGreyColor;
+  display: inline-block;
+  padding: 0;
 }
 
 .nav-item{
+  margin: 0.5rem 0;
+  padding: 0;
   font-size: 0.9375rem;
 }
 
 .btn-main{
   .nav-link{
-    padding: 0rem;
+    padding: 0.9375rem 0rem !important;
+    margin: 0 !important;
+    display: block !important;
+  }
+  .nuxt-link-exact-active{
+    border-bottom: none;
   }
 }
 
 @media screen and (min-width: 768px){
-
-  .navbar-wrapper{
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 2;
-  }
 
   .main_bar, .top_bar{
     padding-left: 5%;
@@ -69,6 +79,18 @@
 }
 
 @media screen and (min-width: 992px){
+  .navbar-wrapper{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+  .navbar-nav{
+    margin-top: 0rem;
+  }
+
   .menu-items{
     align-items: center;
   }

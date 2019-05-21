@@ -87,8 +87,8 @@ button:focus, button:active {
 
 .scroll_btn{
     background-color: $primaryColor;
-    height: 4rem;
-    width: 4rem;
+    height: 3.125rem;
+    width: 3.125rem;
     color: $whiteColor;
     border-radius: 100%;
     display: flex;
@@ -107,15 +107,15 @@ button:focus, button:active {
     }
     .scroll_inner{
         background-color: $darkPrimaryColor;
-        width: 3.0625rem;
-        height: 3.0625rem;
+        width: 2.5rem;
+        height: 2.5rem;
         border-radius: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
 
         .scroll_down{
-            font-size: 20px;
+            font-size: 1.25rem;
             animation-duration: 1.5s;
             animation-iteration-count: infinite;
             animation-name: animation_wheel;
@@ -126,7 +126,7 @@ button:focus, button:active {
                 }
                 100%{
                     opacity: 0;
-                    transform: translateY(10px); 
+                    transform: translateY(0.625rem); 
                 }
             }
         }
@@ -164,32 +164,32 @@ button:focus, button:active {
 
 .play_btn{
     @include play_round;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    width: 84px;
-    height: 84px;
+    border: 0.125rem solid rgba(255, 255, 255, 0.3);
+    width: 5.25rem;
+    height: 5.25rem;
     background: transparent;
     margin: 0 auto;
 
     .play_wrapper{
         @include play_round;
-        border: 2px solid rgba(255, 255, 255, 0.5);
-        width: 74px;
-        height: 74px;
+        border: 0.125rem solid rgba(255, 255, 255, 0.5);
+        width: 4.625rem;
+        height: 4.625rem;
 
         .play_inner{
             @include play_round;
             position: relative;
-            border: 5px solid $whiteColor;
-            width: 64px;
-            height: 64px;
+            border: 0.3125rem solid $whiteColor;
+            width: 4rem;
+            height: 4rem;
 
             .play_icon{
                 position: absolute;
                 left: 55%;
                 top: 50%;
-                border-top: 10px solid transparent;
-                border-bottom: 10px solid transparent;
-                border-left: 20px solid $whiteColor;
+                border-top: 0.625rem solid transparent;
+                border-bottom: 0.625rem solid transparent;
+                border-left: 1.25rem solid $whiteColor;
                 transform: translate(-50%, -50%);
             }
         }
@@ -198,26 +198,26 @@ button:focus, button:active {
 
 @media screen and (min-width: 768px){
     .play_btn{
-        border: 3px solid rgba(255, 255, 255, 0.3);
-        width: 136px;
-        height: 136px;
+        border: 0.1875rem solid rgba(255, 255, 255, 0.3);
+        width: 8.5rem;
+        height: 8.5rem;
     
         .play_wrapper{
-            border: 3px solid rgba(255, 255, 255, 0.5);
-            width: 120px;
-            height: 120px;
+            border: 0.1875rem solid rgba(255, 255, 255, 0.5);
+            width: 7.5rem;
+            height: 7.5rem;
     
             .play_inner{
-                border: 8px solid $whiteColor;
-                width: 105px;
-                height: 105px;
+                border: 0.5rem solid $whiteColor;
+                width: 6.5625rem;
+                height: 6.5625rem;
     
                 .play_icon{
                     left: 55%;
                     top: 50%;
-                    border-top: 10px solid transparent;
-                    border-bottom: 10px solid transparent;
-                    border-left: 20px solid $whiteColor;
+                    border-top: 0.625rem solid transparent;
+                    border-bottom: 0.625rem solid transparent;
+                    border-left: 1.25rem solid $whiteColor;
                     transform: translate(-50%, -50%);
                 }
             }
