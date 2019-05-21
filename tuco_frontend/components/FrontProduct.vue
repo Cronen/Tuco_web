@@ -19,7 +19,7 @@
                             <span>Engine:</span>{{b.boat_engine}}
                         </li>
                     </ul>
-                    <a href="" class="btn btn-main">View boat</a>
+                    <a :href="b.boat_url" class="btn btn-main">View boat</a>
                 </b-col>
                 <b-col cols="12" md="7" class="product_img_wrapper">
                     <img :src="get_image_url(b.boat_image.url)" alt="">
@@ -57,8 +57,6 @@ export default {
     get_image_url(url){
         return strapi_url + url;
     },
-
-
-}
+ }
 };
 </script>
