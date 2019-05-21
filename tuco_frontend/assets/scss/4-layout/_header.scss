@@ -96,8 +96,7 @@
   }
 
   .nav-item {
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
+    margin: 0 0.75rem;
     &:last-child{
       margin: 0rem;
     }
@@ -106,10 +105,11 @@
   .navbar-expand-lg .navbar-nav .nav-link{
     padding-left: 0rem;
     padding-right: 0rem;
+    padding-bottom: 0.1875rem;
   }
 }
 
-@media screen and (min-width: 1271px){
+@media screen and (min-width: 1200px){
   .nav-item {
     margin-left: 1.5625rem;
     margin-right: 1.5625rem;

@@ -1,20 +1,13 @@
 <template>
   <div id="app">
-
     <FrontBanner/>
-
     <IntroAbout/>
-    
     <FeaturedCases/>
-
     <VideoPromo/>
-
     <FrontProduct/>
-
+    <RecentNews/>
     <Partners/>
-
     <NewsletterForm/>
-
   </div>
 </template>
 
@@ -24,6 +17,7 @@ import IntroAbout from "~/components/IntroAbout.vue";
 import FeaturedCases from "~/components/FeaturedCases.vue";
 import VideoPromo from "~/components/VideoPromo.vue";
 import FrontProduct from "~/components/FrontProduct.vue";
+import RecentNews from "~/components/RecentNews.vue";
 import Partners from "~/components/Partners.vue";
 import NewsletterForm from "~/components/NewsletterForm.vue";
 
@@ -40,11 +34,9 @@ export default {
     FeaturedCases,
     VideoPromo,
     FrontProduct,
+    RecentNews,
     Partners,
     NewsletterForm
   },
 };
 </script>
-
-<style>
-</style>
