@@ -55,7 +55,7 @@ export default {
       let response = await strapi
         .request("get", "/boats")
         .then((this.loading = false));
-      console.log(response[5]);
+      console.log(response);
       this.boats = response;
     }
 
