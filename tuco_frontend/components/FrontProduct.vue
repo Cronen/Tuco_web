@@ -22,7 +22,7 @@
                     <a href="" class="btn btn-main">View boat</a>
                 </b-col>
                 <b-col cols="12" md="7" class="product_img_wrapper">
-                    <img src="" alt="">
+                    <img :src="get_image_url(b.boat_image.url)" alt="">
                 </b-col>
             </b-row>
         </b-container>
@@ -49,14 +49,14 @@ export default {
     async fetchData() {
       this.loading = true;
       let response = await strapi
-        .request("get", "/boats?_&_boat_featured=true&_limit=1")
+        .request("get", "/boats?boat_Featured=true&_limit=1")
         .then((this.loading = false));
       console.log(response);
       this.boats = response;
     },
-    // get_image_url(boats){
-    //     return strapi_url + boats.boat_image.url;
-    // },
+    get_image_url(url){
+        return strapi_url + url;
+    },
 
 
 }
