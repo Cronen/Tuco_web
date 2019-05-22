@@ -105,6 +105,10 @@
 }
 
 //Partner Section
+.partners{
+    padding-top: 6.25rem;
+}
+
 .partners_wrapper{
     border-bottom: 0.0625rem solid rgba(112, 112, 112, 0.25);
     margin: 0 auto;
@@ -165,6 +169,10 @@
 @media screen and (min-width: 992px){
     .banner_hero{
         height: 100vh;
+    }
+
+    .partners{
+        padding-top: 12.5rem
     }
 }
 

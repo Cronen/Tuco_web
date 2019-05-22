@@ -1,0 +1,31 @@
+.recent_list{
+    list-style-type: none;
+
+    li{
+        border-bottom: 1px solid rgba(112, 112, 112, 0.25);
+        margin-bottom: 40px;
+        padding: 0 0 25px 0;
+        font-weight: 300;
+        &:last-child{
+            margin-bottom: 50px;
+        }
+        a{
+            color: $darkGreyColor;
+            text-decoration: none;
+            font-size: 18px;
+        }
+    }
+}
+
+@media screen and (min-width: 992px){
+    .recent_list{
+        max-width: 330px;
+        li{
+            a{
+                font-size: 20px;
+                display: inline-block;
+                max-width: 190px;
+            }
+        }
+    }
+}

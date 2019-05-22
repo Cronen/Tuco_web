@@ -1,13 +1,17 @@
 .casehead_wrapper{
     position: relative;
     margin-bottom: 2.5rem;
+
+    .casehead_title{
+        text-transform: capitalize;
+    }
 }
 
 .casehead_img{
     border-radius: $radius;
     object-fit: cover;
     width: 100%;
-    max-height: 500px;
+    max-height: 700px;
 }
 
 .casehead_share{
