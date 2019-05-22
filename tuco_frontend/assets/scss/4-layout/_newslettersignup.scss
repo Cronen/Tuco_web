@@ -6,30 +6,16 @@
     background-size: cover;
     background-position: 50% 80%;
     background-repeat: no-repeat;
-    /*img{
-        background-position: center;
-        height: auto;
-        width: 100%;
-        display: block;
+    &::before{
+        @include banner_fade;
     }
-    */
-}
-
-.newsform_wrapper{
-    /*
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    */
-
 }
 
 .signup_title{
     margin-bottom: 1.25rem;
+    font-weight: 600;
+    font-size: 1.875rem;
+    line-height: 2.5rem;
 }
 
 .signup_subtext{
@@ -85,14 +71,22 @@
     } 
 }
 
+@media screen and (min-width: 992px){
+    .signup_title{
+        font-size: 3.125rem;
+        line-height: 4.0625rem;
+    }
+    
+    .signup_subtext{
+        font-size: 1.25rem;
+        line-height: 2rem;
+    }
+}
+
 @media screen and (min-width: 1200px){
     .signup_bg{
         padding-top: 12.5rem;
         padding-bottom: 18.75rem;
-        /*img{
-            height: 47.8125rem;
-        }
-        */
     }
 
     .input_wrapper{

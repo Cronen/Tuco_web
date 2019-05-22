@@ -6,7 +6,7 @@
             <li><a href="#">Releasing new 18m ASV design.</a></li>
         </ul>
         <a href="#" class="btn btn-link-border">
-            Full story
+            Read more
         <font-awesome-icon :icon="['fas', 'long-arrow-alt-right']"/>
         </a>
     </b-col>

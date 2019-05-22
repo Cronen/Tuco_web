@@ -3,7 +3,7 @@
         <b-container>
             <b-row>
                 <b-col class="mb-80">
-                    <h2>Recent news</h2>
+                    <h2 class="front_title">Recent news</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor. </p>
                 </b-col>
             </b-row>

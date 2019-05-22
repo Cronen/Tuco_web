@@ -2,29 +2,29 @@
     list-style-type: none;
 
     li{
-        border-bottom: 1px solid rgba(112, 112, 112, 0.25);
-        margin-bottom: 40px;
-        padding: 0 0 25px 0;
+        border-bottom: 0.0625rem solid rgba(112, 112, 112, 0.25);
+        margin-bottom: 2.5rem;
+        padding: 0 0 1.5625rem 0;
         font-weight: 300;
         &:last-child{
-            margin-bottom: 50px;
+            margin-bottom: 3.125rem;
         }
         a{
             color: $darkGreyColor;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 1.125rem;
         }
     }
 }
 
 @media screen and (min-width: 992px){
     .recent_list{
-        max-width: 330px;
+        max-width: 20.625rem;
         li{
             a{
-                font-size: 20px;
+                font-size: 1.25rem;
                 display: inline-block;
-                max-width: 190px;
+                max-width: 11.875rem;
             }
         }
     }

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="refcarousel">
     <carousel :autoplay="true" :loop="true" :autoplayTime="8000" :nav="false" :dots="true" :responsive="{0:{items:1},768:{items:2}}">
       <div class="review_wrapper">
         <div class="review_img">
