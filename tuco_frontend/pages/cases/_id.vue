@@ -18,12 +18,29 @@
         </b-row>
       </b-container>
     </section>
+    <section class="morelike_section">
+      <b-container>
+        <b-row>
+          <b-col class="mb-50">
+            <h2>Other articles you may like:</h2>
+          </b-col>
+        </b-row>
+      </b-container>
+      <b-container>
+        <b-row>
+          <b-col cols="12" md="6" lg="4">
+            <MoreArticle />
+          </b-col>
+        </b-row>
+      </b-container>
+    </section>
   </div>
 </template>
 
 <script>
 import subbanner from "~/components/subbanner.vue";
 import CaseHead from "~/components/CaseHead.vue";
+import MoreArticle from "~/components/MoreArticle.vue";
 import Loader from "~/components/Loader.vue";
 import Strapi from "strapi-sdk-javascript";
 import showdown from "showdown";
@@ -59,7 +76,8 @@ export default {
   components: {
     Loader,
     subbanner,
-    CaseHead
+    CaseHead,
+    MoreArticle
   },
   created() {
     console.log(this.case);

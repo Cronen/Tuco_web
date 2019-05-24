@@ -1,0 +1,50 @@
+.morelike_card{
+    position: relative;
+    display: block;
+    margin-bottom: 25px;
+
+    .morelike_img{
+        height: 100%;
+        border-radius: $radius;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .morelike_line{
+        height: 5px;
+        background-color: $primaryColor;
+        border-radius: 0 0 $radius $radius;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .card_overlay{
+        .card_fade{
+            .case_title{
+                left: 20px;
+                bottom: 20px;
+                right: 20px;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+
+.morelike_btn{
+    color: $whiteColor;
+    &:hover{
+        color: $primaryColor;
+        text-decoration: none;
+    }
+    svg{
+        margin-left: 0.625rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .morelike_card{
+        height: 250px;
+    }
+}

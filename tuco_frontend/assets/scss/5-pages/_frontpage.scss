@@ -178,10 +178,6 @@
         right: 0.9375rem;
         bottom: -6.25rem;
         padding: 3.125rem 2.5rem;
-        p{
-            font-size: 1.125rem;
-            line-height: 2rem;
-        }
     }
 
     .partners{
@@ -235,5 +231,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+        p{
+            font-size: 1.125rem;
+            line-height: 2rem;
+        }
     }
 }
