@@ -27,10 +27,6 @@
     "featured": {
       "default": false,
       "type": "boolean"
-    },
-    "tags": {
-      "default": "",
-      "type": "string"
     }
   }
 }
