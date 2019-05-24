@@ -40,13 +40,6 @@
     padding: 6.25rem 0;
 }
 
-.front_title{
-    margin-bottom: 0.625rem;
-    font-weight: 600;
-    font-size: 1.875rem;
-    line-height: 2.5rem;
-}
-
 .intro_subtext{
     text-align: center;
 }
@@ -163,10 +156,8 @@
         height: 100vh;
     }
 
-    .front_title{
-        font-size: 3.125rem;
-        line-height: 4.0625rem;
-        margin-bottom: 1.5625rem;
+    .story_section{
+        margin-bottom: 100px;
     }
 
     .story_img_wrapper{
@@ -204,6 +195,10 @@
 
     .intro_subtext{
         line-height: 2rem;
+    }
+
+    .story_section{
+        margin-bottom: 465px;
     }
 
     .story_img_inner{

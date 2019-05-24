@@ -5,7 +5,7 @@
             <b-container>
                 <b-row>
                     <b-col md="7" lg="6" class="mb-80">
-                        <h2>News Articles</h2>
+                        <h2 class="subpage_title">News Articles</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</p>
                     </b-col>
                 </b-row>
