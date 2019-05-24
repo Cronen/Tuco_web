@@ -22,7 +22,7 @@
       <b-container>
         <b-row>
           <b-col class="mb-50">
-            <h2 class="subpage_title">Other articles you may like:</h2>
+            <h4 class="morelike_section_title">Other articles you may like:</h4>
           </b-col>
         </b-row>
       </b-container>
