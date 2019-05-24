@@ -1,7 +1,7 @@
 <template>
   <div>
     <subbanner title="Quality"/>
-    <section id="quality">
+    <section class="section_padding">
       <b-container>
         <b-row>
           <b-col>
@@ -12,9 +12,6 @@
           </b-col>
         </b-row>
       </b-container>
-    </section>
-    <br>
-    <section>
       <b-container>
         <b-row>
           <b-col>
@@ -32,9 +29,6 @@
           </b-col>
         </b-row>
       </b-container>
-    </section>
-    <br>
-    <section>
       <b-container>
         <b-row>
           <b-col>
@@ -52,9 +46,6 @@
           </b-col>
         </b-row>
       </b-container>
-    </section>
-    <br>
-    <section>
       <b-container>
         <b-row>
           <b-col cols="12" class="mb-0">
@@ -64,9 +55,6 @@
           </b-col>
         </b-row>
       </b-container>
-    </section>
-    <br>
-    <section>
       <b-container>
         <div style="text-align:center;">
           <h1>
@@ -74,11 +62,7 @@
           </h1>
         </div>
       </b-container>
-    </section>
-    <br>
-    <div id="whycarbon">
-      <section>
-        <b-container>
+      <b-container>
           <b-row>
             <b-col>
               <p>
@@ -100,9 +84,6 @@
             </b-col>
           </b-row>
         </b-container>
-      </section>
-      <br>
-      <section>
         <b-container>
           <b-row>
             <b-col>
@@ -163,9 +144,6 @@
             </b-col>
           </b-row>
         </b-container>
-      </section>
-      <br>
-      <section>
         <b-container>
           <b-row>
             <b-col>
@@ -185,26 +163,22 @@
             </b-col>
           </b-row>
         </b-container>
-      </section>
-      <br>
-      <section>
         <b-container style="text-align:center;">
           <p>
             <b>"Contact us for more information on carbon fiber. Call us at +45 7020 3898</b>
           </p>
           <br>
         </b-container>
-      </section>
-    </div>
+    </section>
   </div>
 </template>
 
-    <script>
-import subbanner from "~/components/subbanner.vue";
-export default {
-  name: "quality",
-  components: {
-    subbanner
-  }
-};
+<script>
+  import subbanner from "~/components/subbanner.vue";
+  export default {
+    name: "quality",
+    components: {
+      subbanner
+    }
+  };
 </script>   

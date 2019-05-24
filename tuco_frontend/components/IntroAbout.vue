@@ -27,10 +27,10 @@
               <p class="mb-20">At Tuco Marine Group we specialize in light structures and hulls manufactured with composite materials such as carbon fibre. Tuco supplies a range of different composite structures for the shipping industry and other industries where low weight and strength are important factors.</p>
               <p>In 1998 when the company was founded it was a traditional yard and the main business area was sailing boats. Today focus has shifted to the construction of large structures primarily in the commercial maritime sector.</p>
             </div>
-            <a href="#" class="btn btn-link-border">
+            <nuxt-link :to="{path: '/about'}" class="btn btn-link-border">
               Full story
               <font-awesome-icon :icon="['fas', 'long-arrow-alt-right']"/>
-            </a>
+            </nuxt-link>
           </b-col>
         </b-row>
       </b-container>
