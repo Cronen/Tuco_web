@@ -5,7 +5,7 @@
       <b-container v-if="this.case">
         <b-row>
           <b-col>
-            <CaseHead :title="this.case.title" :img_url="get_img_url()" :date="get_date()"/>
+            <CaseHead :title="this.case.title" :img_url="get_img_url(this.case)" :date="get_date()"/>
           </b-col>
         </b-row>
         <b-row v-html="this.get_article_html()"></b-row>
@@ -27,9 +27,14 @@
         </b-row>
       </b-container>
       <b-container>
-        <b-row>
-          <b-col cols="12" md="6" lg="4">
-            <MoreArticle />
+        <b-row v-if="!loading">
+          <b-col cols="12" md="6" lg="4" v-for="c in related_array" :key="c.id">
+            <MoreArticle :img_url="get_img_url(c)" :title="c.title" :id="c.id"/>
+          </b-col>
+        </b-row>
+        <b-row v-else>
+          <b-col cols="1" class="mx-auto">
+            <Loader/>
           </b-col>
         </b-row>
       </b-container>
@@ -71,6 +76,8 @@ const converter = new showdown.Converter({
 export default {
   data() {
     return {
+      loading: true,
+      related_array: null
     };
   },
   components: {
@@ -80,8 +87,7 @@ export default {
     MoreArticle
   },
   created() {
-    console.log(this.case);
-    console.log(this.get_date());
+    this.get_related_article();
   },
   async asyncData(context) {
     return {
@@ -92,13 +98,30 @@ export default {
     get_article_html() {
       return converter.makeHtml(this.case.article);
     },
-    get_img_url(){
-      return strapi_url + this.case.case_image.url;
+    get_img_url(the_case) {
+      return strapi_url + the_case.case_image.url;
     },
-    get_date(){
+    get_date() {
       let d = new Date(this.case.createdAt);
-      var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+      var months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+      ];
       return `${months[d.getMonth()]} ${d.getDate()} ${d.getFullYear()}`;
+    },
+    async get_related_article() {
+      this.loading = true;
+      this.related_array = await strapi.request("get", "/cases?_sort=createdAt:DESC&_id_ne="+this.case.id+"&_limit=3").then(this.loading=false);
     }
   }
 };
