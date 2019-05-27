@@ -14,7 +14,7 @@
                     <RecentNewsList/>
                 </b-col>
                 <b-col cols="12" lg="8">
-
+                    <img src="~/assets/img/0b48acbe30999524ca3a49913345b1e9.jpg" class="recentnews_img"/>
                 </b-col>
             </b-row>
         </b-container>

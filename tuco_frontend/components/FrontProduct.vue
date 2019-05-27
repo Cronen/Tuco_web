@@ -1,5 +1,5 @@
 <template>
-    <section class="section_padding">
+    <section class="section_padding" v-if="!loading">
         <b-container>
             <b-row v-for="b in this.boats" :key="b.id">
                 <b-col cols="12" md="5" class="product_wrapper">
