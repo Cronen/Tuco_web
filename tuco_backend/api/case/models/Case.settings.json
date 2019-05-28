@@ -27,6 +27,14 @@
     "featured": {
       "default": false,
       "type": "boolean"
+    },
+    "Tag": {
+      "default": "Case",
+      "type": "enumeration",
+      "enum": [
+        "Case",
+        "Research&Development"
+      ]
     }
   }
 }
