@@ -54,15 +54,26 @@
         </b-row>
       </b-container>
       <b-container>
-        <b-row class="align-items-md-center">
-          <b-col cols="12" md="6">
-            <h3 class="mb-40 timeline_title">The change of focus in the production to composite materials was further accelerated in 2009</h3>
-            <p>Tuco won a tender on the construction of hulls for three carbon fibre ferries for the Norwegian commercial sector. The task now was to manufacture three 35-meter carbon fibre hull structures that were ready for outfitting.</p>
-          </b-col>
-          <b-col cols="12" md="6" class="history_img_wrapper">
-            <img src="../assets/img/about4.png" alt>
-          </b-col>
-        </b-row>
+        <carousel :autoplay="false" :loop="false" :nav="false" :dots="true" :responsive="{0:{items:1},768:{items:1}}" v-if="!loading" class="carousel_about">
+          <b-row class="align-items-md-center">
+            <b-col cols="12" md="6">
+              <h3 class="mb-40 timeline_title">The change of focus in the production to composite materials was further accelerated in 2009</h3>
+              <p>Tuco won a tender on the construction of hulls for three carbon fibre ferries for the Norwegian commercial sector. The task now was to manufacture three 35-meter carbon fibre hull structures that were ready for outfitting.</p>
+            </b-col>
+            <b-col cols="12" md="6" class="history_img_wrapper">
+              <img src="../assets/img/about4.png" alt>
+            </b-col>
+          </b-row>
+          <b-row class="align-items-md-center">
+            <b-col cols="12" md="6">
+              <h3 class="mb-40 timeline_title">The change of focus in the production to composite materials was further accelerated in 2009</h3>
+              <p>Tuco won a tender on the construction of hulls for three carbon fibre ferries for the Norwegian commercial sector. The task now was to manufacture three 35-meter carbon fibre hull structures that were ready for outfitting.</p>
+            </b-col>
+            <b-col cols="12" md="6" class="history_img_wrapper">
+              <img src="../assets/img/about4.png" alt>
+            </b-col>
+          </b-row>
+        </carousel>
       </b-container>
     </section>
     <section class="vision_qoute">
@@ -94,11 +105,13 @@
 <script>
 import subbanner from "~/components/subbanner.vue";
 import togglecollapsible from "~/components/togglecollapsible.vue";
+import carousel from "vue-owl-carousel";
 
 export default {
   components: {
     subbanner,
-    togglecollapsible
+    togglecollapsible,
+    carousel
   }
 };
 </script>

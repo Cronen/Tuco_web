@@ -52,6 +52,25 @@
         line-height: 2.125rem;
         font-weight: 600;
     }
+
+    .carousel_about{
+        .owl-dots{
+            margin-top: 25px;
+            .owl-dot{
+                span{
+                    border-radius: 0;
+                    background: #3D3D3D;
+                    width: 2.8125rem;
+                    height: 0.1875rem;
+                }
+            }
+        }
+    }
+
+    .owl-theme .owl-dots .owl-dot.active span{
+        background: $primaryColor;
+    }
+
 }
 
 
@@ -75,9 +94,16 @@
     }
 
     .history_section{
+        padding-bottom: 150px;
         .timeline_title{
             font-size: 1.875rem;
             line-height: 2.5rem;
+        }
+
+        .carousel_about{
+            .owl-theme .owl-nav.disabled + .owl-dots{
+                margin-top: 50px;
+            }
         }
     }
 }
