@@ -6,15 +6,16 @@
         <b-row class="relative">
           <b-col cols="12" class="location_info">
             <div class="location_address">
-              <h2 class="adress_title">Tuco - Krogsbjergvej 2</h2>
+              <h2 class="adress_title">Tuco Marine ApS</h2>
               <ul>
-                <li>5600 Faaborg</li>
+                <li>Krogsbjergvej 2</li>
+                <li>DK-5600 Faaborg</li>
                 <li>Denmark</li>
               </ul>
             </div>
             <div class="location_phone">
               <h4 class="contact_title">Phone number</h4>
-              <a href="tel:+4570203898">+45 7020 3898</a>
+              <a href="tel:+4570203898">+ 45 7020 3898</a>
             </div>
             <div class="location_mail">
               <h4 class="contact_title">Email</h4>
