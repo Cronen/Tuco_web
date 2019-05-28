@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/reviews",
+      "handler": "Reviews.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/reviews/count",
+      "handler": "Reviews.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/reviews/:_id",
+      "handler": "Reviews.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/reviews",
+      "handler": "Reviews.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/reviews/:_id",
+      "handler": "Reviews.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/reviews/:_id",
+      "handler": "Reviews.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

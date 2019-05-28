@@ -1,0 +1,35 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "reviews",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Review_name": {
+      "default": "",
+      "type": "string"
+    },
+    "Review_company": {
+      "default": "",
+      "type": "string"
+    },
+    "Review_description": {
+      "default": "",
+      "type": "text"
+    },
+    "Review_image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "Review_featured": {
+      "default": false,
+      "type": "boolean"
+    }
+  }
+}
