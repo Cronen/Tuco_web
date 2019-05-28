@@ -18,9 +18,7 @@ export default {
   props: {
     reference: Object
   },
-  created() {
-    console.log(this.reference);
-  }
+
 };
 </script>
 
