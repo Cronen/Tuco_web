@@ -3,7 +3,7 @@
     <b-container>
       <b-row class="mb-25">
         <b-col>
-          <h5 class="left_border">Latest project cases</h5>
+          <h5 class="left_border">Latest research cases</h5>
         </b-col>
       </b-row>
       <b-row v-if="!loading">
@@ -45,9 +45,9 @@ export default {
     async fetchData() {
       this.loading = true;
       let response = await strapi
-        .request("get", "/cases?_sort=createdAt:DESC&featured=true&_limit=3")
+        .request("get", "/cases?_sort=createdAt:DESC&featured=true")
         .then((this.loading = false));
-      this.cases = response
+      this.cases = response.filter(c => {return c.Tag == "Research&Development"}).splice(0,3);
     }
   }
 };
