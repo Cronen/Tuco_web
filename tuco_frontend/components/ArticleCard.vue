@@ -25,15 +25,64 @@
         </b-col>
     </b-row>
 </div>
-    
+
+<!-- <div id="articleList" v-if="!loading">
+    <b-row v-for="n in this.news" :key="n.id">
+        <b-col xs="12" md="5" lg="6" class="article_imgwrapper">
+            <img :src="get_image_url(n.news_image.url)" alt="">
+        </b-col>
+        <b-col xs="12" md="7" lg="6" class="article_textwrapper">
+            <div class="article_inner">
+                <span class="article_label date_label">News post</span> 
+                <div class="article_meta">
+                    <div class="article_timestamp">
+                        <span><time>{{n.news_time}}</time></span>
+                    </div>
+                    <ul class="article_share">
+                        <li class="article_icon"><a target="_blank" href="https://www.facebook.com/pages/Tuco-Marine-Group-ApS/250239778331751?fref=ts"><font-awesome-icon :icon="['fab', 'facebook-f']"/></a></li>
+                        <li class="article_icon"><a target="_blank" href="http://www.linkedin.com/company/tuco-marine-aps"><font-awesome-icon :icon="['fab', 'linkedin-in']"/></a></li>
+                        <li class="article_icon"><a target="_blank" href="http://www.youtube.com/tucomarine"><font-awesome-icon :icon="['fas', 'envelope']"/></a></li>
+                    </ul>
+                </div>
+                <h2 class="article_title">
+                    <a :href="n.news_url" target="_blank">{{n.news_title}}</a>
+                </h2>
+                <p class="article_introtext">{{n.news_description}}</p>
+            </div>
+        </b-col>
+    </b-row>
+</div> -->
 </template>
 
 <script>
-export default {
+import Strapi from "strapi-sdk-javascript";
+const strapi_url = process.env.StrapiUrl;
+const strapi = new Strapi(strapi_url);
 
+export default {
+     data() {
+    return {
+    news: null,
+    loading: true
+  };
+  },
+    created() {
+    this.fetchData();
+    console.log("news", this.news);
+
+  },
+  methods: {
+    async fetchData() {
+      this.loading = true;
+      let response = await strapi
+        .request("get", "/news")
+        .then((this.loading = false));
+      console.log("news", response);
+      this.news = response;
+    },
+    get_image_url(url){
+        return strapi_url + url;
+    },
+ }
 }
 </script>
-
-<style>
-
-</style>
