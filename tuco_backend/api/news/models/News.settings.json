@@ -1,0 +1,35 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "news",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "News_time": {
+      "default": "",
+      "type": "date"
+    },
+    "News_title": {
+      "default": "",
+      "type": "string"
+    },
+    "News_description": {
+      "default": "",
+      "type": "text"
+    },
+    "News_url": {
+      "default": "",
+      "type": "string"
+    },
+    "News_image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
