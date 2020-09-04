@@ -21,7 +21,7 @@
     "cross-env": "^5.2.0",
     "nuxt": "^2.4.0",
     "nuxt-fontawesome": "^0.4.0",
-    "showdown": "^1.9.0",
+    "showdown": "^1.9.1",
     "strapi-sdk-javascript": "^0.3.1",
     "vue-owl-carousel": "^2.0.3",
     "vue-spinner": "^1.0.3"
